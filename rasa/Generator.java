@@ -84,6 +84,7 @@ public class Generator {
 		
 		schema.TrackColumn = TrackColumn;
 		schema.TrackType = TrackType;
+		schema.TrackConstant = TrackConstant;
 	}
 
 
@@ -163,6 +164,10 @@ public class Generator {
 			}
 			
 		}
+		
+		schema.TrackColumn = TrackColumn;
+		schema.TrackType = TrackType;
+		schema.TrackConstant = TrackConstant;
 	}
 
 
@@ -219,5 +224,9 @@ public class Generator {
 			}
 			
 		}
+		
+		schema.TrackColumn = TrackColumn;
+		schema.TrackType = TrackType;
+		schema.TrackConstant = TrackConstant;
 	}
 }
