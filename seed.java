@@ -27,7 +27,7 @@
                 for(int k=0;k<s.tables.get(i).columns.get(j).prepositions.size();k++){
                     
                 }
-                for(int k=0;k<s.tables.get(i).columns.get(j).verbs.size();k++){
+                for(int k=0;k<s.tables.get(i).columns.get(j).xyz.size();k++){
                     
                 }
                 
