@@ -1,8 +1,8 @@
 package rasa;
 import java.util.*;
 
-
-public String nextPerm(String last) {
+public class Generator {
+	public String nextPerm(String last) {
 		String next = "";
 		
 		int carry = 1;
@@ -220,3 +220,4 @@ public String nextPerm(String last) {
 			
 		}
 	}
+}
