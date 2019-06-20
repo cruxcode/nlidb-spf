@@ -4,7 +4,7 @@ import java.util.*;
 public class Hierarchy {
 	TreeNode root;
 	
-	public String CommonAncestor() {
+	public static String CommonAncestor(String A, String B) {
 		return "s";
 	}
 }

@@ -20,8 +20,9 @@ public class Main {
 	public void predicate(Schema schema, Predicate pred_file)
 	{
 		ArrayList<Relation> RelationList = schema.RelationList;
-		Dictionary TrackType = new Hashtable();
-		Dictionary TrackColumn = new Hashtable();
+		Dictionary TrackType = schema.TrackType;
+		Dictionary TrackColumn = schema.TrackColumn;
+		Dictionary TrackConstant = schema.TrackConstant;
 		String last = "";
 		
 		for(int i=0; i<RelationList.size(); i++) {
@@ -90,8 +91,9 @@ public class Main {
 
 	public void constant(Schema schema, Constant const_file) {
 		ArrayList<Relation> RelationList = schema.RelationList;
-		Dictionary TrackType = new Hashtable();
-		Dictionary TrackColumn = new Hashtable();
+		Dictionary TrackType = schema.TrackType;
+		Dictionary TrackColumn = schema.TrackColumn;
+		Dictionary TrackConstant = schema.TrackConstant;
 		
 		for(int i=0; i<RelationList.size(); i++) {
 			
@@ -108,18 +110,53 @@ public class Main {
 				for(int k=0; k<ValueList.size(); k++) {
 					
 					String ctype = (String)TrackColumn.get(Name);
-					const_file.ConstGenerator(ValueList.get(k), ctype);
+					if(TrackConstant.get(ValueList.get(k)) == null)
+					{
+						const_file.ConstGenerator(ValueList.get(k), ctype);
+						TrackConstant.put(ValueList.get(k), ctype);
+					}
+					
+					else
+					{
+						String comm_ancc = Hierarchy.CommonAncestor(ctype, (String)TrackConstant.get(ValueList.get(k)));
+						const_file.ConstGenerator(ValueList.get(k), comm_ancc);
+						TrackConstant.put(ValueList.get(k), comm_ancc);
+					}
 					
 					for(int l=0; l<Prefix.size(); l++) {
-						String prefix = ValueList.get(l) + " " + Prefix.get(l);
+						String prefix = Prefix.get(l) + " " + ValueList.get(l);
 						prefix.replace(' ', '_');
-						const_file.ConstGenerator(prefix, ctype);
+						
+						if(TrackConstant.get(prefix) == null)
+						{
+							const_file.ConstGenerator(prefix, ctype);
+							TrackConstant.put(prefix, ctype);
+						}
+						
+						else
+						{
+							String comm_ancc = Hierarchy.CommonAncestor(ctype, (String)TrackConstant.get(prefix));
+							const_file.ConstGenerator(prefix, comm_ancc);
+							TrackConstant.put(prefix, comm_ancc);
+						}
 					}
 					
 					for(int l=0; l<Postfix.size(); l++) {
 						String postfix = ValueList.get(l) + " " + Postfix.get(l);
 						postfix.replace(' ', '_');
-						const_file.ConstGenerator(postfix, ctype);
+						
+						if(TrackConstant.get(postfix) == null)
+						{
+							const_file.ConstGenerator(postfix, ctype);
+							TrackConstant.put(postfix, ctype);
+						}
+						
+						else
+						{
+							String comm_ancc = Hierarchy.CommonAncestor(ctype, (String)TrackConstant.get(postfix));
+							const_file.ConstGenerator(postfix, comm_ancc);
+							TrackConstant.put(postfix, comm_ancc);
+						}
 					}
 					
 				}
@@ -132,10 +169,11 @@ public class Main {
 
 
 
-	public void constant(Schema schema, NpList np_file) {
+	public void nplist(Schema schema, NpList np_file) {
 		ArrayList<Relation> RelationList = schema.RelationList;
-		Dictionary TrackType = new Hashtable();
-		Dictionary TrackColumn = new Hashtable();
+		Dictionary TrackType = schema.TrackType;
+		Dictionary TrackColumn = schema.TrackColumn;
+		Dictionary TrackConstant = schema.TrackConstant;
 		
 		for(int i=0; i<RelationList.size(); i++) {
 			
@@ -152,19 +190,29 @@ public class Main {
 				
 				for(int k=0; k<ValueList.size(); k++) {
 					
-					String ctype = (String)TrackColumn.get(Name);
-					np_file.NpGenerator(ValueList.get(k), ctype, PosTag);
+					String ctype = (String)TrackConstant.get(ValueList.get(k));
+					np_file.NpGenerator(ValueList.get(k), ctype, Name, PosTag);
 					
 					for(int l=0; l<Prefix.size(); l++) {
-						String prefix = ValueList.get(l) + " " + Prefix.get(l);
-						//prefix.replace(' ', '_');
-						np_file.NpGenerator(prefix, ctype, PosTag);
+						String prefix = Prefix.get(l) + " " + ValueList.get(l);
+						
+						String org_prefix = prefix;
+						prefix.replace(' ', '_');
+						ctype = (String)TrackConstant.get(prefix);
+						prefix = org_prefix;
+						
+						np_file.NpGenerator(prefix, ctype, Name, PosTag);
 					}
 					
 					for(int l=0; l<Postfix.size(); l++) {
 						String postfix = ValueList.get(l) + " " + Postfix.get(l);
-						//postfix.replace(' ', '_');
-						np_file.NpGenerator(postfix, ctype, PosTag);
+
+						String org_postfix = postfix;
+						postfix.replace(' ', '_');
+						ctype = (String)TrackConstant.get(postfix);
+						postfix = org_postfix;
+						
+						np_file.NpGenerator(postfix, ctype, Name, PosTag);
 					}
 					
 				}
