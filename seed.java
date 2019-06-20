@@ -15,9 +15,9 @@
         int i1,i2,i3;
         for(int i=0;i<s.tables.size();i++){
             for(int j=0;j<s.tables.get(i).columns.size();j++){
-                for(int k=0;k<s.tables.get(i).columns.get(j).adjective.size();k++){
-                    s1 = s.tables.get(i).columns.get(j).adjective.get(k).name;
-                    i1 = s.tables.get(i).columns.get(j).adjadjective.get(k).level;
+                for(int k=0;k<s.tables.get(i).columns.get(j).adjectives.size();k++){
+                    s1 = s.tables.get(i).columns.get(j).adjectives.get(k).name;
+                    i1 = s.tables.get(i).columns.get(j).adjectives.get(k).level;
                     s3 = (preds.get(s.tables.get(i).columns.get(j).name)).get(1******);//undecided
                     adj(s1,i1,s3);
                 }
