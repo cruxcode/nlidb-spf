@@ -229,4 +229,34 @@ public class Generator {
 		schema.TrackType = TrackType;
 		schema.TrackConstant = TrackConstant;
 	}
+	public void Adjective_seed(Schema s, Seed seed_file, Predicate pred_file) {
+		String s1,s2,s3,s4;
+		for(int i=0;i<s.RelationList.size();i++) {
+			for(int j=0;j<s.RelationList.get(i).ColumnList.size();j++) {
+				for(int k=0;k<s.RelationList.get(i).ColumnList.get(j).AdjectiveList.size();k++) {
+					s1 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).name;
+					s2 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).level;
+					s3 = (pred_file.pred_dict.get(s.RelationList.get(i).ColumnList.get(j).name)).get(1);
+					s4 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).type;
+					if(s4=="general") {
+						seed_file.Adjectives(s1,s2,s3,pred_file.pred_dict.get("greater").get(0),pred_file.pred_dict.get("argmax").get(0));
+						seed_file.Adjectives(s1,s2,pred_file.pred_dict.get("greater").get(0),pred_file.pred_dict.get("argmax").get(0));
+					}else {
+						seed_file.Adjectives(s1,s2,s3,pred_file.pred_dict.get("greater").get(0),pred_file.pred_dict.get("argmax").get(0));
+					}
+				}
+			}
+		}
+	}
+    public void Column_Seed(Schema s, Seed seed_file, Predicate pred_file) {
+		String s1,s2,s3,s4;
+		for(int i=0;i<s.RelationList.size();i++) {
+			for(int j=0;j<s.RelationList.get(i).ColumnList.size();j++) {
+				s1 = s.RelationList.get(i).ColumnList.get(j).Name;
+				s2 = s.RelationList.get(i).ColumnList.get(j).Name;
+				s3 = s.RelationList.get(i).ColumnList.get(j).Name;
+				
+                //incomplete
+			}
+		}
 }
