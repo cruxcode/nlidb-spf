@@ -89,6 +89,14 @@ public class reader {
 		
 		
 	}
+	public static void hGenerator(Nodes x, ArrayList<String> s) {
+		for(int i=0;i<x.children.size();i++) {
+			s.add("("+x.children.get(i).name+","+x.name+")"+"       // "+x.children.get(i).name);
+		}
+		for(int i=0;i<x.children.size();i++) {
+			hGenerator(x.children.get(i),s);
+		}
+	}
 	
 	
 	
@@ -121,6 +129,11 @@ public class reader {
 		//System.out.println(b.name);
 		
 		System.out.println(common_parent("Rust","earth",Hierarchy));
+		ArrayList<String> s = new ArrayList<String>();
+		hGenerator(Hierarchy,s);
+		for(int i=0;i<s.size();i++) {
+			System.out.println(s.get(i));
+		}
 		
 	}
 }
