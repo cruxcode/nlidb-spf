@@ -2,7 +2,7 @@ package hreader;
 
 import java.util.ArrayList;
 public class Nodes {
-	String name;
+	String name,symbol;
 	Nodes parent = null;
 	ArrayList<Nodes> children = new ArrayList<Nodes>();
 	public Nodes(String name, Nodes parent) {
