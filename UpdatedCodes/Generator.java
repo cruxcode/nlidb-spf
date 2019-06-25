@@ -306,7 +306,7 @@ public class Generator {
 					seed_file.ColGenerator(s1,s.TrackType.get(s2),s.TrackType.get(s3),"type1");
 				}
 				
-                //incomplete
+               
 			}
 		}
 		
