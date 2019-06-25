@@ -215,4 +215,12 @@ class Seed{
             System.out.println(entry);
         }
     }
+    public static ArrayList<String> seed_prep = new ArrayList<String>();
+    public static void Preposition(String prep, String pred, String ptype) {
+    	String entry = "";
+    	entry += prep + " :- PP/NP : (lambda $0:e (" + pred + " $0))";//returns pkey, may be not required
+    	seed_prep.add(entry);
+        entry += prep + " :- PP/NP : (lambda $0:e (lambda $1:"+ ptype + "(" + pred + " $1 $0)))";//here type 4 will be used
+        seed_prep.add(entry);
+    }
 }
