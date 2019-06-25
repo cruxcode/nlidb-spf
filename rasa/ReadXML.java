@@ -7,6 +7,7 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class ReadXML {
@@ -194,9 +195,6 @@ public class ReadXML {
 	    catch (Exception e){
 	    	e.printStackTrace();
 	    }
-	    
-	    
-	    System.out.println(SchemaObj.RelationList.get(0).ColumnList.get(0).Prefix.size());
 	    
 	}
 	  

@@ -19,6 +19,7 @@ class Predicate{
         	pred1 += "<" + ctype + "," + "t" + ">";
             this.predicate.add(pred1);
             
+            
             pred2 = name + ":";
             for(int i=0;i<1;i++)
             {
