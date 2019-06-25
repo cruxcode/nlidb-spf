@@ -216,11 +216,11 @@ class Seed{
         }
     }
     public static ArrayList<String> seed_prep = new ArrayList<String>();
-    public static void Preposition(String prep, String pred, String ptype) {
+    public static void Preposition(String prep, String pred1, String pred2, String ptype) {
     	String entry = "";
-    	entry += prep + " :- PP/NP : (lambda $0:e (" + pred + " $0))";//returns pkey, may be not required
+    	entry += prep + " :- PP/NP : (lambda $0:e (" + pred1 + " $0))";//returns pkey, may be not required
     	seed_prep.add(entry);
-        entry += prep + " :- PP/NP : (lambda $0:e (lambda $1:"+ ptype + "(" + pred + " $1 $0)))";//here type 4 will be used
+        entry += prep + " :- PP/NP : (lambda $0:e (lambda $1:"+ ptype + "(" + pred2 + " $1 $0)))";//here type 4 will be used
         seed_prep.add(entry);
     }
 }
