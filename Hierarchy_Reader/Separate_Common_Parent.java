@@ -15,7 +15,7 @@ public class Common_Parent {
 		
 		if(x==null) {
 			return;
-		}else if(s.equals(x.name)) {
+		}else if(s.equals(x.symbol)) {
 			b = x;
 			//System.out.println(s.equals(x.name));
 		}else {
@@ -29,7 +29,7 @@ public class Common_Parent {
 		if(x == null) {
 			return;
 		}else {
-			s.add(x.name);
+			s.add(x.symbol);
 			traversing_up(x.parent,s);
 		}
 	}
