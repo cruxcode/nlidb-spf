@@ -25,9 +25,11 @@ class Column {
 }
 
 class Adjective {
+	String name,level,type;
 }
 
 class Preposition {
+	String name;
 
 }
 
