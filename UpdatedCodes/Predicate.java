@@ -223,4 +223,11 @@ class Seed{
         entry += prep + " :- PP/NP : (lambda $0:e (lambda $1:"+ ptype + "(" + pred2 + " $1 $0)))";//here type 4 will be used
         seed_prep.add(entry);
     }
+    public static ArrayList<String> complete_seed = new ArrayList<String>();
+    public static void comseed(){
+	    completeseed.addall(seed_verb);
+	    completeseed.addall(seed_col);
+	    completeseed.addall(seed_adj);
+	    completeseed.addall(seed_prep);
+	}
 }
