@@ -1,0 +1,22 @@
+Maharashtra :- NP : a:state
+Haryana :- NP : a:state
+Mumbai :- NP : b:city
+The Mumbai :- NP : b:city
+The Great Kurukshetra :- NP : b:city
+Mumbai Vala :- NP : b:city
+Kurukshetra Vali :- NP : b:city
+Kurukshetra :- NP : b:city
+The Mumbai :- NP : b:city
+The Great Kurukshetra :- NP : b:city
+Mumbai Vala :- NP : b:city
+Kurukshetra Vali :- NP : b:city
+Mumbai :- NP : b:capital
+The Mumbai :- NP : b:capital
+The Great Chandigarh :- NP : b:capital
+Mumbai Vala :- NP : b:capital
+Chandigarh Vali :- NP : b:capital
+Chandigarh :- NP : b:capital
+The Mumbai :- NP : b:capital
+The Great Chandigarh :- NP : b:capital
+Mumbai Vala :- NP : b:capital
+Chandigarh Vali :- NP : b:capital

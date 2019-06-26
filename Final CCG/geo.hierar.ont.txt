@@ -1,0 +1,10 @@
+(c,e)       // location
+(i,e)       // integer
+(h,e)       // earth
+(k,e)       // Water
+(a,c)       // state
+(b,c)       // city
+(d,c)       // river
+(f,c)       // mountain
+(g,c)       // lake
+(j,h)       // wqq
