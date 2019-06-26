@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Generator {
-	
+	public static String last1 = "";
 	public static void generate_file(String FileName, ArrayList<String> arr) {
 		try {
 			FileGenerator.list_to_file(FileName, arr);
@@ -53,6 +53,7 @@ public class Generator {
 				ptype = nextPerm(last);
 			}
 			last = "ptype";
+			last1 = last;
 			
 			TrackColumn.put(PName, ptype);
 			TrackType.put(PType, ptype);
