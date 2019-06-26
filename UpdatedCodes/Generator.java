@@ -347,9 +347,9 @@ public class Generator {
 		}
 	}
 	
-	public static void hGenerator(Nodes x, ArrayList<String> s, Schema s) {
+	public static void hGenerator(Nodes x, ArrayList<String> s) {
 		for(int i=0;i<x.children.size();i++) {
-			s.add("("+s.TrackType(x.children.get(i).name)+","+s.TrackType(x.name)+")"+"       // "+x.children.get(i).name);
+			s.add("("+x.children.get(i).symbol+","+x.symbol+")"+"       // "+x.children.get(i).name);
 		}
 		for(int i=0;i<x.children.size();i++) {
 			hGenerator(x.children.get(i),s);
