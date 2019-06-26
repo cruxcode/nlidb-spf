@@ -188,10 +188,10 @@ class Seed{
     public static ArrayList<String> seed_adj = new ArrayList<String>(); 
     public static void Adjectives(String adj, int level, String pred, String greater, String max){
         String entry = "";
-        if(level == 0){
+        if(level.equal("0")){
             entry += adj + " :- NP/NP : (lambda $0:e (" + pred + " $0))";
             System.out.println(entry);
-        }else if(level == 1){
+        }else if(level.equal("1")){
             entry += adj + " :- PP/NP : (lambda $0:e (lambda $1:e (" + greater + " (" + pred + " $1) (" + pred + " $0))))";
             System.out.println(entry);
         }else{
@@ -203,10 +203,10 @@ class Seed{
 
     public static void Adjectives(String adj, int level, String greater, String max){
         String entry = "";
-        if(level == 1){
+        if(level.equal("1")){
             entry += adj + " :- (PP\NP)/NP : (lambda $0:e (lambda $1:e (" + greater + " (" + pred + " $1) (" + pred + " $0))))";
             System.out.println(entry);
-        }else if(level == 2){
+        }else if(level.eqaul("2")){
             entry += adj + " :- (NP/N)/N : (lambda $0:<e,e> (lambda $1:<e,t> (" + max + " $1 $0" + ")))";
             seed_adj.add(entry);
             System.out.println(entry);
