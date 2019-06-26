@@ -129,6 +129,21 @@ public class ReadXML {
 		
 		return ColObj;
 	}
+	public static void tree_reader(Element n, Nodes x, int q) {
+			NodeList a = n.getElementsByTagName("Level"+Integer.toString(q));
+			//System.out.println(a.getLength());
+			for(int i=0;i<a.getLength();i++) {
+				Node b = a.item(i);
+				Element b1 = (Element) b;
+				x.add_child(b1.getElementsByTagName("Name").item(0).getTextContent());
+				//System.out.println(b1.getElementsByTagName("Name").item(0).getTextContent());
+				if(b.getNodeType() == Node.ELEMENT_NODE) {
+					tree_reader((Element) b,x.children.get(x.children.size()-1),q+1);
+				}
+			}
+			//System.out.println("hi"+a.getLength());
+		
+	}
 	
 
 	public static void main(String argv[]) {
@@ -188,6 +203,19 @@ public class ReadXML {
 			}
 			
 			SchemaObj.RelationList = RelList;
+			NodeList n = doc.getElementsByTagName("Hierarchy");
+			if(n.item(0).getNodeType() == Node.ELEMENT_NODE) {
+				Element hnode = (Element) n.item(0);
+				NodeList root = hnode.getElementsByTagName("RootNode");
+				
+				if(n.item(0).getNodeType() == Node.ELEMENT_NODE) {
+					Element rnode = (Element) root.item(0);
+					SchemaObj.Hierarchy.name = rnode.getElementsByTagName("Name").item(0).getTextContent();
+					//System.out.println(rnode.getElementsByTagName("Name").item(0).getTextContent());
+					tree_reader(rnode,SchemaObj.Hierarchy,1);
+				}
+				
+			}
 			
 			
 	    }
