@@ -1,0 +1,9 @@
+state:<a,t>
+state:<a,a>
+state:<a,<a,t>>
+city:<b,t>
+city:<a,b>
+city:<a,<b,t>>
+capital:<b,t>
+capital:<a,b>
+capital:<a,<b,t>>

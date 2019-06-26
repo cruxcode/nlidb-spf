@@ -1,0 +1,8 @@
+has :- (S\NP)/NP : (lambda $0:e (lambda $1:e (city:city:<a,b> $0 $1)))
+has :- NP/NP : (lambda $0:e (city:city:<b,t> $0))
+have :- (S\NP)/NP : (lambda $0:e (lambda $1:e (city:city:<a,b> $0 $1)))
+have :- NP/NP : (lambda $0:e (city:city:<b,t> $0))
+has :- (S\NP)/NP : (lambda $0:e (lambda $1:e (capital:capital:<a,b> $0 $1)))
+has :- NP/NP : (lambda $0:e (capital:capital:<b,t> $0))
+have :- (S\NP)/NP : (lambda $0:e (lambda $1:e (capital:capital:<a,b> $0 $1)))
+have :- NP/NP : (lambda $0:e (capital:capital:<b,t> $0))
