@@ -302,7 +302,7 @@ public class Generator {
 					s2 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).level;
 					s3 = (pred_file.pred_dict.get(s.RelationList.get(i).ColumnList.get(j).Name)).get(1);
 					s4 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).type;
-					if(s4.contentEquals("general")) {
+					if(s4.equals("general")) {
 						seed_file.Adjectives(s1,s2,s3,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
 						seed_file.Adjectives(s1,s2,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
 					}else {
