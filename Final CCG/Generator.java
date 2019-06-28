@@ -37,7 +37,7 @@ public class Generator {
 			next = "j";
 		
 		lastsymb = next;
-		System.out.println("aa "+lastsymb);
+		//System.out.println("aa "+lastsymb);
 		
 		return next;
 	}
@@ -326,7 +326,7 @@ public class Generator {
 				s4.add(s3);
 				seed_file.ColGenerator(s1,s2,s4,"type2");
 				seed_file.ColGenerator(s1,s2,s4,"type3");
-				if((s.RelationList.get(i).ColumnList.get(j).VarType).equals("Category")) {
+				if((s.RelationList.get(i).ColumnList.get(j).VarType).equals("category")) {
 					seed_file.ColGenerator(s1,s2,s4,"type1");
 				}
 				
