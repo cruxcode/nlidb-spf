@@ -214,6 +214,7 @@ class Seed{
         if(level.equals("1")){
         	entry += adj + " :- (PP/NP)/NP : (lambda $0:e (lambda $1:<e,i> (lambda $2:e (" + greater + " (" + "$1" + " $2) (" + "$1" + " $0)))))";
             //System.out.println(entry);
+        	seed_adj.add(entry);
         }else if(level.equals("2")){
             entry += adj + " :- (NP/N)/N : (lambda $0:<e,e> (lambda $1:<e,t> (" + max + " $1 $0" + ")))";
             seed_adj.add(entry);
