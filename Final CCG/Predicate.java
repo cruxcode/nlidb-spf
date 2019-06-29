@@ -212,7 +212,7 @@ class Seed{
     public void Adjectives(String adj, String level, String greater, String max){
         String entry = "";
         if(level.equals("1")){
-            entry += adj + " :- (PP\\NP)/NP : (lambda $0:e (lambda $1:e (" + greater + " (" + "pred" + " $1) (" + "pred" + " $0))))";
+        	entry += adj + " :- (PP/NP)/NP : (lambda $0:e (lambda $1:<e,i> (lambda $2:e (" + greater + " (" + "$1" + " $2) (" + "$1" + " $0)))))";
             //System.out.println(entry);
         }else if(level.equals("2")){
             entry += adj + " :- (NP/N)/N : (lambda $0:<e,e> (lambda $1:<e,t> (" + max + " $1 $0" + ")))";

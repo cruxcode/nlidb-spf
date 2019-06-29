@@ -88,9 +88,9 @@
 	                    </VerbList>
 	                <AdjectiveList>
 	                    <adjective>
-	                    	<AdjName></AdjName>
-	                    	<AdjType></AdjType>
-	                    	<AdjLevel></AdjLevel>
+	                    	<AdjName>higher</AdjName>
+	                    	<AdjType>general</AdjType>
+	                    	<AdjLevel>1</AdjLevel>
 	                    </adjective>
 	                    <adjective>
 	                    	<AdjName></AdjName>
