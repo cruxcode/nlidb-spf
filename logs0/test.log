@@ -1,0 +1,1407 @@
+[P-T2] [P-T2] ============ (Job test started)
+[P-T2] [P-T2] 1 : ==================
+[P-T2] [P-T2] how large is the largest city in alaska
+(size:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 alaska:s))) (lambda $1:e (size:<lo,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.081000sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse with skipping: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 alaska:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [378.39] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 alaska:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: large :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[0-1 :: >skip :: 0-0, 1-1]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[2-2 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-4 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[5-5 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[6-6 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[7-7 :: lex :: alaska :- NP : alaska:s{fixed_domain}]{{FACLEX#LEX#2429#84=10.955(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2429=10.955(1.000),RULE#lex=53.395(0.100)} -> 28.03708486244775}
+[P-T2] [P-T2] 	[6-7 :: >apply+shift_pp :: 6-6, 7-7]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[5-7 :: <apply :: 5-5, 6-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[4-7 :: >apply :: 4-4, 5-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-1, 2-7]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {DYNSKIP=-1.000(1.000),FACLEX#LEX#15#12=24.989(1.000),FACLEX#LEX#22#18=20.720(1.000),FACLEX#LEX#2429#84=10.955(1.000),FACLEX#LEX#2495#27=8.764(1.000),FACLEX#LEX#26#12=38.504(1.000),FACLEX#LEX#46#26=11.486(1.000),FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#12=8.073(0.200),FACLEX#TMP#18=1.622(0.100),FACLEX#TMP#26=0.478(0.100),FACLEX#TMP#27=5.531(0.100),FACLEX#TMP#8=1.599(0.100),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#15=33.023(1.000),FACLEX#XEME#22=19.303(1.000),FACLEX#XEME#2429=10.955(1.000),FACLEX#XEME#2495=8.764(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#46=11.462(1.000),FACLEX#XEME#68=15.731(1.000),LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#<apply=4.892(0.100),RULE#>apply=44.560(0.500),RULE#>skip=0.0(0.100),RULE#lex=53.395(0.800),RULE#shift_pp=3.941(0.100)}
+[P-T2] [P-T2] 2 : ==================
+[P-T2] [P-T2] what is the largest city in wisconsin
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wisconsin:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.05sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wisconsin:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [378.65] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wisconsin:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: wisconsin :- NP : wisconsin:s{fixed_domain}]{{FACLEX#LEX#1770#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1770=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] 3 : ==================
+[P-T2] [P-T2] what are the highest points of states surrounding mississippi
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 mississippi:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (elevation:<lo,i> $2)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.078000sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse with skipping: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (elevation:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [350.46] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (elevation:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#4#12=-1.765(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 20.085429369271036}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#65#45=17.655(1.000),FACLEX#TMP#45=0.423(0.100),FACLEX#XEME#65=16.464(1.000),RULE#lex=53.395(0.100)} -> 39.50053409284874}
+[P-T2] [P-T2] 	[4-4 :: lex :: points :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[3-4 :: >skip :: 3-3, 4-4]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[5-5 :: lex :: of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#43#22=11.455(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 42.0582889931077}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-7 :: lex :: surrounding :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[3-7 :: >skip :: 3-6, 7-7]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[8-8 :: lex :: mississippi :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[3-8 :: >skip :: 3-7, 8-8]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[2-8 :: >apply :: 2-2, 3-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-8 :: >apply :: 1-1, 2-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-8 :: >apply :: 0-0, 1-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {DYNSKIP=-1.000(3.000),FACLEX#LEX#100#27=14.867(1.000),FACLEX#LEX#26#12=38.504(1.000),FACLEX#LEX#4#12=-1.765(1.000),FACLEX#LEX#43#22=11.455(1.000),FACLEX#LEX#6#18=15.116(1.000),FACLEX#LEX#65#45=17.655(1.000),FACLEX#TMP#12=8.073(0.200),FACLEX#TMP#18=1.622(0.100),FACLEX#TMP#22=5.976(0.100),FACLEX#TMP#27=5.531(0.100),FACLEX#TMP#45=0.423(0.100),FACLEX#XEME#100=15.305(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#4=15.703(1.000),FACLEX#XEME#43=24.666(1.000),FACLEX#XEME#6=31.414(1.000),FACLEX#XEME#65=16.464(1.000),RULE#>apply=44.560(0.500),RULE#>skip=0.0(0.300),RULE#lex=53.395(0.900)}
+[P-T2] [P-T2] 4 : ==================
+[P-T2] [P-T2] which states border hawaii
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 hawaii:s)))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 hawaii:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [149.43] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 hawaii:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: which :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#6=11.939(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 41.48887896997003}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[2-2 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[3-3 :: lex :: hawaii :- NP : hawaii:s{fixed_domain}]{{FACLEX#LEX#2469#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2469=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-3 :: >thatless :: 1-1, 2-3]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-3 :: >apply :: 0-0, 1-3]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 5 : ==================
+[P-T2] [P-T2] how many states have cities named austin
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (city:<c,t> $1) (named:<e,<n,t>> $1 austin:n) (loc:<lo,<lo,t>> $1 $0)))))))
+[P-T2] [P-T2] Test parsing time 0.06sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (city:<c,t> $1) (named:<e,<n,t>> $1 austin:n) (loc:<lo,<lo,t>> $1 $0)))))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [229.04] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (city:<c,t> $1) (named:<e,<n,t>> $1 austin:n) (loc:<lo,<lo,t>> $1 $0)))))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: have :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1))){fixed_domain}]{{FACLEX#LEX#42#15=11.600(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#42=11.600(1.000),RULE#lex=53.395(0.100)} -> 28.47106650547884}
+[P-T2] [P-T2] 	[4-4 :: lex :: cities :- N : (lambda $0:e (city:<c,t> $0)){fixed_domain}]{{FACLEX#LEX#75#27=12.958(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#75=12.958(1.000),RULE#lex=53.395(0.100)} -> 31.80889200686836}
+[P-T2] [P-T2] 	[5-5 :: lex :: named :- PP/NP : (lambda $0:e (lambda $1:e (named:<e,<n,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#60#8=10.087(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#60=10.000(1.000),RULE#lex=53.395(0.100)} -> 25.58601605692303}
+[P-T2] [P-T2] 	[6-6 :: lex :: austin :- NP : austin:n{fixed_domain}]{{FACLEX#LEX#1067#84=9.938(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1067=9.938(1.000),RULE#lex=53.395(0.100)} -> 26.003558352726145}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >plural_exists :: 3-3, 4-6]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-2, 3-6]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#named:<e,<n,t>>#city:<c,t>=3.754(1.000),LOGEXP#CPP1#and:<t*,t>#named:<e,<n,t>>#loc:<lo,<lo,t>>=1.761(1.000),RULE#>apply=44.560(0.100)} -> 10.766115863251159}
+[P-T2] [P-T2] 6 : ==================
+[P-T2] [P-T2] what is the population of austin
+(population:<lo,i> austin_tx:c)
+[P-T2] [P-T2] Test parsing time 0.03sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<lo,i> austin_tx:c)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [365.71] S : (population:<lo,i> austin_tx:c)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: population :- NP/NP : (lambda $0:e (population:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#92#24=7.243(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#92=7.923(1.000),RULE#lex=53.395(0.100)} -> 20.677613461574584}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: austin :- NP : austin_tx:c{fixed_domain}]{{FACLEX#LEX#1977#84=10.013(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1977=10.013(1.000),RULE#lex=53.395(0.100)} -> 26.153270666385602}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 7 : ==================
+[P-T2] [P-T2] what are major rivers in texas
+(lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [256.05] S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: major :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (major:<lo,t> $1) ($0 $1)))){fixed_domain}]{{FACLEX#LEX#29#68=13.955(1.000),FACLEX#TMP#68=0.226(0.100),FACLEX#XEME#29=13.955(1.000),RULE#lex=53.395(0.100)} -> 33.27158731534604}
+[P-T2] [P-T2] 	[3-3 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[5-5 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[4-5 :: >apply+shift_pp :: 4-4, 5-5]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[3-5 :: <apply :: 3-3, 4-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-5 :: <apply :: 2-3, 4-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-3 :: >apply :: 1-1, 2-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: <apply :: 1-3, 4-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#loc:<lo,<lo,t>>=3.038(1.000),LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),LOGEXP#CPP1#and:<t*,t>#river:<r,t>#major:<lo,t>=0.997(1.000),RULE#>apply=44.560(0.100)} -> 10.750118223313187}
+[P-T2] [P-T2] 8 : ==================
+[P-T2] [P-T2] what states neighbor maine
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 maine:s)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.004000sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse with skipping: (lambda $0:e (state:<s,t> $0))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [107.31] S : (lambda $0:e (state:<s,t> $0))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[0-1 :: >apply :: 0-0, 1-1]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-2 :: lex :: neighbor :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[0-2 :: >skip :: 0-1, 2-2]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[3-3 :: lex :: maine :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[1-2 :: >skip :: 1-1, 2-2]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[1-3 :: >skip :: 1-2, 3-3]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[0-3 :: >skip :: 0-2, 3-3]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[0-3 :: >apply :: 0-0, 1-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {DYNSKIP=-1.000(2.000),FACLEX#LEX#100#27=14.867(1.000),FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#100=15.305(1.000),FACLEX#XEME#6=31.414(1.000),RULE#>apply=44.560(0.100),RULE#>skip=0.0(0.200),RULE#lex=53.395(0.400)}
+[P-T2] [P-T2] 9 : ==================
+[P-T2] [P-T2] population of boulder
+(population:<lo,i> boulder_co:c)
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<lo,i> boulder_co:c)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [119.25] S : (population:<lo,i> boulder_co:c)
+[P-T2] [P-T2] 	[0-0 :: lex :: population :- S/NP : (lambda $0:e (population:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#92#53=10.000(1.000),FACLEX#TMP#53=0.333(0.100),FACLEX#XEME#92=7.923(1.000),RULE#lex=53.395(0.100)} -> 23.295758391193928}
+[P-T2] [P-T2] 	[1-1 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[2-2 :: lex :: boulder :- NP : boulder_co:c{fixed_domain}]{{FACLEX#LEX#2406#84=12.965(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2406=12.965(1.000),RULE#lex=53.395(0.100)} -> 32.05823087196854}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-0, 1-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 10 : ==================
+[P-T2] [P-T2] how many citizens live in california
+(population:<lo,i> california:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.020000sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse with skipping: (population:<lo,i> california:s)
+[P-T2] [P-T2] [EXACT stats]  Record sloppy correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [150.10] S : (population:<lo,i> california:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2500#12=6.353(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2500=1.939(1.000),RULE#lex=53.395(0.100)} -> 14.43814922113118}
+[P-T2] [P-T2] 	[2-2 :: lex :: citizens :- NP/NP : (lambda $0:e (population:<lo,i> $0)){genlex}]{{FACLEX#LEX#2563#24=1.962(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2563=1.962(1.000),RULE#lex=53.395(0.100)} -> 9.436414959709008}
+[P-T2] [P-T2] 	[3-3 :: lex :: live :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[2-3 :: >skip :: 2-2, 3-3]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2499#12=7.893(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2499=14.473(1.000),RULE#lex=53.395(0.100)} -> 28.512267843664794}
+[P-T2] [P-T2] 	[5-5 :: lex :: california :- NP : california:s{fixed_domain}]{{FACLEX#LEX#2262#84=11.947(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2262=11.947(1.000),RULE#lex=53.395(0.100)} -> 30.020964375311813}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 11 : ==================
+[P-T2] [P-T2] how many cities are in louisiana
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 louisiana:s))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 louisiana:s))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [207.98] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 louisiana:s))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: cities :- N : (lambda $0:e (city:<c,t> $0)){fixed_domain}]{{FACLEX#LEX#75#27=12.958(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#75=12.958(1.000),RULE#lex=53.395(0.100)} -> 31.80889200686836}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#28=14.454(1.000),FACLEX#TMP#28=0.784(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 35.57542262995477}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[5-5 :: lex :: louisiana :- NP : louisiana:s{fixed_domain}]{{FACLEX#LEX#930#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#930=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-2, 3-5]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] 12 : ==================
+[P-T2] [P-T2] what is the largest state in the us
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.05sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [513.98] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[7-7 :: lex :: us :- NP : usa:co{fixed_domain}]{{FACLEX#LEX#1123#84=13.208(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1123=11.955(1.000),RULE#lex=53.395(0.100)} -> 31.29109960860744}
+[P-T2] [P-T2] 	[6-7 :: >apply :: 6-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-7 :: >apply+shift_pp :: 5-5, 6-7]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-7 :: <apply :: 4-4, 5-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#loc:<lo,<lo,t>>=-2.352(1.000),RULE#>apply=44.560(0.100)} -> 2.104358843652771}
+[P-T2] [P-T2] 13 : ==================
+[P-T2] [P-T2] how many rivers are in new york
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 new_york:s))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 new_york:s))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [236.94] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 new_york:s))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#28=14.454(1.000),FACLEX#TMP#28=0.784(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 35.57542262995477}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[5-6 :: lex :: new york :- NP : new_york:s{fixed_domain}]{{FACLEX#LEX#1334#84=23.571(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1334=12.135(1.000),RULE#lex=53.395(0.100)} -> 41.83295764588706}
+[P-T2] [P-T2] 	[4-6 :: >apply :: 4-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-2, 3-6]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 14 : ==================
+[P-T2] [P-T2] what rivers flow through colorado
+(lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 colorado:s)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 colorado:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [171.50] S : (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 colorado:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[2-2 :: lex :: flow :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2593#14=2.899(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2593=0.978(1.000),RULE#lex=53.395(0.100)} -> 9.728802539121759}
+[P-T2] [P-T2] 	[3-3 :: lex :: through :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2511#12=0.110(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 16.0744069028373}
+[P-T2] [P-T2] 	[4-4 :: lex :: colorado :- NP : colorado:s{fixed_domain}]{{FACLEX#LEX#319#84=12.920(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#319=9.146(1.000),RULE#lex=53.395(0.100)} -> 28.194220014582285}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-4 :: >thatless :: 1-1, 2-4]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 15 : ==================
+[P-T2] [P-T2] what is the river that cross over ohio
+(lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 ohio:s)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.097000sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse with skipping: (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 ohio:s)))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [360.79] S : (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 ohio:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#15#22=19.949(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 58.909101125028734}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: river :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#94#27=8.685(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#94=8.685(1.000),RULE#lex=53.395(0.100)} -> 23.262824958152336}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-3 :: >apply :: 1-1, 2-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-4 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[5-5 :: lex :: cross :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2615#14=1.082(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2615=0.969(1.000),RULE#lex=53.395(0.100)} -> 7.903413312216502}
+[P-T2] [P-T2] 	[6-6 :: lex :: over :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[5-6 :: >skip :: 5-5, 6-6]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[7-7 :: lex :: ohio :- NP : ohio:s{fixed_domain}]{{FACLEX#LEX#2132#84=9.985(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2132=9.985(1.000),RULE#lex=53.395(0.100)} -> 26.096579436177826}
+[P-T2] [P-T2] 	[5-7 :: >apply :: 5-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-7 :: >apply+shift_pp :: 4-4, 5-7]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[3-7 :: <apply :: 3-3, 4-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: <apply :: 2-3, 4-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-7 :: <apply :: 1-3, 4-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 16 : ==================
+[P-T2] [P-T2] which states border iowa
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 iowa:s)))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 iowa:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [153.36] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 iowa:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: which :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#6=11.939(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 41.48887896997003}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[2-2 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[3-3 :: lex :: iowa :- NP : iowa:s{fixed_domain}]{{FACLEX#LEX#149#84=11.965(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#149=11.965(1.000),RULE#lex=53.395(0.100)} -> 30.05655465810216}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-3 :: >thatless :: 1-1, 2-3]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-3 :: >apply :: 0-0, 1-3]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 17 : ==================
+[P-T2] [P-T2] what is the shortest river in nebraska
+(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 nebraska:s))) (lambda $1:e (len:<r,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.04sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 nebraska:s))) (lambda $1:e (len:<r,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [379.01] S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 nebraska:s))) (lambda $1:e (len:<r,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: shortest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (len:<r,i> $2)))){fixed_domain}]{{FACLEX#LEX#1#1=10.000(1.000),FACLEX#TMP#1=0.621(0.100),FACLEX#XEME#1=10.000(1.000),RULE#lex=53.395(0.100)} -> 25.40162842926466}
+[P-T2] [P-T2] 	[4-4 :: lex :: river :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#94#27=8.685(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#94=8.685(1.000),RULE#lex=53.395(0.100)} -> 23.262824958152336}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: nebraska :- NP : nebraska:s{fixed_domain}]{{FACLEX#LEX#2266#84=10.995(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2266=10.995(1.000),RULE#lex=53.395(0.100)} -> 28.117858231152596}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 18 : ==================
+[P-T2] [P-T2] what state has the least population density
+(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (density:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.06sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (density:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [300.01] S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (density:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: has :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){genlex}]{{FACLEX#LEX#2488#3=2.833(1.000),FACLEX#TMP#3=-0.706(0.100),FACLEX#XEME#2488=5.578(1.000),RULE#lex=53.395(0.100)} -> 13.680301927277405}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-4 :: lex :: least :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))){fixed_domain}]{{FACLEX#LEX#32#21=10.000(1.000),FACLEX#TMP#21=1.503(0.100),FACLEX#XEME#32=10.000(1.000),RULE#lex=53.395(0.100)} -> 25.48978614537748}
+[P-T2] [P-T2] 	[5-5 :: lex :: population :- N/N : (lambda $0:<e,e> (lambda $1:e ($0 $1))){genlex}]{{FACLEX#LEX#2553#39=0.0(1.000),FACLEX#TMP#39=0.142(0.100),FACLEX#XEME#2553=5.776(1.000),RULE#lex=53.395(0.100)} -> 11.129852938800791}
+[P-T2] [P-T2] 	[6-6 :: lex :: density :- N : (lambda $0:e (density:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#89#54=11.000(1.000),FACLEX#TMP#54=1.815(0.100),FACLEX#XEME#89=11.000(1.000),RULE#lex=53.395(0.100)} -> 27.52003788303969}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-6 :: >apply :: 4-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-6 :: >comp1 :: 3-3, 4-6]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: <apply :: 1-1, 2-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 19 : ==================
+[P-T2] [P-T2] how many states does the missouri river run through
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> missouri_river:r $0))))
+[P-T2] [P-T2] Test parsing time 0.06sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> missouri_river:r $0))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [338.46] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> missouri_river:r $0))))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2519#25=2.731(1.000),FACLEX#TMP#25=0.043(0.100),FACLEX#XEME#2519=2.731(1.000),RULE#lex=53.395(0.100)} -> 10.806799512058983}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[3-3 :: lex :: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#11#23=14.881(1.000),FACLEX#TMP#23=0.533(0.100),FACLEX#XEME#11=15.840(1.000),RULE#lex=53.395(0.100)} -> 36.11376704541808}
+[P-T2] [P-T2] 	[4-4 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[5-6 :: lex :: missouri river :- NP : missouri_river:r{fixed_domain}]{{FACLEX#LEX#830#84=22.723(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#830=11.287(1.000),RULE#lex=53.395(0.100)} -> 40.13701960052832}
+[P-T2] [P-T2] 	[4-6 :: >apply :: 4-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-7 :: lex :: run :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2513#14=2.227(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2513=0.998(1.000),RULE#lex=53.395(0.100)} -> 9.07674096328896}
+[P-T2] [P-T2] 	[4-7 :: >trcomp1 :: 4-6, 7-7]{{RULE#>trcomp1=-0.689(0.100)} -> -0.06894571231442839}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: >thatless :: 2-2, 3-7]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[8-8 :: lex :: through :- S\S : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2511#38=1.517(1.000),FACLEX#TMP#38=2.322(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 16.906944932689303}
+[P-T2] [P-T2] 	[0-8 :: <apply :: 0-7, 8-8]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 20 : ==================
+[P-T2] [P-T2] what states border states that border states that border states that border texas
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $0 $1) (exists:<<e,t>,t> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2) (exists:<<e,t>,t> (lambda $3:e (and:<t*,t> (state:<s,t> $3) (next_to:<lo,<lo,t>> $3 texas:s) (next_to:<lo,<lo,t>> $2 $3))))))))))))
+[P-T2] [P-T2] Test parsing time 0.83sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (exists:<<e,t>,t> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $2 $2)))) (exists:<<e,t>,t> (lambda $3:e (and:<t*,t> (state:<s,t> $3) (next_to:<lo,<lo,t>> $3 texas:s) (next_to:<lo,<lo,t>> $3 $3)))) (next_to:<lo,<lo,t>> $0 $1))))))
+[P-T2] [P-T2] [EXACT stats]  Record incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [503.67] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (exists:<<e,t>,t> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $2 $2)))) (exists:<<e,t>,t> (lambda $3:e (and:<t*,t> (state:<s,t> $3) (next_to:<lo,<lo,t>> $3 texas:s) (next_to:<lo,<lo,t>> $3 $3)))) (next_to:<lo,<lo,t>> $0 $1))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[2-2 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[3-3 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[4-4 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[5-5 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-6 :: >plural_exists :: 5-5, 6-6]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[4-6 :: >apply+shift_pp :: 4-4, 5-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[3-6 :: <apply :: 3-3, 4-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[7-7 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[8-8 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[9-9 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[10-10 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[11-11 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[12-12 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[11-12 :: >apply :: 11-11, 12-12]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[10-12 :: >apply+shift_pp :: 10-10, 11-12]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[9-12 :: <apply :: 9-9, 10-12]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[8-12 :: >plural_exists :: 8-8, 9-12]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[7-12 :: >apply+shift_pp :: 7-7, 8-12]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[3-12 :: <apply :: 3-6, 7-12]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-12 :: >plural_exists :: 2-2, 3-12]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[1-12 :: >thatless :: 1-1, 2-12]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-12 :: >apply :: 0-0, 1-12]{{LOGEXP#CPAP#and:<t*,t>#next_to:<lo,<lo,t>>#0=0.627(1.000),LOGEXP#CPP1#and:<t*,t>#next_to:<lo,<lo,t>>#next_to:<lo,<lo,t>>=0.627(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 10.727162798835163}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {FACLEX#LEX#100#27=14.867(4.000),FACLEX#LEX#17#46=15.962(3.000),FACLEX#LEX#40#14=12.904(4.000),FACLEX#LEX#6#6=20.874(1.000),FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#14=5.124(0.400),FACLEX#TMP#27=5.531(0.400),FACLEX#TMP#46=1.558(0.300),FACLEX#TMP#6=4.829(0.100),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#100=15.305(4.000),FACLEX#XEME#17=15.963(3.000),FACLEX#XEME#40=12.902(4.000),FACLEX#XEME#6=31.414(1.000),FACLEX#XEME#91=12.611(1.000),LOGEXP#CPAP#and:<t*,t>#next_to:<lo,<lo,t>>#0=0.627(1.000),LOGEXP#CPP1#and:<t*,t>#next_to:<lo,<lo,t>>#next_to:<lo,<lo,t>>=0.627(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#<apply=4.892(0.300),RULE#>apply=44.560(0.500),RULE#>plural_exists=-1.031(0.300),RULE#>thatless=1.616(0.100),RULE#lex=53.395(1.300),RULE#shift_pp=3.941(0.300)}
+[P-T2] [P-T2] 21 : ==================
+[P-T2] [P-T2] what state borders the least states
+(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $2:e (size:<lo,i> $2))))))
+[P-T2] [P-T2] [EXACT stats]  Record incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [295.33] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $2:e (size:<lo,i> $2))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: borders :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2528#14=3.634(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2528=0.996(1.000),RULE#lex=53.395(0.100)} -> 10.481875917947962}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-4 :: lex :: least :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#32#26=0.0(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#32=10.000(1.000),RULE#lex=53.395(0.100)} -> 15.387290492158474}
+[P-T2] [P-T2] 	[5-5 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >thatless :: 1-1, 2-5]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] Had correct parses: true
+[P-T2] [P-T2] Correct derivation:
+[P-T2] [P-T2] [285.71] S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: borders :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2528#14=3.634(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2528=0.996(1.000),RULE#lex=53.395(0.100)} -> 10.481875917947962}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[2-3 :: >comp1 :: 2-2, 3-3]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[4-4 :: lex :: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))){fixed_domain}]{{FACLEX#LEX#78#56=10.000(1.000),FACLEX#TMP#56=0.563(0.100),FACLEX#XEME#78=10.000(1.000),RULE#lex=53.395(0.100)} -> 25.39586928867716}
+[P-T2] [P-T2] 	[5-5 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: <apply :: 2-3, 4-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-5 :: <apply :: 1-1, 2-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] Diff: {FACLEX#LEX#32#26=0.0(-1.000),FACLEX#LEX#6#18=15.116(1.000),FACLEX#LEX#6#6=20.874(-1.000),FACLEX#LEX#78#56=10.000(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#TMP#26=0.478(-0.100),FACLEX#TMP#56=0.563(0.100),FACLEX#TMP#6=4.829(-0.100),FACLEX#XEME#32=10.000(-1.000),FACLEX#XEME#78=10.000(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(-1.000),RULE#<apply=4.892(0.200),RULE#>apply=44.560(-0.200),RULE#>comp1=-4.354(0.100),RULE#>thatless=1.616(-0.100)}
+[P-T2] [P-T2] Feats: {FACLEX#LEX#100#27=14.867(1.000),FACLEX#LEX#2528#14=3.634(1.000),FACLEX#LEX#26#12=38.504(1.000),FACLEX#LEX#32#26=0.0(1.000),FACLEX#LEX#6#6=20.874(1.000),FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#TMP#14=5.124(0.100),FACLEX#TMP#26=0.478(0.100),FACLEX#TMP#27=5.531(0.200),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#100=15.305(1.000),FACLEX#XEME#2528=0.996(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#32=10.000(1.000),FACLEX#XEME#6=31.414(1.000),FACLEX#XEME#96=10.073(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.400),RULE#>thatless=1.616(0.100),RULE#lex=53.395(0.600)}
+[P-T2] [P-T2] 22 : ==================
+[P-T2] [P-T2] what is the area of seattle
+(area:<lo,i> seattle_wa:c)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<lo,i> seattle_wa:c)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [364.73] S : (area:<lo,i> seattle_wa:c)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: area :- NP/NP : (lambda $0:e (area:<lo,i> $0)){genlex}]{{FACLEX#LEX#2535#24=4.602(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2535=9.369(1.000),RULE#lex=53.395(0.100)} -> 19.482362396677427}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: seattle :- NP : seattle_wa:c{fixed_domain}]{{FACLEX#LEX#803#84=10.123(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#803=10.123(1.000),RULE#lex=53.395(0.100)} -> 26.3733101603562}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 23 : ==================
+[P-T2] [P-T2] how many people live in washington
+(population:<lo,i> washington:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<lo,i> washington:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [155.76] S : (population:<lo,i> washington:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2500#12=6.353(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2500=1.939(1.000),RULE#lex=53.395(0.100)} -> 14.43814922113118}
+[P-T2] [P-T2] 	[2-2 :: lex :: people :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2498#12=3.572(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2498=-0.260(1.000),RULE#lex=53.395(0.100)} -> 9.459506932774822}
+[P-T2] [P-T2] 	[3-3 :: lex :: live :- NP/NP : (lambda $0:e (population:<lo,i> $0)){genlex}]{{FACLEX#LEX#2547#24=1.952(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2547=1.952(1.000),RULE#lex=53.395(0.100)} -> 9.4167147164485}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2499#12=7.893(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2499=14.473(1.000),RULE#lex=53.395(0.100)} -> 28.512267843664794}
+[P-T2] [P-T2] 	[5-5 :: lex :: washington :- NP : washington:s{fixed_domain}]{{FACLEX#LEX#1421#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1421=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 24 : ==================
+[P-T2] [P-T2] what is the population of south dakota
+(population:<lo,i> south_dakota:s)
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<lo,i> south_dakota:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [377.12] S : (population:<lo,i> south_dakota:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: population :- NP/NP : (lambda $0:e (population:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#92#24=7.243(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#92=7.923(1.000),RULE#lex=53.395(0.100)} -> 20.677613461574584}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-6 :: lex :: south dakota :- NP : south_dakota:s{fixed_domain}]{{FACLEX#LEX#1661#84=21.435(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1661=10.000(1.000),RULE#lex=53.395(0.100)} -> 37.56288162200585}
+[P-T2] [P-T2] 	[4-6 :: >apply :: 4-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 25 : ==================
+[P-T2] [P-T2] what are the major cities in rhode island
+(lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 rhode_island:s)))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 rhode_island:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [376.64] S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 rhode_island:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: major :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (major:<lo,t> $1) ($0 $1)))){fixed_domain}]{{FACLEX#LEX#29#68=13.955(1.000),FACLEX#TMP#68=0.226(0.100),FACLEX#XEME#29=13.955(1.000),RULE#lex=53.395(0.100)} -> 33.27158731534604}
+[P-T2] [P-T2] 	[4-4 :: lex :: cities :- N : (lambda $0:e (city:<c,t> $0)){fixed_domain}]{{FACLEX#LEX#75#27=12.958(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#75=12.958(1.000),RULE#lex=53.395(0.100)} -> 31.80889200686836}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-7 :: lex :: rhode island :- NP : rhode_island:s{fixed_domain}]{{FACLEX#LEX#815#84=21.836(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#815=10.400(1.000),RULE#lex=53.395(0.100)} -> 38.363407421883295}
+[P-T2] [P-T2] 	[5-7 :: >apply+shift_pp :: 5-5, 6-7]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-7 :: <apply :: 4-4, 5-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-7 :: <apply :: 3-4, 5-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: <apply :: 2-4, 5-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-4 :: >apply :: 1-1, 2-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: <apply :: 1-4, 5-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#city:<c,t>=4.045(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#loc:<lo,<lo,t>>=3.038(1.000),RULE#>apply=44.560(0.100)} -> 12.334457621166933}
+[P-T2] [P-T2] 26 : ==================
+[P-T2] [P-T2] what is the biggest city in wyoming
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wyoming:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wyoming:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [373.55] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 wyoming:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: biggest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#25#26=4.054(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#25=10.000(1.000),RULE#lex=53.395(0.100)} -> 19.441725525370487}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: wyoming :- NP : wyoming:s{fixed_domain}]{{FACLEX#LEX#1196#84=11.895(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1196=11.895(1.000),RULE#lex=53.395(0.100)} -> 29.918198398121305}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] 27 : ==================
+[P-T2] [P-T2] what are the populations of the states through which the mississippi river run
+(lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] Test parsing time 0.19sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [698.46] S : (lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: populations :- S\NP/NP : (lambda $0:e (lambda $1:e (population:<lo,<i,t>> $0 $1))){fixed_domain}]{{FACLEX#LEX#61#15=2.845(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#61=11.168(1.000),RULE#lex=53.395(0.100)} -> 19.283534997076266}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (exists:<<e,t>,t> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2))))))){fixed_domain}]{{FACLEX#LEX#43#7=10.676(1.000),FACLEX#TMP#7=-0.068(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 40.67472512913882}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-7 :: lex :: through :- PP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){genlex}]{{FACLEX#LEX#2511#32=2.091(1.000),FACLEX#TMP#32=0.005(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 17.249056329792538}
+[P-T2] [P-T2] 	[8-8 :: lex :: which :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#29=12.981(1.000),FACLEX#TMP#29=-0.015(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 42.04683011096072}
+[P-T2] [P-T2] 	[9-9 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[10-11 :: lex :: mississippi river :- NP : mississippi_river:r{fixed_domain}]{{FACLEX#LEX#2198#84=24.872(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2198=13.436(1.000),RULE#lex=53.395(0.100)} -> 44.43503697681864}
+[P-T2] [P-T2] 	[9-11 :: >apply :: 9-9, 10-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[12-12 :: lex :: run :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2513#14=2.227(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2513=0.998(1.000),RULE#lex=53.395(0.100)} -> 9.07674096328896}
+[P-T2] [P-T2] 	[9-12 :: >trcomp1 :: 9-11, 12-12]{{RULE#>trcomp1=-0.689(0.100)} -> -0.06894571231442839}
+[P-T2] [P-T2] 	[8-12 :: >apply :: 8-8, 9-12]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-12 :: >apply+shift_pp :: 7-7, 8-12]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[5-12 :: <apply :: 5-6, 7-12]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[4-12 :: >apply :: 4-4, 5-12]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-12 :: <apply :: 3-3, 4-12]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-12 :: >apply :: 2-2, 3-12]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-12 :: >apply :: 1-1, 2-12]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-12 :: >apply :: 0-0, 1-12]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#population:<lo,<i,t>>=0.981(1.000),RULE#>apply=44.560(0.100)} -> 5.43684166350944}
+[P-T2] [P-T2] 28 : ==================
+[P-T2] [P-T2] what is the density of texas
+(density:<lo,i> texas:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (density:<lo,i> texas:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [369.52] S : (density:<lo,i> texas:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: density :- NP/NP : (lambda $0:e (density:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#89#24=2.779(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#89=11.000(1.000),RULE#lex=53.395(0.100)} -> 19.290122802865525}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 29 : ==================
+[P-T2] [P-T2] what is the population density of the state with the smallest area
+(density:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (area:<lo,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.13sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (density:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (area:<lo,i> $1))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [736.17] S : (density:<lo,i> (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (area:<lo,i> $1))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: population :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2553#12=3.559(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2553=5.776(1.000),RULE#lex=53.395(0.100)} -> 15.482307659982663}
+[P-T2] [P-T2] 	[4-4 :: lex :: density :- NP/NP : (lambda $0:e (density:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#89#24=2.779(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#89=11.000(1.000),RULE#lex=53.395(0.100)} -> 19.290122802865525}
+[P-T2] [P-T2] 	[5-5 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[6-6 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[7-7 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[8-8 :: lex :: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){fixed_domain}]{{FACLEX#LEX#48#3=11.331(1.000),FACLEX#TMP#3=-0.706(0.100),FACLEX#XEME#48=12.582(1.000),RULE#lex=53.395(0.100)} -> 29.18165117621986}
+[P-T2] [P-T2] 	[9-9 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[10-10 :: lex :: smallest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))){fixed_domain}]{{FACLEX#LEX#20#21=13.331(1.000),FACLEX#TMP#21=1.503(0.100),FACLEX#XEME#20=17.456(1.000),RULE#lex=53.395(0.100)} -> 36.27697745200794}
+[P-T2] [P-T2] 	[11-11 :: lex :: area :- N : (lambda $0:e (area:<lo,i> $0)){genlex}]{{FACLEX#LEX#2535#54=6.591(1.000),FACLEX#TMP#54=1.815(0.100),FACLEX#XEME#2535=9.369(1.000),RULE#lex=53.395(0.100)} -> 21.480576094139963}
+[P-T2] [P-T2] 	[10-11 :: >apply :: 10-10, 11-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[9-11 :: >comp1 :: 9-9, 10-11]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[8-11 :: >apply :: 8-8, 9-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-11 :: <apply :: 7-7, 8-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[6-11 :: >apply :: 6-6, 7-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-11 :: >apply :: 5-5, 6-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-11 :: >apply :: 4-4, 5-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-11 :: >apply :: 3-3, 4-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-11 :: >apply :: 2-2, 3-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-11 :: >apply :: 1-1, 2-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-11 :: >apply :: 0-0, 1-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 30 : ==================
+[P-T2] [P-T2] what rivers flow through missouri
+(lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [170.80] S : (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[2-2 :: lex :: flow :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2593#14=2.899(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2593=0.978(1.000),RULE#lex=53.395(0.100)} -> 9.728802539121759}
+[P-T2] [P-T2] 	[3-3 :: lex :: through :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2511#12=0.110(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 16.0744069028373}
+[P-T2] [P-T2] 	[4-4 :: lex :: missouri :- NP : missouri:s{fixed_domain}]{{FACLEX#LEX#2069#84=10.686(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2069=10.686(1.000),RULE#lex=53.395(0.100)} -> 27.499332305141348}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-4 :: >thatless :: 1-1, 2-4]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 31 : ==================
+[P-T2] [P-T2] what is the area of the state with the capital albany
+(area:<lo,i> (the:<<e,t>,e> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (capital2:<s,<c,t>> $0 albany_ny:c)))))
+[P-T2] [P-T2] Test parsing time 0.13sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<lo,i> (the:<<e,t>,e> (lambda $0:e (and:<t*,t> (capital2:<s,<c,t>> $0 albany_ny:c) (state:<s,t> $0)))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [691.24] S : (area:<lo,i> (the:<<e,t>,e> (lambda $0:e (and:<t*,t> (capital2:<s,<c,t>> $0 albany_ny:c) (state:<s,t> $0)))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: area :- NP/NP : (lambda $0:e (area:<lo,i> $0)){genlex}]{{FACLEX#LEX#2535#24=4.602(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2535=9.369(1.000),RULE#lex=53.395(0.100)} -> 19.482362396677427}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[6-6 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[7-7 :: lex :: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){fixed_domain}]{{FACLEX#LEX#48#3=11.331(1.000),FACLEX#TMP#3=-0.706(0.100),FACLEX#XEME#48=12.582(1.000),RULE#lex=53.395(0.100)} -> 29.18165117621986}
+[P-T2] [P-T2] 	[8-8 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[9-9 :: lex :: capital :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2597#0=7.090(1.000),FACLEX#TMP#0=-0.919(0.100),FACLEX#XEME#2597=0.614(1.000),RULE#lex=53.395(0.100)} -> 12.951023226336464}
+[P-T2] [P-T2] 	[10-10 :: lex :: albany :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (capital2:<s,<c,t>> $1 albany_ny:c) ($0 $1)))){genlex}]{{FACLEX#LEX#2652#73=3.363(1.000),FACLEX#TMP#73=0.648(0.100),FACLEX#XEME#2652=3.363(1.000),RULE#lex=53.395(0.100)} -> 12.129924903072151}
+[P-T2] [P-T2] 	[9-10 :: >comp1 :: 9-9, 10-10]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[8-10 :: >comp1 :: 8-8, 9-10]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[7-10 :: >apply :: 7-7, 8-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-10 :: <apply :: 6-6, 7-10]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[5-10 :: >apply :: 5-5, 6-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-10 :: >apply :: 4-4, 5-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-10 :: >apply :: 3-3, 4-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-10 :: >apply :: 2-2, 3-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-10 :: >apply :: 1-1, 2-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-10 :: >apply :: 0-0, 1-10]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#capital2:<s,<c,t>>=12.388(1.000),RULE#>apply=44.560(0.100)} -> 16.84412631829269}
+[P-T2] [P-T2] 32 : ==================
+[P-T2] [P-T2] what states border arkansas
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 arkansas:s)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 arkansas:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [168.05] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 arkansas:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[2-2 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[3-3 :: lex :: arkansas :- NP : arkansas:s{fixed_domain}]{{FACLEX#LEX#1467#84=11.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1467=11.000(1.000),RULE#lex=53.395(0.100)} -> 28.127412371279984}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-3 :: >thatless :: 1-1, 2-3]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-3 :: >apply :: 0-0, 1-3]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 33 : ==================
+[P-T2] [P-T2] which state contains most rivers
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (river:<r,t> $2) (loc:<lo,<lo,t>> $2 $1))))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (river:<r,t> $2) (loc:<lo,<lo,t>> $2 $1))))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [168.38] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (river:<r,t> $2) (loc:<lo,<lo,t>> $2 $1))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: which :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#24#18=12.277(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 41.506397511395846}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: contains :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1))){genlex}]{{FACLEX#LEX#2579#15=0.928(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#2579=0.982(1.000),RULE#lex=53.395(0.100)} -> 7.180154559845728}
+[P-T2] [P-T2] 	[3-3 :: lex :: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))){fixed_domain}]{{FACLEX#LEX#99#56=15.685(1.000),FACLEX#TMP#56=0.563(0.100),FACLEX#XEME#99=16.002(1.000),RULE#lex=53.395(0.100)} -> 37.08247812581964}
+[P-T2] [P-T2] 	[4-4 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: <apply :: 2-2, 3-4]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-4 :: <apply :: 1-1, 2-4]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 34 : ==================
+[P-T2] [P-T2] what is the largest city in michigan
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 michigan:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 michigan:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [378.65] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 michigan:s))) (lambda $1:e (size:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: michigan :- NP : michigan:s{fixed_domain}]{{FACLEX#LEX#1551#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1551=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] 35 : ==================
+[P-T2] [P-T2] how many states border the mississippi river
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 mississippi_river:r))))
+[P-T2] [P-T2] Test parsing time 0.04sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 mississippi_river:r))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [321.07] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 mississippi_river:r))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[4-4 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[5-6 :: lex :: mississippi river :- NP : mississippi_river:r{fixed_domain}]{{FACLEX#LEX#2198#84=24.872(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2198=13.436(1.000),RULE#lex=53.395(0.100)} -> 44.43503697681864}
+[P-T2] [P-T2] 	[4-6 :: >apply :: 4-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-2, 3-6]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 36 : ==================
+[P-T2] [P-T2] what is the smallest city in the largest state
+(argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $2:e (size:<lo,i> $2)))))) (lambda $3:e (size:<lo,i> $3)))
+[P-T2] [P-T2] Test parsing time 0.06sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $2:e (size:<lo,i> $2)))))) (lambda $3:e (size:<lo,i> $3)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [548.79] S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e (state:<s,t> $1)) (lambda $2:e (size:<lo,i> $2)))))) (lambda $3:e (size:<lo,i> $3)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#20#26=12.225(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#20=17.456(1.000),RULE#lex=53.395(0.100)} -> 35.06864478419008}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[7-7 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[8-8 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[7-8 :: >apply :: 7-7, 8-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-8 :: >apply :: 6-6, 7-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-8 :: >apply+shift_pp :: 5-5, 6-8]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-8 :: <apply :: 4-4, 5-8]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-8 :: >apply :: 3-3, 4-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-8 :: >apply :: 2-2, 3-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-8 :: >apply :: 1-1, 2-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-8 :: >apply :: 0-0, 1-8]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),RULE#>apply=44.560(0.100)} -> 5.25173742471032}
+[P-T2] [P-T2] 37 : ==================
+[P-T2] [P-T2] what is the most populated state bordering oklahoma
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 oklahoma:s))) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.03sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 oklahoma:s))) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [359.73] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> $0 oklahoma:s))) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: most :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (population:<lo,i> $2)))){genlex}]{{FACLEX#LEX#2491#1=3.727(1.000),FACLEX#TMP#1=0.621(0.100),FACLEX#XEME#2491=3.727(1.000),RULE#lex=53.395(0.100)} -> 12.85579998207205}
+[P-T2] [P-T2] 	[4-4 :: lex :: populated :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){genlex}]{{FACLEX#LEX#2492#22=1.003(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#2492=0.999(1.000),RULE#lex=53.395(0.100)} -> 7.938896082899603}
+[P-T2] [P-T2] 	[5-5 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-6 :: lex :: bordering :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2533#14=4.613(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2533=1.955(1.000),RULE#lex=53.395(0.100)} -> 12.419891197129626}
+[P-T2] [P-T2] 	[7-7 :: lex :: oklahoma :- NP : oklahoma:s{fixed_domain}]{{FACLEX#LEX#1902#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1902=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[6-7 :: >apply :: 6-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-7 :: >thatless :: 5-5, 6-7]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[4-7 :: >thatless :: 4-5, 6-7]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[4-7 :: >apply :: 4-4, 5-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 38 : ==================
+[P-T2] [P-T2] what is the area of maine
+(area:<lo,i> maine:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<lo,i> maine:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [364.80] S : (area:<lo,i> maine:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: area :- NP/NP : (lambda $0:e (area:<lo,i> $0)){genlex}]{{FACLEX#LEX#2535#24=4.602(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2535=9.369(1.000),RULE#lex=53.395(0.100)} -> 19.482362396677427}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: maine :- NP : maine:s{fixed_domain}]{{FACLEX#LEX#1687#84=10.155(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1687=10.155(1.000),RULE#lex=53.395(0.100)} -> 26.436680678026754}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 39 : ==================
+[P-T2] [P-T2] what are the major cities in the smallest state in the us
+(lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> $1 usa:co))) (lambda $2:e (size:<lo,i> $2))))))
+[P-T2] [P-T2] Test parsing time 0.11sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> $1 usa:co))) (lambda $2:e (size:<lo,i> $2))))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [733.89] S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> $1 usa:co))) (lambda $2:e (size:<lo,i> $2))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: major :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (major:<lo,t> $1) ($0 $1)))){fixed_domain}]{{FACLEX#LEX#29#68=13.955(1.000),FACLEX#TMP#68=0.226(0.100),FACLEX#XEME#29=13.955(1.000),RULE#lex=53.395(0.100)} -> 33.27158731534604}
+[P-T2] [P-T2] 	[4-4 :: lex :: cities :- N : (lambda $0:e (city:<c,t> $0)){fixed_domain}]{{FACLEX#LEX#75#27=12.958(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#75=12.958(1.000),RULE#lex=53.395(0.100)} -> 31.80889200686836}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[7-7 :: lex :: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#20#26=12.225(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#20=17.456(1.000),RULE#lex=53.395(0.100)} -> 35.06864478419008}
+[P-T2] [P-T2] 	[8-8 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[9-9 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[10-10 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[11-11 :: lex :: us :- NP : usa:co{fixed_domain}]{{FACLEX#LEX#1123#84=13.208(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1123=11.955(1.000),RULE#lex=53.395(0.100)} -> 31.29109960860744}
+[P-T2] [P-T2] 	[10-11 :: >apply :: 10-10, 11-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[9-11 :: >apply+shift_pp :: 9-9, 10-11]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[8-11 :: <apply :: 8-8, 9-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[7-11 :: >apply :: 7-7, 8-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-11 :: >apply :: 6-6, 7-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-11 :: >apply+shift_pp :: 5-5, 6-11]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[3-11 :: <apply :: 3-4, 5-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-11 :: >apply :: 2-2, 3-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-11 :: <apply :: 2-4, 5-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-4 :: >apply :: 1-1, 2-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-11 :: >apply :: 1-1, 2-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-11 :: <apply :: 1-4, 5-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-11 :: >apply :: 0-0, 1-11]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#city:<c,t>=4.045(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#loc:<lo,<lo,t>>=3.038(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#loc:<lo,<lo,t>>=-2.352(1.000),RULE#>apply=44.560(0.100)} -> 9.982770570495912}
+[P-T2] [P-T2] 40 : ==================
+[P-T2] [P-T2] what city has the largest population
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (city:<c,t> $0)) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (city:<c,t> $0)) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [277.36] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (city:<c,t> $0)) (lambda $1:e (population:<lo,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[2-2 :: lex :: has :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){genlex}]{{FACLEX#LEX#2488#3=2.833(1.000),FACLEX#TMP#3=-0.706(0.100),FACLEX#XEME#2488=5.578(1.000),RULE#lex=53.395(0.100)} -> 13.680301927277405}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-4 :: lex :: largest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))){fixed_domain}]{{FACLEX#LEX#46#21=16.639(1.000),FACLEX#TMP#21=1.503(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 33.59046082973742}
+[P-T2] [P-T2] 	[5-5 :: lex :: population :- N : (lambda $0:e (population:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#92#54=2.348(1.000),FACLEX#TMP#54=1.815(0.100),FACLEX#XEME#92=7.923(1.000),RULE#lex=53.395(0.100)} -> 15.792265735237038}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >comp1 :: 3-3, 4-5]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: <apply :: 1-1, 2-5]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 41 : ==================
+[P-T2] [P-T2] what is the population of minnesota
+(population:<lo,i> minnesota:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<lo,i> minnesota:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [365.68] S : (population:<lo,i> minnesota:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: population :- NP/NP : (lambda $0:e (population:<lo,i> $0)){fixed_domain}]{{FACLEX#LEX#92#24=7.243(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#92=7.923(1.000),RULE#lex=53.395(0.100)} -> 20.677613461574584}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: minnesota :- NP : minnesota:s{fixed_domain}]{{FACLEX#LEX#1144#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1144=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 42 : ==================
+[P-T2] [P-T2] which states does the mississippi river run through
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> mississippi_river:r $0)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> mississippi_river:r $0)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [321.70] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> mississippi_river:r $0)))
+[P-T2] [P-T2] 	[0-0 :: lex :: which :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#6=11.939(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 41.48887896997003}
+[P-T2] [P-T2] 	[1-1 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[2-2 :: lex :: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#11#23=14.881(1.000),FACLEX#TMP#23=0.533(0.100),FACLEX#XEME#11=15.840(1.000),RULE#lex=53.395(0.100)} -> 36.11376704541808}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-5 :: lex :: mississippi river :- NP : mississippi_river:r{fixed_domain}]{{FACLEX#LEX#2198#84=24.872(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2198=13.436(1.000),RULE#lex=53.395(0.100)} -> 44.43503697681864}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-6 :: lex :: run :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2513#14=2.227(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2513=0.998(1.000),RULE#lex=53.395(0.100)} -> 9.07674096328896}
+[P-T2] [P-T2] 	[7-7 :: lex :: through :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2511#12=0.110(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 16.0744069028373}
+[P-T2] [P-T2] 	[6-7 :: >comp1 :: 6-6, 7-7]{{RULE#>comp1=-4.354(0.100)} -> -0.43535235750819745}
+[P-T2] [P-T2] 	[3-7 :: >trcomp1 :: 3-5, 6-7]{{RULE#>trcomp1=-0.689(0.100)} -> -0.06894571231442839}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: >thatless :: 1-1, 2-7]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 43 : ==================
+[P-T2] [P-T2] what state has the city flint
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> flint_mi:c $0)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> flint_mi:c $0)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [269.35] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> flint_mi:c $0)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: has :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1))){fixed_domain}]{{FACLEX#LEX#74#15=5.583(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#74=4.976(1.000),RULE#lex=53.395(0.100)} -> 15.830197419731022}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#2522#12=-3.092(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#2522=-4.043(1.000),RULE#lex=53.395(0.100)} -> -0.9890619654443435}
+[P-T2] [P-T2] 	[5-5 :: lex :: flint :- NP : flint_mi:c{fixed_domain}]{{FACLEX#LEX#556#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#556=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >thatless :: 1-1, 2-5]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 44 : ==================
+[P-T2] [P-T2] what is the capital of georgia
+(capital:<s,c> georgia:s)
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (capital:<s,c> georgia:s)
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [363.59] S : (capital:<s,c> georgia:s)
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: capital :- NP/NP : (lambda $0:e (capital:<s,c> $0)){fixed_domain}]{{FACLEX#LEX#56#24=6.535(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#56=6.535(1.000),RULE#lex=53.395(0.100)} -> 18.58132081590902}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: georgia :- NP : georgia:s{fixed_domain}]{{FACLEX#LEX#640#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#640=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 45 : ==================
+[P-T2] [P-T2] what rivers run through the states that border the state with the capital atlanta
+(lambda $0:e (and:<t*,t> (river:<r,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> $0 $1) (next_to:<lo,<lo,t>> $1 (the:<<e,t>,e> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (capital2:<s,<c,t>> $2 atlanta_ga:c))))))))))
+[P-T2] [P-T2] Test parsing time 0.31sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse: (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 (the:<<e,t>,e> (lambda $2:e (state:<s,t> $2)))) (capital2:<s,<c,t>> $1 atlanta_ga:c)))))))
+[P-T2] [P-T2] [EXACT stats]  Record incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [754.48] S : (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 (the:<<e,t>,e> (lambda $2:e (state:<s,t> $2)))) (capital2:<s,<c,t>> $1 atlanta_ga:c)))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[2-2 :: lex :: run :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2513#8=5.238(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#2513=0.998(1.000),RULE#lex=53.395(0.100)} -> 11.73493051824927}
+[P-T2] [P-T2] 	[3-3 :: lex :: through :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2511#0=-3.240(1.000),FACLEX#TMP#0=-0.919(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 11.825141713326856}
+[P-T2] [P-T2] 	[4-4 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[5-5 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[6-6 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[7-7 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[8-8 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[9-9 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[10-10 :: lex :: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){fixed_domain}]{{FACLEX#LEX#48#3=11.331(1.000),FACLEX#TMP#3=-0.706(0.100),FACLEX#XEME#48=12.582(1.000),RULE#lex=53.395(0.100)} -> 29.18165117621986}
+[P-T2] [P-T2] 	[11-11 :: lex :: the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))){fixed_domain}]{{FACLEX#LEX#26#0=23.345(1.000),FACLEX#TMP#0=-0.919(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 109.36204330101795}
+[P-T2] [P-T2] 	[10-11 :: >apply :: 10-10, 11-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[9-11 :: <apply :: 9-9, 10-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[8-11 :: >apply :: 8-8, 9-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-11 :: >apply :: 7-7, 8-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[6-11 :: >apply+shift_pp :: 6-6, 7-11]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[5-11 :: <apply :: 5-5, 6-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-11 :: >apply :: 4-4, 5-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-11 :: <apply :: 4-5, 6-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[12-12 :: lex :: capital :- S\NP/NP : (lambda $0:e (lambda $1:e (capital2:<s,<c,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#88#14=12.041(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#88=8.419(1.000),RULE#lex=53.395(0.100)} -> 26.31231059481393}
+[P-T2] [P-T2] 	[13-13 :: lex :: atlanta :- NP : atlanta_ga:c{fixed_domain}]{{FACLEX#LEX#941#84=10.070(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#941=10.070(1.000),RULE#lex=53.395(0.100)} -> 26.26784482220953}
+[P-T2] [P-T2] 	[12-13 :: >apply :: 12-12, 13-13]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-13 :: >thatless :: 5-11, 12-13]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[4-13 :: >thatless :: 4-11, 12-13]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[4-13 :: >apply :: 4-4, 5-13]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-13 :: >apply :: 3-3, 4-13]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-13 :: >apply+shift_pp :: 2-2, 3-13]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[1-13 :: <apply :: 1-1, 2-13]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-13 :: >apply :: 0-0, 1-13]{{LOGEXP#CPP1#and:<t*,t>#next_to:<lo,<lo,t>>#capital2:<s,<c,t>>=-0.852(1.000),LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#capital2:<s,<c,t>>=12.388(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 23.269750339887015}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {FACLEX#LEX#100#27=14.867(1.000),FACLEX#LEX#17#46=15.962(1.000),FACLEX#LEX#2511#0=-3.240(1.000),FACLEX#LEX#2513#8=5.238(1.000),FACLEX#LEX#26#0=23.345(1.000),FACLEX#LEX#26#12=38.504(1.000),FACLEX#LEX#26#22=32.621(1.000),FACLEX#LEX#40#14=12.904(1.000),FACLEX#LEX#48#3=11.331(1.000),FACLEX#LEX#6#6=20.874(1.000),FACLEX#LEX#86#27=18.854(1.000),FACLEX#LEX#88#14=12.041(1.000),FACLEX#LEX#941#84=10.070(1.000),FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#0=-0.919(0.200),FACLEX#TMP#12=8.073(0.100),FACLEX#TMP#14=5.124(0.200),FACLEX#TMP#22=5.976(0.100),FACLEX#TMP#27=5.531(0.300),FACLEX#TMP#3=-0.706(0.100),FACLEX#TMP#46=1.558(0.100),FACLEX#TMP#6=4.829(0.100),FACLEX#TMP#8=1.599(0.100),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#100=15.305(1.000),FACLEX#XEME#17=15.963(1.000),FACLEX#XEME#2511=9.818(1.000),FACLEX#XEME#2513=0.998(1.000),FACLEX#XEME#26=80.769(3.000),FACLEX#XEME#40=12.902(1.000),FACLEX#XEME#48=12.582(1.000),FACLEX#XEME#6=31.414(1.000),FACLEX#XEME#86=18.854(1.000),FACLEX#XEME#88=8.419(1.000),FACLEX#XEME#941=10.070(1.000),FACLEX#XEME#96=10.073(1.000),LOGEXP#CPP1#and:<t*,t>#next_to:<lo,<lo,t>>#capital2:<s,<c,t>>=-0.852(1.000),LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#capital2:<s,<c,t>>=12.388(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#<apply=4.892(0.300),RULE#>apply=44.560(0.900),RULE#>thatless=1.616(0.100),RULE#lex=53.395(1.400),RULE#shift_pp=3.941(0.200)}
+[P-T2] [P-T2] 46 : ==================
+[P-T2] [P-T2] what is the length of the longest river in the usa
+(len:<r,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (len:<r,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.07sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (len:<r,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (len:<r,i> $1))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [719.89] S : (len:<r,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (len:<r,i> $1))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: length :- NP/NP : (lambda $0:e (len:<r,i> $0)){genlex}]{{FACLEX#LEX#2588#24=2.786(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2588=0.980(1.000),RULE#lex=53.395(0.100)} -> 9.277246961751107}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[6-6 :: lex :: longest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (len:<r,i> $2)))){fixed_domain}]{{FACLEX#LEX#63#1=11.008(1.000),FACLEX#TMP#1=0.621(0.100),FACLEX#XEME#63=11.008(1.000),RULE#lex=53.395(0.100)} -> 27.417739216308945}
+[P-T2] [P-T2] 	[7-7 :: lex :: river :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#94#27=8.685(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#94=8.685(1.000),RULE#lex=53.395(0.100)} -> 23.262824958152336}
+[P-T2] [P-T2] 	[8-8 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[9-9 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[10-10 :: lex :: usa :- NP : usa:co{fixed_domain}]{{FACLEX#LEX#1278#84=13.963(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1278=13.963(1.000),RULE#lex=53.395(0.100)} -> 34.053870206775194}
+[P-T2] [P-T2] 	[9-10 :: >apply :: 9-9, 10-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[8-10 :: >apply+shift_pp :: 8-8, 9-10]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[7-10 :: <apply :: 7-7, 8-10]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[6-10 :: >apply :: 6-6, 7-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-10 :: >apply :: 5-5, 6-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-10 :: >apply :: 4-4, 5-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-10 :: >apply :: 3-3, 4-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-10 :: >apply :: 2-2, 3-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-10 :: >apply :: 1-1, 2-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-10 :: >apply :: 0-0, 1-10]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 47 : ==================
+[P-T2] [P-T2] what is the largest city in a state that borders texas
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 texas:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] Test parsing time 0.16sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 texas:s))))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] [EXACT stats]  Record incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [490.89] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 texas:s))))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: a :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))){fixed_domain}]{{FACLEX#LEX#36#0=-0.016(1.000),FACLEX#TMP#0=-0.919(0.100),FACLEX#XEME#36=7.746(1.000),RULE#lex=53.395(0.100)} -> 12.978396560512607}
+[P-T2] [P-T2] 	[7-7 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[8-8 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[9-9 :: lex :: borders :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2528#14=3.634(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2528=0.996(1.000),RULE#lex=53.395(0.100)} -> 10.481875917947962}
+[P-T2] [P-T2] 	[10-10 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[9-10 :: >apply :: 9-9, 10-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[8-10 :: >apply+shift_pp :: 8-8, 9-10]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[7-10 :: <apply :: 7-7, 8-10]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[6-10 :: >apply :: 6-6, 7-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-10 :: >apply+shift_pp :: 5-5, 6-10]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-10 :: <apply :: 4-4, 5-10]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-10 :: >apply :: 3-3, 4-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-10 :: >apply :: 2-2, 3-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-10 :: >apply :: 1-1, 2-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-10 :: >apply :: 0-0, 1-10]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 10.269655541564108}
+[P-T2] [P-T2] Had correct parses: true
+[P-T2] [P-T2] Correct derivation:
+[P-T2] [P-T2] [486.92] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 texas:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#14=5.283(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 26.865952845365662}
+[P-T2] [P-T2] 	[6-6 :: lex :: a :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#36#22=9.741(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#36=7.746(1.000),RULE#lex=53.395(0.100)} -> 23.4248747263731}
+[P-T2] [P-T2] 	[7-7 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[6-7 :: >apply :: 6-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[8-8 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[9-9 :: lex :: borders :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2528#14=3.634(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2528=0.996(1.000),RULE#lex=53.395(0.100)} -> 10.481875917947962}
+[P-T2] [P-T2] 	[10-10 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[9-10 :: >apply :: 9-9, 10-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[8-10 :: >apply+shift_pp :: 8-8, 9-10]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[6-10 :: <apply :: 6-7, 8-10]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[5-10 :: >plural_exists :: 5-5, 6-10]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[4-10 :: >thatless :: 4-4, 5-10]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[3-10 :: >apply :: 3-3, 4-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-10 :: >apply :: 2-2, 3-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-10 :: >apply :: 1-1, 2-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-10 :: >apply :: 0-0, 1-10]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] Diff: {FACLEX#LEX#36#0=-0.016(-1.000),FACLEX#LEX#36#22=9.741(1.000),FACLEX#LEX#68#14=5.283(1.000),FACLEX#LEX#68#8=13.967(-1.000),FACLEX#TMP#0=-0.919(-0.100),FACLEX#TMP#14=5.124(0.100),FACLEX#TMP#22=5.976(0.100),FACLEX#TMP#8=1.599(-0.100),LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(-1.000),RULE#<apply=4.892(-0.100),RULE#>apply=44.560(-0.100),RULE#>plural_exists=-1.031(0.100),RULE#>thatless=1.616(0.100),RULE#shift_pp=3.941(-0.100)}
+[P-T2] [P-T2] Feats: {FACLEX#LEX#15#12=24.989(1.000),FACLEX#LEX#17#46=15.962(1.000),FACLEX#LEX#2495#27=8.764(1.000),FACLEX#LEX#2528#14=3.634(1.000),FACLEX#LEX#26#12=38.504(1.000),FACLEX#LEX#36#0=-0.016(1.000),FACLEX#LEX#46#26=11.486(1.000),FACLEX#LEX#6#18=15.116(1.000),FACLEX#LEX#68#8=13.967(1.000),FACLEX#LEX#91#84=12.611(1.000),FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#0=-0.919(0.100),FACLEX#TMP#12=8.073(0.200),FACLEX#TMP#14=5.124(0.100),FACLEX#TMP#18=1.622(0.100),FACLEX#TMP#26=0.478(0.100),FACLEX#TMP#27=5.531(0.200),FACLEX#TMP#46=1.558(0.100),FACLEX#TMP#8=1.599(0.100),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#15=33.023(1.000),FACLEX#XEME#17=15.963(1.000),FACLEX#XEME#2495=8.764(1.000),FACLEX#XEME#2528=0.996(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#36=7.746(1.000),FACLEX#XEME#46=11.462(1.000),FACLEX#XEME#6=31.414(1.000),FACLEX#XEME#68=15.731(1.000),FACLEX#XEME#91=12.611(1.000),FACLEX#XEME#96=10.073(1.000),LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#<apply=4.892(0.200),RULE#>apply=44.560(0.800),RULE#lex=53.395(1.100),RULE#shift_pp=3.941(0.200)}
+[P-T2] [P-T2] 48 : ==================
+[P-T2] [P-T2] what rivers are in utah
+(lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 utah:s)))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 utah:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [216.30] S : (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 utah:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[2-2 :: lex :: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#28=14.454(1.000),FACLEX#TMP#28=0.784(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 35.57542262995477}
+[P-T2] [P-T2] 	[3-3 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[4-4 :: lex :: utah :- NP : utah:s{fixed_domain}]{{FACLEX#LEX#1812#84=10.952(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1812=10.952(1.000),RULE#lex=53.395(0.100)} -> 28.032355699215977}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-4 :: >thatless :: 1-1, 2-4]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 49 : ==================
+[P-T2] [P-T2] how many rivers are there in us
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [230.15] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2519#25=2.731(1.000),FACLEX#TMP#25=0.043(0.100),FACLEX#XEME#2519=2.731(1.000),RULE#lex=53.395(0.100)} -> 10.806799512058983}
+[P-T2] [P-T2] 	[2-2 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[3-4 :: lex :: are there :- S\NP : (lambda $0:e true:t){fixed_domain}]{{FACLEX#LEX#98#78=26.551(1.000),FACLEX#TMP#78=0.506(0.100),FACLEX#XEME#98=15.116(1.000),RULE#lex=53.395(0.100)} -> 47.056860620111664}
+[P-T2] [P-T2] 	[2-4 :: >thatless :: 2-2, 3-4]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: us :- NP : usa:co{fixed_domain}]{{FACLEX#LEX#1123#84=13.208(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1123=11.955(1.000),RULE#lex=53.395(0.100)} -> 31.29109960860744}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[2-6 :: <apply :: 2-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 50 : ==================
+[P-T2] [P-T2] what is the area of the largest state
+(area:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (size:<lo,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.03sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (size:<lo,i> $1))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [527.89] S : (area:<lo,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (size:<lo,i> $1))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: area :- NP/NP : (lambda $0:e (area:<lo,i> $0)){genlex}]{{FACLEX#LEX#2535#24=4.602(1.000),FACLEX#TMP#24=1.724(0.100),FACLEX#XEME#2535=9.369(1.000),RULE#lex=53.395(0.100)} -> 19.482362396677427}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#43#12=24.176(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 54.98886165229734}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[6-6 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[7-7 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[6-7 :: >apply :: 6-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-7 :: >apply :: 5-5, 6-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-7 :: >apply :: 4-4, 5-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 51 : ==================
+[P-T2] [P-T2] how many rivers in washington
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 washington:s))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 washington:s))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [177.77] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 washington:s))))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2519#25=2.731(1.000),FACLEX#TMP#25=0.043(0.100),FACLEX#XEME#2519=2.731(1.000),RULE#lex=53.395(0.100)} -> 10.806799512058983}
+[P-T2] [P-T2] 	[2-2 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[3-3 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[4-4 :: lex :: washington :- NP : washington:s{fixed_domain}]{{FACLEX#LEX#1421#84=10.000(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1421=10.000(1.000),RULE#lex=53.395(0.100)} -> 26.127412371279984}
+[P-T2] [P-T2] 	[3-4 :: >apply+shift_pp :: 3-3, 4-4]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[2-4 :: <apply :: 2-2, 3-4]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-4 :: >apply :: 1-1, 2-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 52 : ==================
+[P-T2] [P-T2] what are the major cities in texas
+(lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [369.62] S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (city:<c,t> $0) (loc:<lo,<lo,t>> $0 texas:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: major :- N/N : (lambda $0:<e,t> (lambda $1:e (and:<t*,t> (major:<lo,t> $1) ($0 $1)))){fixed_domain}]{{FACLEX#LEX#29#68=13.955(1.000),FACLEX#TMP#68=0.226(0.100),FACLEX#XEME#29=13.955(1.000),RULE#lex=53.395(0.100)} -> 33.27158731534604}
+[P-T2] [P-T2] 	[4-4 :: lex :: cities :- N : (lambda $0:e (city:<c,t> $0)){fixed_domain}]{{FACLEX#LEX#75#27=12.958(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#75=12.958(1.000),RULE#lex=53.395(0.100)} -> 31.80889200686836}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: >apply :: 2-2, 3-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[6-6 :: lex :: texas :- NP : texas:s{fixed_domain}]{{FACLEX#LEX#91#84=12.611(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#91=12.611(1.000),RULE#lex=53.395(0.100)} -> 31.350102254932395}
+[P-T2] [P-T2] 	[5-6 :: >apply+shift_pp :: 5-5, 6-6]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[4-6 :: <apply :: 4-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: <apply :: 3-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: <apply :: 2-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-4 :: >apply :: 1-1, 2-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-6 :: <apply :: 1-4, 5-6]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#loc:<lo,<lo,t>>#city:<c,t>=0.796(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#city:<c,t>=4.045(1.000),LOGEXP#CPP1#and:<t*,t>#major:<lo,t>#loc:<lo,<lo,t>>=3.038(1.000),RULE#>apply=44.560(0.100)} -> 12.334457621166933}
+[P-T2] [P-T2] 53 : ==================
+[P-T2] [P-T2] what is the largest city in states that border california
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 california:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] Test parsing time 0.12sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 california:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [488.09] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 california:s) (loc:<lo,<lo,t>> $0 $1)))))) (lambda $2:e (size:<lo,i> $2)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#6#18=15.116(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 52.03112057900124}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#15#12=24.989(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#15=33.023(1.000),RULE#lex=53.395(0.100)} -> 64.15891824503457}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))){fixed_domain}]{{FACLEX#LEX#46#26=11.486(1.000),FACLEX#TMP#26=0.478(0.100),FACLEX#XEME#46=11.462(1.000),RULE#lex=53.395(0.100)} -> 28.335758098825508}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c,t> $0)){genlex}]{{FACLEX#LEX#2495#27=8.764(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#2495=8.764(1.000),RULE#lex=53.395(0.100)} -> 23.420513170790297}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#14=5.283(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 26.865952845365662}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[7-7 :: lex :: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#17#46=15.962(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#17=15.963(1.000),RULE#lex=53.395(0.100)} -> 37.42046378220912}
+[P-T2] [P-T2] 	[8-8 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[9-9 :: lex :: california :- NP : california:s{fixed_domain}]{{FACLEX#LEX#2262#84=11.947(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2262=11.947(1.000),RULE#lex=53.395(0.100)} -> 30.020964375311813}
+[P-T2] [P-T2] 	[8-9 :: >apply :: 8-8, 9-9]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-9 :: >apply+shift_pp :: 7-7, 8-9]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[6-9 :: <apply :: 6-6, 7-9]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[5-9 :: >plural_exists :: 5-5, 6-9]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[4-9 :: >thatless :: 4-4, 5-9]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[3-9 :: >apply :: 3-3, 4-9]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-9 :: >apply :: 2-2, 3-9]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-9 :: >apply :: 1-1, 2-9]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-9 :: >apply :: 0-0, 1-9]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#next_to:<lo,<lo,t>>=5.018(1.000),RULE#>apply=44.560(0.100)} -> 9.473964011177582}
+[P-T2] [P-T2] 54 : ==================
+[P-T2] [P-T2] how many states does missouri border
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> missouri:s $0))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> missouri:s $0))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [201.13] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (next_to:<lo,<lo,t>> missouri:s $0))))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#22#18=20.720(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#22=19.303(1.000),RULE#lex=53.395(0.100)} -> 45.524647487101376}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))){genlex}]{{FACLEX#LEX#2519#25=2.731(1.000),FACLEX#TMP#25=0.043(0.100),FACLEX#XEME#2519=2.731(1.000),RULE#lex=53.395(0.100)} -> 10.806799512058983}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[3-3 :: lex :: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#11#23=14.881(1.000),FACLEX#TMP#23=0.533(0.100),FACLEX#XEME#11=15.840(1.000),RULE#lex=53.395(0.100)} -> 36.11376704541808}
+[P-T2] [P-T2] 	[4-4 :: lex :: missouri :- NP : missouri:s{fixed_domain}]{{FACLEX#LEX#2069#84=10.686(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2069=10.686(1.000),RULE#lex=53.395(0.100)} -> 27.499332305141348}
+[P-T2] [P-T2] 	[5-5 :: lex :: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#40#14=12.904(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#40=12.902(1.000),RULE#lex=53.395(0.100)} -> 31.658054088273964}
+[P-T2] [P-T2] 	[4-5 :: >trcomp1 :: 4-4, 5-5]{{RULE#>trcomp1=-0.689(0.100)} -> -0.06894571231442839}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-5 :: >thatless :: 2-2, 3-5]{{RULE#>thatless=1.616(0.100)} -> 0.16163060545017505}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 55 : ==================
+[P-T2] [P-T2] name the states which have no surrounding states
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (not:<t,t> (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $0 $1)))))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.050000sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse with skipping: (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (not:<t,t> (state:<s,t> $1)) (loc:<lo,<lo,t>> $1 $0))))))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [300.16] S : (lambda $0:e (and:<t*,t> (state:<s,t> $0) (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (not:<t,t> (state:<s,t> $1)) (loc:<lo,<lo,t>> $1 $0))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: name :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){genlex}]{{FACLEX#LEX#2486#6=5.675(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#2486=1.000(1.000),RULE#lex=53.395(0.100)} -> 12.497877191917212}
+[P-T2] [P-T2] 	[1-1 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: which :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#46=8.802(1.000),FACLEX#TMP#46=1.558(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 38.02491134359206}
+[P-T2] [P-T2] 	[4-4 :: lex :: have :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1))){fixed_domain}]{{FACLEX#LEX#42#15=11.600(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#42=11.600(1.000),RULE#lex=53.395(0.100)} -> 28.47106650547884}
+[P-T2] [P-T2] 	[5-5 :: lex :: no :- N/N : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))){fixed_domain}]{{FACLEX#LEX#18#63=-6.617(1.000),FACLEX#TMP#63=-0.603(0.100),FACLEX#XEME#18=8.105(1.000),RULE#lex=53.395(0.100)} -> 6.766790277839496}
+[P-T2] [P-T2] 	[6-6 :: lex :: surrounding :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[5-6 :: >skip :: 5-5, 6-6]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[7-7 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-7 :: >apply :: 5-6, 7-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-7 :: >plural_exists :: 4-4, 5-7]{{RULE#>plural_exists=-1.031(0.100)} -> -0.10306635599924602}
+[P-T2] [P-T2] 	[3-7 :: >apply+shift_pp :: 3-3, 4-7]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[2-7 :: <apply :: 2-2, 3-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-7 :: <apply :: 1-2, 3-7]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {DYNSKIP=-1.000(1.000),FACLEX#LEX#100#27=14.867(2.000),FACLEX#LEX#18#63=-6.617(1.000),FACLEX#LEX#24#46=8.802(1.000),FACLEX#LEX#2486#6=5.675(1.000),FACLEX#LEX#26#22=32.621(1.000),FACLEX#LEX#42#15=11.600(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#TMP#22=5.976(0.100),FACLEX#TMP#27=5.531(0.200),FACLEX#TMP#46=1.558(0.100),FACLEX#TMP#6=4.829(0.100),FACLEX#TMP#63=-0.603(0.100),FACLEX#XEME#100=15.305(2.000),FACLEX#XEME#18=8.105(1.000),FACLEX#XEME#24=23.727(1.000),FACLEX#XEME#2486=1.000(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#42=11.600(1.000),RULE#<apply=4.892(0.100),RULE#>apply=44.560(0.400),RULE#>plural_exists=-1.031(0.100),RULE#>skip=0.0(0.100),RULE#lex=53.395(0.800),RULE#shift_pp=3.941(0.100)}
+[P-T2] [P-T2] 56 : ==================
+[P-T2] [P-T2] how many states are in the united states
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] Test parsing time 0.05sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [368.80] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (state:<s,t> $0) (loc:<lo,<lo,t>> $0 usa:co))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#28=14.454(1.000),FACLEX#TMP#28=0.784(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 35.57542262995477}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[6-7 :: lex :: united states :- NP : usa:co{fixed_domain}]{{FACLEX#LEX#1797#84=30.637(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#1797=19.201(1.000),RULE#lex=53.395(0.100)} -> 55.96545588192508}
+[P-T2] [P-T2] 	[5-7 :: >apply :: 5-5, 6-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-7 :: >apply :: 4-4, 5-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-2, 3-7]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#loc:<lo,<lo,t>>=-2.352(1.000),RULE#>apply=44.560(0.100)} -> 2.104358843652771}
+[P-T2] [P-T2] 57 : ==================
+[P-T2] [P-T2] how many rivers are in missouri
+(count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [222.61] S : (count:<<e,t>,i> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 missouri:s))))
+[P-T2] [P-T2] 	[0-1 :: lex :: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))){fixed_domain}]{{FACLEX#LEX#58#17=32.934(1.000),FACLEX#TMP#17=1.138(0.100),FACLEX#XEME#58=22.264(1.000),RULE#lex=53.395(0.100)} -> 60.65130621257603}
+[P-T2] [P-T2] 	[2-2 :: lex :: rivers :- N : (lambda $0:e (river:<r,t> $0)){fixed_domain}]{{FACLEX#LEX#86#27=18.854(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#86=18.854(1.000),RULE#lex=53.395(0.100)} -> 43.600143221077474}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-1, 2-2]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-3 :: lex :: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#28=14.454(1.000),FACLEX#TMP#28=0.784(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 35.57542262995477}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- PP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#68#8=13.967(1.000),FACLEX#TMP#8=1.599(0.100),FACLEX#XEME#68=15.731(1.000),RULE#lex=53.395(0.100)} -> 35.19749703551967}
+[P-T2] [P-T2] 	[5-5 :: lex :: missouri :- NP : missouri:s{fixed_domain}]{{FACLEX#LEX#2069#84=10.686(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2069=10.686(1.000),RULE#lex=53.395(0.100)} -> 27.499332305141348}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-2, 3-5]{{LOGEXP#CPP1#and:<t*,t>#river:<r,t>#loc:<lo,<lo,t>>=2.260(1.000),RULE#>apply=44.560(0.100)} -> 6.715688865551087}
+[P-T2] [P-T2] 58 : ==================
+[P-T2] [P-T2] which state borders most states
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [161.89] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (count:<<e,t>,i> (lambda $2:e (and:<t*,t> (state:<s,t> $2) (next_to:<lo,<lo,t>> $1 $2))))))
+[P-T2] [P-T2] 	[0-0 :: lex :: which :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#24#18=12.277(1.000),FACLEX#TMP#18=1.622(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 41.506397511395846}
+[P-T2] [P-T2] 	[1-1 :: lex :: state :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#96#27=10.898(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#96=10.073(1.000),RULE#lex=53.395(0.100)} -> 26.863545589184277}
+[P-T2] [P-T2] 	[2-2 :: lex :: borders :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2528#14=3.634(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2528=0.996(1.000),RULE#lex=53.395(0.100)} -> 10.481875917947962}
+[P-T2] [P-T2] 	[3-3 :: lex :: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))){fixed_domain}]{{FACLEX#LEX#99#56=15.685(1.000),FACLEX#TMP#56=0.563(0.100),FACLEX#XEME#99=16.002(1.000),RULE#lex=53.395(0.100)} -> 37.08247812581964}
+[P-T2] [P-T2] 	[4-4 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[3-4 :: >apply :: 3-3, 4-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-4 :: <apply :: 2-2, 3-4]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[1-4 :: <apply :: 1-1, 2-4]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[0-4 :: >apply :: 0-0, 1-4]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 59 : ==================
+[P-T2] [P-T2] what are the populations of the states through which the mississippi run
+(lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] Test parsing time 0.09sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [673.83] S : (lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (loc:<lo,<lo,t>> mississippi_river:r $1) (population:<lo,<i,t>> $1 $0)))))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: populations :- S\NP/NP : (lambda $0:e (lambda $1:e (population:<lo,<i,t>> $0 $1))){fixed_domain}]{{FACLEX#LEX#61#15=2.845(1.000),FACLEX#TMP#15=-0.693(0.100),FACLEX#XEME#61=11.168(1.000),RULE#lex=53.395(0.100)} -> 19.283534997076266}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (exists:<<e,t>,t> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2))))))){fixed_domain}]{{FACLEX#LEX#43#7=10.676(1.000),FACLEX#TMP#7=-0.068(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 40.67472512913882}
+[P-T2] [P-T2] 	[5-5 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-7 :: lex :: through :- PP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))){genlex}]{{FACLEX#LEX#2511#32=2.091(1.000),FACLEX#TMP#32=0.005(0.100),FACLEX#XEME#2511=9.818(1.000),RULE#lex=53.395(0.100)} -> 17.249056329792538}
+[P-T2] [P-T2] 	[8-8 :: lex :: which :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#24#29=12.981(1.000),FACLEX#TMP#29=-0.015(0.100),FACLEX#XEME#24=23.727(1.000),RULE#lex=53.395(0.100)} -> 42.04683011096072}
+[P-T2] [P-T2] 	[9-9 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#26#12=38.504(1.000),FACLEX#TMP#12=8.073(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 125.41948262730777}
+[P-T2] [P-T2] 	[10-10 :: lex :: mississippi :- NP : mississippi_river:r{genlex}]{{FACLEX#LEX#2514#84=7.441(1.000),FACLEX#TMP#84=7.879(0.100),FACLEX#XEME#2514=6.234(1.000),RULE#lex=53.395(0.100)} -> 19.802187744230622}
+[P-T2] [P-T2] 	[9-10 :: >apply :: 9-9, 10-10]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[11-11 :: lex :: run :- S\NP/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $1 $0))){genlex}]{{FACLEX#LEX#2513#14=2.227(1.000),FACLEX#TMP#14=5.124(0.100),FACLEX#XEME#2513=0.998(1.000),RULE#lex=53.395(0.100)} -> 9.07674096328896}
+[P-T2] [P-T2] 	[9-11 :: >trcomp1 :: 9-10, 11-11]{{RULE#>trcomp1=-0.689(0.100)} -> -0.06894571231442839}
+[P-T2] [P-T2] 	[8-11 :: >apply :: 8-8, 9-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-11 :: >apply+shift_pp :: 7-7, 8-11]{{RULE#>apply=44.560(0.100),RULE#shift_pp=3.941(0.100)} -> 4.850130798523295}
+[P-T2] [P-T2] 	[6-11 :: <apply :: 6-6, 7-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[5-11 :: <apply :: 5-6, 7-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[5-11 :: >apply :: 5-5, 6-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[4-11 :: >apply :: 4-4, 5-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[3-11 :: <apply :: 3-3, 4-11]{{RULE#<apply=4.892(0.100)} -> 0.48919678819902473}
+[P-T2] [P-T2] 	[2-11 :: >apply :: 2-2, 3-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[1-11 :: >apply :: 1-1, 2-11]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-11 :: >apply :: 0-0, 1-11]{{LOGEXP#CPP1#and:<t*,t>#state:<s,t>#population:<lo,<i,t>>=0.981(1.000),RULE#>apply=44.560(0.100)} -> 5.43684166350944}
+[P-T2] [P-T2] 60 : ==================
+[P-T2] [P-T2] what are the high points of states surrounding mississippi
+(lambda $0:e (exists:<<e,t>,t> (lambda $1:e (and:<t*,t> (state:<s,t> $1) (next_to:<lo,<lo,t>> $1 mississippi:s) (high_point:<e,<e,t>> $1 $0)))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.043000sec
+[P-T2] [P-T2] EXACT stats -- recording wrong parse with skipping: (lambda $0:e (state:<s,t> $0))
+[P-T2] [P-T2] [EXACT stats]  Record sloppy incorrect.
+[P-T2] [P-T2] WRONG
+[P-T2] [P-T2] [320.26] S : (lambda $0:e (state:<s,t> $0))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#6=31.414(1.000),RULE#lex=53.395(0.100)} -> 58.11009330313742}
+[P-T2] [P-T2] 	[1-1 :: lex :: are :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#4#22=7.876(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#4=15.703(1.000),RULE#lex=53.395(0.100)} -> 29.51582726340464}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#26#22=32.621(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#26=80.769(1.000),RULE#lex=53.395(0.100)} -> 119.32744040080463}
+[P-T2] [P-T2] 	[3-3 :: lex :: high :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[2-3 :: >skip :: 2-2, 3-3]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[4-4 :: lex :: points :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[2-4 :: >skip :: 2-3, 4-4]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[5-5 :: lex :: of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))){fixed_domain}]{{FACLEX#LEX#43#22=11.455(1.000),FACLEX#TMP#22=5.976(0.100),FACLEX#XEME#43=24.666(1.000),RULE#lex=53.395(0.100)} -> 42.0582889931077}
+[P-T2] [P-T2] 	[6-6 :: lex :: states :- N : (lambda $0:e (state:<s,t> $0)){fixed_domain}]{{FACLEX#LEX#100#27=14.867(1.000),FACLEX#TMP#27=5.531(0.100),FACLEX#XEME#100=15.305(1.000),RULE#lex=53.395(0.100)} -> 36.06511793122433}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-4, 5-6]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[7-7 :: lex :: surrounding :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[2-7 :: >skip :: 2-6, 7-7]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[8-8 :: lex :: mississippi :- EMPTY{skipping}]{{DYNSKIP=-1.000(1.000),RULE#lex=53.395(0.100)} -> 4.339526629825017}
+[P-T2] [P-T2] 	[2-8 :: >skip :: 2-7, 8-8]{{RULE#>skip=0.0(0.100)} -> 0.0}
+[P-T2] [P-T2] 	[1-8 :: >apply :: 1-1, 2-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] 	[0-8 :: >apply :: 0-0, 1-8]{{RULE#>apply=44.560(0.100)} -> 4.456045894323794}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] Feats: {DYNSKIP=-1.000(4.000),FACLEX#LEX#100#27=14.867(1.000),FACLEX#LEX#26#22=32.621(1.000),FACLEX#LEX#4#22=7.876(1.000),FACLEX#LEX#43#22=11.455(1.000),FACLEX#LEX#6#6=20.874(1.000),FACLEX#TMP#22=5.976(0.300),FACLEX#TMP#27=5.531(0.100),FACLEX#TMP#6=4.829(0.100),FACLEX#XEME#100=15.305(1.000),FACLEX#XEME#26=80.769(1.000),FACLEX#XEME#4=15.703(1.000),FACLEX#XEME#43=24.666(1.000),FACLEX#XEME#6=31.414(1.000),RULE#>apply=44.560(0.400),RULE#>skip=0.0(0.400),RULE#lex=53.395(0.900)}
+[P-T2] [P-T2] === EXACT statistics:
+Recall: 49.0/60.0 = 0.8166666666666667
+Precision: 49.0/53.0 = 0.9245283018867925
+F1: 0.8672566371681416
+SKIP Recall: 51.0/60.0 = 0.85
+SKIP Precision: 51.0/60.0 = 0.85
+SKIP F1: 0.85
+[P-T2] [P-T2] Total run time 3.6730 seconds
+[P-T2] [P-T2] ============ (Job test completed)
