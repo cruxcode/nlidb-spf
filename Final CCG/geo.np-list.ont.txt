@@ -1,44 +1,44 @@
 Maharashtra :- NP : Maharashtra:a
-Maharashtra :- NP : pkey_retriever:<c_type,ptype> Maharashtra:a
+Maharashtra :- NP : (pkey_retriever:<a,a> Maharashtra):a
 Haryana :- NP : Haryana:a
-Haryana :- NP : pkey_retriever:<c_type,ptype> Haryana:a
+Haryana :- NP : (pkey_retriever:<a,a> Haryana):a
 Mumbai :- NP : Mumbai:b
-Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Mumbai :- NP : Mumbai:b
-The Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+The Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Great Kurukshetra :- NP : Kurukshetra:b
-The Great Kurukshetra :- NP : pkey_retriever:<c_type,ptype> Kurukshetra:a
+The Great Kurukshetra :- NP : (pkey_retriever:<b,a> Kurukshetra):a
 Mumbai Vala :- NP : Mumbai:b
-Mumbai Vala :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai Vala :- NP : (pkey_retriever:<b,a> Mumbai):a
 Kurukshetra Vali :- NP : Kurukshetra:b
-Kurukshetra Vali :- NP : pkey_retriever:<c_type,ptype> Kurukshetra:a
+Kurukshetra Vali :- NP : (pkey_retriever:<b,a> Kurukshetra):a
 Kurukshetra :- NP : Kurukshetra:b
-Kurukshetra :- NP : pkey_retriever:<c_type,ptype> Kurukshetra:a
+Kurukshetra :- NP : (pkey_retriever:<b,a> Kurukshetra):a
 The Mumbai :- NP : Mumbai:b
-The Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+The Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Great Kurukshetra :- NP : Kurukshetra:b
-The Great Kurukshetra :- NP : pkey_retriever:<c_type,ptype> Kurukshetra:a
+The Great Kurukshetra :- NP : (pkey_retriever:<b,a> Kurukshetra):a
 Mumbai Vala :- NP : Mumbai:b
-Mumbai Vala :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai Vala :- NP : (pkey_retriever:<b,a> Mumbai):a
 Kurukshetra Vali :- NP : Kurukshetra:b
-Kurukshetra Vali :- NP : pkey_retriever:<c_type,ptype> Kurukshetra:a
+Kurukshetra Vali :- NP : (pkey_retriever:<b,a> Kurukshetra):a
 Mumbai :- NP : Mumbai:b
-Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Mumbai :- NP : Mumbai:b
-The Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+The Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Great Chandigarh :- NP : Chandigarh:b
-The Great Chandigarh :- NP : pkey_retriever:<c_type,ptype> Chandigarh:a
+The Great Chandigarh :- NP : (pkey_retriever:<b,a> Chandigarh):a
 Mumbai Vala :- NP : Mumbai:b
-Mumbai Vala :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai Vala :- NP : (pkey_retriever:<b,a> Mumbai):a
 Chandigarh Vali :- NP : Chandigarh:b
-Chandigarh Vali :- NP : pkey_retriever:<c_type,ptype> Chandigarh:a
+Chandigarh Vali :- NP : (pkey_retriever:<b,a> Chandigarh):a
 Chandigarh :- NP : Chandigarh:b
-Chandigarh :- NP : pkey_retriever:<c_type,ptype> Chandigarh:a
+Chandigarh :- NP : (pkey_retriever:<b,a> Chandigarh):a
 The Mumbai :- NP : Mumbai:b
-The Mumbai :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+The Mumbai :- NP : (pkey_retriever:<b,a> Mumbai):a
 The Great Chandigarh :- NP : Chandigarh:b
-The Great Chandigarh :- NP : pkey_retriever:<c_type,ptype> Chandigarh:a
+The Great Chandigarh :- NP : (pkey_retriever:<b,a> Chandigarh):a
 Mumbai Vala :- NP : Mumbai:b
-Mumbai Vala :- NP : pkey_retriever:<c_type,ptype> Mumbai:a
+Mumbai Vala :- NP : (pkey_retriever:<b,a> Mumbai):a
 Chandigarh Vali :- NP : Chandigarh:b
-Chandigarh Vali :- NP : pkey_retriever:<c_type,ptype> Chandigarh:a
+Chandigarh Vali :- NP : (pkey_retriever:<b,a> Chandigarh):a
