@@ -106,6 +106,7 @@ public class Main {
 			AdjObj.name = adjectiveElement.getElementsByTagName("AdjName").item(0).getTextContent();
 			AdjObj.type = adjectiveElement.getElementsByTagName("AdjType").item(0).getTextContent();
 			AdjObj.level = adjectiveElement.getElementsByTagName("AdjLevel").item(0).getTextContent();
+			//AdjObj.adjtype = adjectiveElement.getElementsByTagName("Max").item(0).getTextContent();
 			
 			AdjList.add(AdjObj);
 		}

@@ -91,11 +91,12 @@
 	                    	<AdjName>higher</AdjName>
 	                    	<AdjType>general</AdjType>
 	                    	<AdjLevel>1</AdjLevel>
-	                    </adjective>
+	                    	<Max>1</Max></adjective>
 	                    <adjective>
 	                    	<AdjName></AdjName>
 	                    	<AdjType></AdjType>
 	                    	<AdjLevel></AdjLevel>
+	                    	<Max>0</Max>
 	                    </adjective>
 	                </AdjectiveList>
 	                <PrepositionList>
@@ -144,11 +145,13 @@
 	                    	<AdjName></AdjName>
 	                    	<AdjType></AdjType>
 	                    	<AdjLevel></AdjLevel>
-	                    </adjective>
+	                    	<Max>0</Max>
+                        </adjective>
 	                    <adjective>
 	                    	<AdjName></AdjName>
 	                    	<AdjType></AdjType>
 	                    	<AdjLevel></AdjLevel>
+	                    	<Max>0</Max>
 	                    </adjective>
                     </AdjectiveList>
                     <PrepositionList>
@@ -198,11 +201,13 @@
                     	<AdjName></AdjName>
                     	<AdjType></AdjType>
                     	<AdjLevel></AdjLevel>
-                    </adjective>
+                    	<Max>0</Max>
+                        </adjective>
                     <adjective>
                     	<AdjName></AdjName>
                     	<AdjType></AdjType>
                     	<AdjLevel></AdjLevel>
+                    	<Max>0</Max>
                     </adjective>
                     </AdjectiveList>
                     <PrepositionList>

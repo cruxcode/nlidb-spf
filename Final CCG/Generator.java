@@ -126,6 +126,7 @@ public class Generator {
 			ArrayList<Column> ColumnList = RelationList.get(i).ColumnList;
 			Column PrimaryDetails = RelationList.get(i).PrimaryDetails;
 			
+			
 			for(int j=0; j<ColumnList.size(); j++) {
 				
 				ArrayList<String> ValueList = ColumnList.get(j).ValueList;
@@ -209,6 +210,7 @@ public class Generator {
 			
 			ArrayList<Column> ColumnList = RelationList.get(i).ColumnList;
 			Column PrimaryDetails = RelationList.get(i).PrimaryDetails;
+			String ptype = TrackType.get(PrimaryDetails.Type).toString();
 			
 			for(int j=0; j<ColumnList.size(); j++) {
 				
@@ -221,7 +223,7 @@ public class Generator {
 				for(int k=0; k<ValueList.size(); k++) {
 					
 					String ctype = (String)TrackConstant.get(ValueList.get(k));
-					np_file.NpGenerator(ValueList.get(k), ctype, Name, PosTag);
+					np_file.NpGenerator(ValueList.get(k), ctype, Name, PosTag,ptype);
 					
 					for(int l=0; l<Prefix.size(); l++) {
 						String prefix = Prefix.get(l) + " " + ValueList.get(l);
@@ -231,7 +233,7 @@ public class Generator {
 						ctype = (String)TrackConstant.get(prefix);
 						prefix = org_prefix;
 						
-						np_file.NpGenerator(prefix, ctype, Name, PosTag);
+						np_file.NpGenerator(prefix, ctype, Name, PosTag,ptype);
 					}
 					
 					for(int l=0; l<Postfix.size(); l++) {
@@ -242,7 +244,7 @@ public class Generator {
 						ctype = (String)TrackConstant.get(postfix);
 						postfix = org_postfix;
 						
-						np_file.NpGenerator(postfix, ctype, Name, PosTag);
+						np_file.NpGenerator(postfix, ctype, Name, PosTag,ptype);
 					}
 					
 				}
@@ -294,7 +296,7 @@ public class Generator {
 		schema.TrackConstant = TrackConstant;
 	}
 	public void Adjective_seed(Schema s, Seed seed_file, Predicate pred_file) {
-		String s1,s2,s3,s4;
+		String s1,s2,s3,s4,s5;
 		for(int i=0;i<s.RelationList.size();i++) {
 			for(int j=0;j<s.RelationList.get(i).ColumnList.size();j++) {
 				for(int k=0;k<s.RelationList.get(i).ColumnList.get(j).AdjectiveList.size();k++) {
@@ -302,11 +304,22 @@ public class Generator {
 					s2 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).level;
 					s3 = (pred_file.pred_dict.get(s.RelationList.get(i).ColumnList.get(j).Name)).get(1);
 					s4 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).type;
+					//s5 = s.RelationList.get(i).ColumnList.get(j).AdjectiveList.get(k).adjtype;
+					s5="1";
 					if(s4.equals("general")) {
-						seed_file.Adjectives(s1,s2,s3,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
-						seed_file.Adjectives(s1,s2,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
+						if(s5.equals("1")) {
+							seed_file.Adjectives(s1,s2,s3,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
+							seed_file.Adjectives(s1,s2,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
+						}else {
+							seed_file.Adjectives(s1,s2,s3,"<:<i,<i,t>>","argmin:<<e,t>,<<e,i>,e>>");
+							seed_file.Adjectives(s1,s2,"<:<i,<i,t>>","argmin:<<e,t>,<<e,i>,e>>");
+						}
 					}else {
-						seed_file.Adjectives(s1,s2,s3,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
+						if(s5.equals("1")) {
+							seed_file.Adjectives(s1,s2,s3,">:<i,<i,t>>","argmax:<<e,t>,<<e,i>,e>>");
+						}else {
+							seed_file.Adjectives(s1,s2,s3,"<:<i,<i,t>>","argmin:<<e,t>,<<e,i>,e>>");
+						}
 					}
 				}
 			}
@@ -368,8 +381,8 @@ public class Generator {
 					s1 = s.RelationList.get(i).ColumnList.get(j).PrepositionList.get(k).name;
 					s2 = s.TrackType.get(s.RelationList.get(i).PrimaryDetails.Type).toString();
 					s3 = s.TrackType.get(s.RelationList.get(i).ColumnList.get(j).Type).toString();
-					s4 = "pkeyReturner:<" + s3 + "," + s2 + ">";
-					s5 = "setReturner:<" + s2 + ",<" + s3 + ",t>>";
+					s4 = "pkeyretriever:<" + s3 + "," + s2 + ">";
+					s5 = "setretriever:<" + s2 + ",<" + s3 + ",t>>";
 					seed_file.Preposition(s1,s4,s5,s2);
 					
 				}
