@@ -110,7 +110,7 @@ class NpList{
     
     ArrayList<String> np_list = new ArrayList<String>();
     
-    public void NpGenerator(String value, String col_value, String c_type, String pos_tag, String ptype) {
+    public void NpGenerator(String value, String c_type, String col_value, String pos_tag, String ptype) {
     
 		String str = value + " :- " + pos_tag + " : " + col_value + ":" + c_type;
 		this.np_list.add(str);
