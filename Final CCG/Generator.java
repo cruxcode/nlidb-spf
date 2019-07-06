@@ -30,11 +30,17 @@ public class Generator {
 		}
 
         if(next.equals("t"))
-			next = "u";
+			next = "v";
 		if(next.equals("e"))
 			next = "f";
 		if(next.equals("i"))
 			next = "j";
+		if(next.equals("c"))
+			next = "d";
+		if(next.equals("s"))
+			next = "u";
+		if(next.equals("r"))
+			next = "w";
 		
 		lastsymb = next;
 		//System.out.println("aa "+lastsymb);

@@ -231,7 +231,13 @@ public class Main {
 	    	e.printStackTrace();
 	    }
 	    
-
+	SchemaObj.TrackType.put("state", "s");
+	SchemaObj.TrackType.put("city", "c");
+	SchemaObj.TrackType.put("state_prime", "s_pkey");
+	SchemaObj.TrackType.put("city_prime", "c_pkey");
+	SchemaObj.TrackType.put("river", "r");
+	SchemaObj.TrackType.put("river_prime", "r_pkey");
+	SchemaObj.TrackType.put("border_prime", "b_pkey");
 	Predicate pred_file = new Predicate();
 	Constant const_file = new Constant();
 	NpList np_file = new NpList();
@@ -244,6 +250,7 @@ public class Main {
 	SchemaObj.TrackType.put("entity", "e");
 	SchemaObj.TrackType.put("integer", "i");
 	SchemaObj.TrackType.put("truth", "t");
+	
 	genObj.symbol_giver(SchemaObj.Hierarchy, SchemaObj);
 	genObj.hGenerator(SchemaObj.Hierarchy, hierar_file.hierar_list); 
 	genObj.constant(SchemaObj, const_file);
