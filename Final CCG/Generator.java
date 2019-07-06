@@ -339,6 +339,7 @@ public class Generator {
 				s4.add(s3);
 				seed_file.ColGenerator(s1,s2,s4,"type2");
 				seed_file.ColGenerator(s1,s2,s4,"type3");
+				seed_file.ColGenerator(s1, s2, s4, "type4");
 				if((s.RelationList.get(i).ColumnList.get(j).VarType).equals("category")) {
 					seed_file.ColGenerator(s1,s2,s4,"type1");
 				}
