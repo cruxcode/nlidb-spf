@@ -1,0 +1,17 @@
+which state has mumbai
+(lambda $0:e (state:<a,<t,b>> $0 (city:<a,<c,t>> $0 mumbai:c)))
+
+name the rivers in maharashtra
+(river:<d,f> (pkey_retriever:<b,d> maharashtra:b))
+
+name the longest river in maharashtra
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<d,t> $0) (set_retriever:<d,<b,t>> $0 maharashtra:b))) (lambda $1:e (length:<d,i> $1)))
+
+what is the length of longest river in maharashtra
+(length:<d,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<d,t> $0) (set_retriever:<d,<b,t>> $0 maharashtra:b))) (lambda $1:e (length:<d,i> $1))))
+
+which states have area greater than area of haryana
+(lambda $0:e (state:<a,<t,b>> $0 (>:<i,<i,t>> (area:<a,i> $0) (area:<a,i> (pkey_retriever:<b,a> haryana:b)))))
+
+how long is ganga
+(length:<d,i> (pkey_retriever:<f,d> ganga:f))

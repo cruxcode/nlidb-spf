@@ -1,0 +1,11 @@
+(
+
+(g e)       // location
+(i e)       // integer
+(b g)       // state
+(c g)       // city
+(d g)       // river_prime
+(a g)       // state_prime
+(f g)       // river
+
+)
