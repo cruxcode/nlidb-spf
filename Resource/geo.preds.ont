@@ -102,6 +102,9 @@ elevation:<lo,i>
 equals:<e,<e,t>>
 argmax:<<e,t>,<<e,i>,e>>
 argmin:<<e,t>,<<e,i>,e>>
-
+length:<r_pkey,i>
+length:<r_pkey,<i,t>>
+length:<r_pkey,<t,i>>
+sum:<<e,t>,<<e,i>,i>>
 
 )
