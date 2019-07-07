@@ -81,15 +81,27 @@ pkey_retriever:<r,r_pkey>
 pkey_retriever:<s_pkey,c_pkey>
 pkey_retriever:<c_pkey,s_pkey>
 pkey_retriever:<s_pkey,r_pkey>
-setretriever:<r_pkey,<s_pkey,t>>
-setretriever:<s_pkey,<i,t>>
-setretriever:<c_pkey,<i,t>>
-setretriever:<b_pkey,<s_pkey,t>>
+set_retriever:<r_pkey,<s_pkey,t>>
+set_retriever:<s_pkey,<i,t>>
+set_retriever:<c_pkey,<i,t>>
+set_retriever:<b_pkey,<s_pkey,t>>
+set_retriever:<r_pkey,<r,t>>
+set_retriever:<s_pkey,<s,t>>
+set_retriever:<c_pkey,<c,t>>
+pkey_retriever:<i,r_pkey>
+pkey_retriever:<i,s_pkey>
+pkey_retriever:<i,c_pkey>
+set_retriever:<r_pkey,<i,t>>
+set_retriever:<c_pkey,<s_pkey,t>>
+pkey_retriever:<s_pkey,b_pkey>
+pkey_retriever:<s,b_pkey>
+set_retriever:<b_pkey,<s,t>>
 size:<lo,i>
 population:<lo,i>
 elevation:<lo,i>
 equals:<e,<e,t>>
 argmax:<<e,t>,<<e,i>,e>>
+argmin:<<e,t>,<<e,i>,e>>
 
 
 )
