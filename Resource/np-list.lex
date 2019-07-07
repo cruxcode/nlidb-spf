@@ -6,7 +6,7 @@ haryana :- NP : haryana:s
 the maharashtra :- NP : maharashtra:s
 the state of haryana :- NP : haryana:s
 maharashtra state :- NP : maharashtra:s
-madhya pradesh :- NP : madhya pradesh:s
+madhya pradesh :- NP : madhya_pradesh:s
 the maharashtra :- NP : maharashtra:s
 the state of haryana :- NP : haryana:s
 maharashtra state :- NP : maharashtra:s
@@ -18,7 +18,7 @@ jharkhand :- NP : jharkhand:s
 the maharashtra :- NP : maharashtra:s
 the state of haryana :- NP : haryana:s
 maharashtra state :- NP : maharashtra:s
-uttar pradesh :- NP : uttar pradesh:s
+uttar pradesh :- NP : uttar_pradesh:s
 the maharashtra :- NP : maharashtra:s
 the state of haryana :- NP : haryana:s
 maharashtra state :- NP : maharashtra:s

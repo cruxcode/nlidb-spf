@@ -16,6 +16,12 @@ city:<s_pkey,<t,c_pkey>>
 area:<s_pkey,i>
 area:<s_pkey,<i,t>>
 area:<s_pkey,<t,i>>
+size:<s_pkey,i>
+size:<s_pkey,<i,t>>
+size:<s_pkey,<t,i>>
+size:<c_pkey,i>
+size:<c_pkey,<i,t>>
+size:<c_pkey,<t,i>>
 population:<s_pkey,i>
 population:<s_pkey,<i,t>>
 population:<s_pkey,<t,i>>
@@ -97,6 +103,7 @@ pkey_retriever:<s_pkey,b_pkey>
 pkey_retriever:<s,b_pkey>
 set_retriever:<b_pkey,<s,t>>
 size:<lo,i>
+
 population:<lo,i>
 elevation:<lo,i>
 equals:<e,<e,t>>
