@@ -22,6 +22,9 @@ size:<s_pkey,<t,i>>
 size:<c_pkey,i>
 size:<c_pkey,<i,t>>
 size:<c_pkey,<t,i>>
+area:<c_pkey,i>
+area:<c_pkey,<i,t>>
+area:<c_pkey,<t,i>>
 population:<s_pkey,i>
 population:<s_pkey,<i,t>>
 population:<s_pkey,<t,i>>
