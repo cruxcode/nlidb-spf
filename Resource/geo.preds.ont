@@ -1,5 +1,6 @@
 (
-
+exists:<<e,t>,t>
+the:<<e,t>,e>
 state_prime:<s_pkey,t>
 state_prime:<s_pkey,s_pkey>
 state_prime:<s_pkey,<s_pkey,t>>
