@@ -49,5 +49,15 @@ count:<<e,t>,i>
 count:<<e,e>,i>
 <:<i,<i,t>>
 >:<i,<i,t>>
+pkey_retriever:<s,s_pkey>
+pkey_retriever:<c,c_pkey>
+pkey_retriever:<r,r_pkey>
+pkey_retriever:<s_pkey,c_pkey>
+pkey_retriever:<c_pkey,s_pkey>
+pkey_retriever:<s_pkey,r_pkey>
+setretriever:<r_pkey,<s_pkey,t>>
+setretriever:<s_pkey,<i,t>>
+setretriever:<c_pkey,<i,t>>
+setretriever:<b_pkey,<s_pkey,t>>
 
 )
