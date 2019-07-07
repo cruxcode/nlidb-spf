@@ -2,12 +2,12 @@
 
 (i e)	// integer / number...
 (pkey e) //primary_key
-(s_pkey pkey)
-(c_pkey pkey)
-(r_pkey pkey)
-(b_pkey pkey)
+(s_pkey pkey) // state primary key
+(c_pkey pkey) //city primary key
+(r_pkey pkey) //river primary key
+(b_pkey pkey) //border primary key
 (n e)		//name
-(a e)		// location
+(lo e)		// location
 (s a) 		// state
 (c a)		// city
 (r a)		// river

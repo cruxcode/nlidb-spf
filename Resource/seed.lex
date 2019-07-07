@@ -16,7 +16,7 @@ which :- S/NP : (lambda $0:e $0)
 how many :- S/NP : (lambda $0:e $0)
 how :- S/NP : (lambda $0:e $0)
 what :- S/NP : (lambda $0:e $0)
-where :- S/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1)))
+//where :- S/NP : (lambda $0:e (lambda $1:e (loc:<lo,<lo,t>> $0 $1)))
 
 // <e,t> nouns
 
