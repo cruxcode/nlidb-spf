@@ -69,6 +69,7 @@ state:<b_pkey,<t,s_pkey>>
 next_to:<s_pkey,t>
 next_to:<b_pkey,s_pkey>
 next_to:<b_pkey,<s_pkey,t>>
+next_to:<s_pkey,<b_pkey,t>>
 next_to:<b_pkey,<t,s_pkey>>
 next_to:<s,t>
 next_to:<b_pkey,s>
