@@ -1,0 +1,295 @@
+[P-T2] [P-T2] ============ (Job test started)
+[P-T2] [P-T2] 1 : ==================
+[P-T2] [P-T2] what is the population of mumbai
+(population:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [142.48] S : (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#204#93=11.997(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#204=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.56241641781288}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#101#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#101=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#121#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#121=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[3-3 :: lex :: population :- NP/NP : (lambda $0:e (population:<c_pkey,i> $0)){fixed_domain}]{{FACLEX#LEX#27#8=10.000(1.000),FACLEX#TMP#8=0.400(0.100),FACLEX#XEME#27=10.218(1.000),RULE#lex=4.785(0.100)} -> 20.736532177035574}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#152#99=12.098(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#152=12.098(1.000),RULE#lex=4.785(0.100)} -> 24.7545627360353}
+[P-T2] [P-T2] 	[5-5 :: lex :: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c){fixed_domain}]{{FACLEX#LEX#247#72=10.667(1.000),FACLEX#TMP#72=0.067(0.100),FACLEX#XEME#247=10.667(1.000),RULE#lex=4.785(0.100)} -> 21.819235355182606}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 2 : ==================
+[P-T2] [P-T2] city in maharashtra
+(city:<c_pkey,c> (pkey_retriever:<s_pkey,c_pkey> (pkey_retriever:<s,s_pkey> maharashtra:s)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (city:<c_pkey,c> (pkey_retriever:<s_pkey,c_pkey> (pkey_retriever:<s,s_pkey> maharashtra:s)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [68.82] S : (city:<c_pkey,c> (pkey_retriever:<s_pkey,c_pkey> (pkey_retriever:<s,s_pkey> maharashtra:s)))
+[P-T2] [P-T2] 	[0-0 :: lex :: city :- S/PP : (lambda $0:e (city:<c_pkey,c> $0)){fixed_domain}]{{FACLEX#LEX#48#3=10.444(1.000),FACLEX#TMP#3=-0.011(0.100),FACLEX#XEME#48=10.444(1.000),RULE#lex=4.785(0.100)} -> 21.365647279532322}
+[P-T2] [P-T2] 	[1-1 :: lex :: in :- PP/NP : (lambda $0:e (pkey_retriever:<s_pkey,c_pkey> $0)){fixed_domain}]{{FACLEX#LEX#43#27=10.444(1.000),FACLEX#TMP#27=-0.074(0.100),FACLEX#XEME#43=10.444(1.000),RULE#lex=4.785(0.100)} -> 21.359349354338974}
+[P-T2] [P-T2] 	[2-2 :: lex :: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s){fixed_domain}]{{FACLEX#LEX#147#69=12.276(1.000),FACLEX#TMP#69=0.060(0.100),FACLEX#XEME#147=12.732(1.000),RULE#lex=4.785(0.100)} -> 25.492448940731403}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-0, 1-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 3 : ==================
+[P-T2] [P-T2] largest city in maharashtra by area
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [132.77] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: largest :- S/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#429#93=5.977(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#429=5.977(1.000),RULE#lex=4.785(0.100)} -> 12.522136405285824}
+[P-T2] [P-T2] 	[1-1 :: lex :: city :- N : (lambda $0:e (city:<c_pkey,t> $0)){fixed_domain}]{{FACLEX#LEX#350#91=14.978(1.000),FACLEX#TMP#91=0.498(0.100),FACLEX#XEME#350=14.978(1.000),RULE#lex=4.785(0.100)} -> 30.484782958388347}
+[P-T2] [P-T2] 	[2-2 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (set_retriever:<c_pkey,<s_pkey,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#162#85=5.144(1.000),FACLEX#TMP#85=0.513(0.100),FACLEX#XEME#162=14.978(1.000),RULE#lex=4.785(0.100)} -> 20.651895479058865}
+[P-T2] [P-T2] 	[3-3 :: lex :: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s){fixed_domain}]{{FACLEX#LEX#147#69=12.276(1.000),FACLEX#TMP#69=0.060(0.100),FACLEX#XEME#147=12.732(1.000),RULE#lex=4.785(0.100)} -> 25.492448940731403}
+[P-T2] [P-T2] 	[2-3 :: >apply :: 2-2, 3-3]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-3 :: >thatless :: 1-1, 2-3]{{RULE#>thatless=0.513(0.100)} -> 0.051267647590354404}
+[P-T2] [P-T2] 	[4-4 :: lex :: by :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))){fixed_domain}]{{FACLEX#LEX#161#107=4.978(1.000),FACLEX#TMP#107=0.498(0.100),FACLEX#XEME#161=14.978(1.000),RULE#lex=4.785(0.100)} -> 20.48478295838836}
+[P-T2] [P-T2] 	[1-4 :: >trcomp1 :: 1-3, 4-4]{{RULE#>trcomp1=0.249(0.100)} -> 0.02490619628715698}
+[P-T2] [P-T2] 	[5-5 :: lex :: area :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (area:<c_pkey,i> $2)))){genlex}]{{FACLEX#LEX#430#42=5.354(1.000),FACLEX#TMP#42=1.183(0.100),FACLEX#XEME#430=10.377(1.000),RULE#lex=4.785(0.100)} -> 16.327161608332613}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-4, 5-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{LOGEXP#CPP1#and:<t*,t>#set_retriever:<c_pkey,<s_pkey,t>>#city:<c_pkey,t>=5.829(1.000),RULE#>apply=2.992(0.100)} -> 6.128581697632799}
+[P-T2] [P-T2] 4 : ==================
+[P-T2] [P-T2] area of the largest city in haryana
+(area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [165.23] S : (area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] 	[0-0 :: lex :: area :- S/NP : (lambda $0:e (area:<c_pkey,i> $0)){genlex}]{{FACLEX#LEX#430#49=2.653(1.000),FACLEX#TMP#49=-0.022(0.100),FACLEX#XEME#430=10.377(1.000),RULE#lex=4.785(0.100)} -> 13.505787551339349}
+[P-T2] [P-T2] 	[1-1 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#152#99=12.098(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#152=12.098(1.000),RULE#lex=4.785(0.100)} -> 24.7545627360353}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#121#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#121=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[3-3 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (area:<c_pkey,i> $2)))){genlex}]{{FACLEX#LEX#433#42=10.445(1.000),FACLEX#TMP#42=1.183(0.100),FACLEX#XEME#433=10.445(1.000),RULE#lex=4.785(0.100)} -> 21.487358802810547}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c_pkey,t> $0)){fixed_domain}]{{FACLEX#LEX#350#91=14.978(1.000),FACLEX#TMP#91=0.498(0.100),FACLEX#XEME#350=14.978(1.000),RULE#lex=4.785(0.100)} -> 30.484782958388347}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (set_retriever:<c_pkey,<s_pkey,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#162#85=5.144(1.000),FACLEX#TMP#85=0.513(0.100),FACLEX#XEME#162=14.978(1.000),RULE#lex=4.785(0.100)} -> 20.651895479058865}
+[P-T2] [P-T2] 	[6-6 :: lex :: haryana :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s){fixed_domain}]{{FACLEX#LEX#154#26=8.528(1.000),FACLEX#TMP#26=0.968(0.100),FACLEX#XEME#154=13.316(1.000),RULE#lex=4.785(0.100)} -> 22.419877641692405}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[4-6 :: >thatless :: 4-4, 5-6]{{RULE#>thatless=0.513(0.100)} -> 0.051267647590354404}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#set_retriever:<c_pkey,<s_pkey,t>>#city:<c_pkey,t>=5.829(1.000),RULE#>apply=2.992(0.100)} -> 6.128581697632799}
+[P-T2] [P-T2] 5 : ==================
+[P-T2] [P-T2] population of maharashtra
+(population:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [69.96] S : (population:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] 	[0-0 :: lex :: population :- S/PP : (lambda $0:e (population:<s_pkey,i> $0)){fixed_domain}]{{FACLEX#LEX#113#3=12.644(1.000),FACLEX#TMP#3=-0.011(0.100),FACLEX#XEME#113=12.724(1.000),RULE#lex=4.785(0.100)} -> 25.84565876642225}
+[P-T2] [P-T2] 	[1-1 :: lex :: of :- PP/NP : (lambda $0:e (pkey_retriever:<s,s_pkey> $0)){fixed_domain}]{{FACLEX#LEX#135#27=9.682(1.000),FACLEX#TMP#27=-0.074(0.100),FACLEX#XEME#135=9.682(1.000),RULE#lex=4.785(0.100)} -> 19.83525346473187}
+[P-T2] [P-T2] 	[2-2 :: lex :: maharashtra :- NP : maharashtra:s{fixed_domain}]{{FACLEX#LEX#147#137=10.455(1.000),FACLEX#TMP#137=0.151(0.100),FACLEX#XEME#147=12.732(1.000),RULE#lex=4.785(0.100)} -> 23.681129930236548}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-0, 1-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 6 : ==================
+[P-T2] [P-T2] area of maharashtra
+(area:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] Test parsing time 0.03sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [57.67] S : (area:<s_pkey,i> (pkey_retriever:<s,s_pkey> maharashtra:s))
+[P-T2] [P-T2] 	[0-0 :: lex :: area :- S/PP : (lambda $0:e (area:<s_pkey,i> $0)){fixed_domain}]{{FACLEX#LEX#4#3=7.038(1.000),FACLEX#TMP#3=-0.011(0.100),FACLEX#XEME#4=6.039(1.000),RULE#lex=4.785(0.100)} -> 13.554759180245263}
+[P-T2] [P-T2] 	[1-1 :: lex :: of :- PP/NP : (lambda $0:e (pkey_retriever:<s,s_pkey> $0)){fixed_domain}]{{FACLEX#LEX#135#27=9.682(1.000),FACLEX#TMP#27=-0.074(0.100),FACLEX#XEME#135=9.682(1.000),RULE#lex=4.785(0.100)} -> 19.83525346473187}
+[P-T2] [P-T2] 	[2-2 :: lex :: maharashtra :- NP : maharashtra:s{fixed_domain}]{{FACLEX#LEX#147#137=10.455(1.000),FACLEX#TMP#137=0.151(0.100),FACLEX#XEME#147=12.732(1.000),RULE#lex=4.785(0.100)} -> 23.681129930236548}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-0, 1-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 7 : ==================
+[P-T2] [P-T2] how large is the largest city in haryana
+(area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] Test parsing time 0.05sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [190.70] S : (area:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (area:<c_pkey,i> $1))))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#165#93=10.999(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#165=10.999(1.000),RULE#lex=4.785(0.100)} -> 22.566608094214477}
+[P-T2] [P-T2] 	[1-1 :: lex :: large :- NP/NP : (lambda $0:e (area:<c_pkey,i> $0)){genlex}]{{FACLEX#LEX#434#8=7.896(1.000),FACLEX#TMP#8=0.400(0.100),FACLEX#XEME#434=7.896(1.000),RULE#lex=4.785(0.100)} -> 16.30990950322236}
+[P-T2] [P-T2] 	[2-2 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#101#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#101=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[3-3 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#121#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#121=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[4-4 :: lex :: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (area:<c_pkey,i> $2)))){genlex}]{{FACLEX#LEX#433#42=10.445(1.000),FACLEX#TMP#42=1.183(0.100),FACLEX#XEME#433=10.445(1.000),RULE#lex=4.785(0.100)} -> 21.487358802810547}
+[P-T2] [P-T2] 	[5-5 :: lex :: city :- N : (lambda $0:e (city:<c_pkey,t> $0)){fixed_domain}]{{FACLEX#LEX#350#91=14.978(1.000),FACLEX#TMP#91=0.498(0.100),FACLEX#XEME#350=14.978(1.000),RULE#lex=4.785(0.100)} -> 30.484782958388347}
+[P-T2] [P-T2] 	[6-6 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (set_retriever:<c_pkey,<s_pkey,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#162#85=5.144(1.000),FACLEX#TMP#85=0.513(0.100),FACLEX#XEME#162=14.978(1.000),RULE#lex=4.785(0.100)} -> 20.651895479058865}
+[P-T2] [P-T2] 	[7-7 :: lex :: haryana :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s){fixed_domain}]{{FACLEX#LEX#154#26=8.528(1.000),FACLEX#TMP#26=0.968(0.100),FACLEX#XEME#154=13.316(1.000),RULE#lex=4.785(0.100)} -> 22.419877641692405}
+[P-T2] [P-T2] 	[6-7 :: >apply :: 6-6, 7-7]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[5-7 :: >thatless :: 5-5, 6-7]{{RULE#>thatless=0.513(0.100)} -> 0.051267647590354404}
+[P-T2] [P-T2] 	[4-7 :: >apply :: 4-4, 5-7]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[3-7 :: >apply :: 3-3, 4-7]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-7 :: >apply :: 2-2, 3-7]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-7 :: >apply :: 1-1, 2-7]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-7 :: >apply :: 0-0, 1-7]{{LOGEXP#CPP1#and:<t*,t>#set_retriever:<c_pkey,<s_pkey,t>>#city:<c_pkey,t>=5.829(1.000),RULE#>apply=2.992(0.100)} -> 6.128581697632799}
+[P-T2] [P-T2] 8 : ==================
+[P-T2] [P-T2] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T2] [P-T2] Test parsing time 0.02sec
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] too many parses
+[P-T2] [P-T2] 2 parses:
+[P-T2] [P-T2]   [S72.64] S : (next_to:<b_pkey,<s_pkey,t>> (the:<<e,t>,e> (lambda $0:e (state:<s,t> $0))) (pkey_retriever:<s,s_pkey> rajasthan:s))
+[P-T2] [P-T2] Calculated score: 72.644218
+[P-T2] [P-T2] Features: {FACLEX#LEX#140#85=10.000(1.000),FACLEX#LEX#324#91=10.000(1.000),FACLEX#LEX#38#98=0.0(1.000),FACLEX#LEX#398#69=10.000(1.000),FACLEX#TMP#69=0.060(0.100),FACLEX#TMP#85=0.513(0.100),FACLEX#TMP#91=0.498(0.100),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#140=10.000(1.000),FACLEX#XEME#324=10.000(1.000),FACLEX#XEME#38=10.000(1.000),FACLEX#XEME#398=10.000(1.000),RULE#>apply=2.992(0.200),RULE#>trcomp1=0.249(0.100),RULE#lex=4.785(0.400)}
+[P-T2] [P-T2]   [S72.64] S : (next_to:<b_pkey,<s_pkey,t>> (the:<<e,t>,e> (lambda $0:e (state:<s_pkey,t> $0))) (pkey_retriever:<s,s_pkey> rajasthan:s))
+[P-T2] [P-T2] Calculated score: 72.644218
+[P-T2] [P-T2] Features: {FACLEX#LEX#140#85=10.000(1.000),FACLEX#LEX#185#91=10.000(1.000),FACLEX#LEX#38#98=0.0(1.000),FACLEX#LEX#398#69=10.000(1.000),FACLEX#TMP#69=0.060(0.100),FACLEX#TMP#85=0.513(0.100),FACLEX#TMP#91=0.498(0.100),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#140=10.000(1.000),FACLEX#XEME#185=10.000(1.000),FACLEX#XEME#38=10.000(1.000),FACLEX#XEME#398=10.000(1.000),RULE#>apply=2.992(0.200),RULE#>trcomp1=0.249(0.100),RULE#lex=4.785(0.400)}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] 9 : ==================
+[P-T2] [P-T2] how many states have cities named auragabad
+(count:<<e,e>,i> (lambda $0:e (state:<c_pkey,<t,s_pkey>> $0 (city:<c_pkey,<c,t>> $0 aurangabad:c))))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.031000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 10 : ==================
+[P-T2] [P-T2] what states neighbor jharkhand
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> jharkhand:s))))
+[P-T2] [P-T2] Test parsing time 0.05sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.005000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 11 : ==================
+[P-T2] [P-T2] population of kota
+(population:<c_pkey,i> (pkey_retriever:<c,c_pkey> kota:c))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> kota:c))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [64.87] S : (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> kota:c))
+[P-T2] [P-T2] 	[0-0 :: lex :: population :- S/PP : (lambda $0:e (population:<c_pkey,i> $0)){fixed_domain}]{{FACLEX#LEX#27#3=10.218(1.000),FACLEX#TMP#3=-0.011(0.100),FACLEX#XEME#27=10.218(1.000),RULE#lex=4.785(0.100)} -> 20.913556351391815}
+[P-T2] [P-T2] 	[1-1 :: lex :: of :- PP/NP : (lambda $0:e (pkey_retriever:<c,c_pkey> $0)){fixed_domain}]{{FACLEX#LEX#167#27=11.198(1.000),FACLEX#TMP#27=-0.074(0.100),FACLEX#XEME#167=11.198(1.000),RULE#lex=4.785(0.100)} -> 22.8667796433665}
+[P-T2] [P-T2] 	[2-2 :: lex :: kota :- NP : kota:c{fixed_domain}]{{FACLEX#LEX#305#137=10.000(1.000),FACLEX#TMP#137=0.151(0.100),FACLEX#XEME#305=10.000(1.000),RULE#lex=4.785(0.100)} -> 20.493594302499087}
+[P-T2] [P-T2] 	[1-2 :: >apply :: 1-1, 2-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-2 :: >apply :: 0-0, 1-2]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 12 : ==================
+[P-T2] [P-T2] how many citizens live in jaipur
+(population:<c_pkey,i> (pkey_retriever:<c,c_pkey> jaipur:c))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> jaipur:c))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [86.70] S : (population:<c_pkey,i> (pkey_retriever:<c,c_pkey> jaipur:c))
+[P-T2] [P-T2] 	[0-0 :: lex :: how :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#165#93=10.999(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#165=10.999(1.000),RULE#lex=4.785(0.100)} -> 22.566608094214477}
+[P-T2] [P-T2] 	[1-1 :: lex :: many :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#435#99=0.999(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#435=0.999(1.000),RULE#lex=4.785(0.100)} -> 2.5577936192105373}
+[P-T2] [P-T2] 	[2-2 :: lex :: citizens :- NP/NP : (lambda $0:e $0){genlex}]{{FACLEX#LEX#436#99=0.999(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#436=0.999(1.000),RULE#lex=4.785(0.100)} -> 2.5577936192105373}
+[P-T2] [P-T2] 	[3-3 :: lex :: live :- NP/NP : (lambda $0:e (population:<c_pkey,i> $0)){fixed_domain}]{{FACLEX#LEX#19#8=10.999(1.000),FACLEX#TMP#8=0.400(0.100),FACLEX#XEME#19=10.999(1.000),RULE#lex=4.785(0.100)} -> 22.516830972554867}
+[P-T2] [P-T2] 	[4-4 :: lex :: in :- NP/NP : (lambda $0:e (pkey_retriever:<c,c_pkey> $0)){fixed_domain}]{{FACLEX#LEX#105#8=0.999(1.000),FACLEX#TMP#8=0.400(0.100),FACLEX#XEME#105=10.999(1.000),RULE#lex=4.785(0.100)} -> 12.516830972554837}
+[P-T2] [P-T2] 	[5-5 :: lex :: jaipur :- NP : jaipur:c{fixed_domain}]{{FACLEX#LEX#369#137=10.999(1.000),FACLEX#TMP#137=0.151(0.100),FACLEX#XEME#369=10.999(1.000),RULE#lex=4.785(0.100)} -> 22.49199558147591}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 13 : ==================
+[P-T2] [P-T2] what rivers flow through haryana
+(lambda $0:e (river:<r_pkey,<t,r>> $0 (state:<r_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> haryana:s))))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.002000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 14 : ==================
+[P-T2] [P-T2] what is the river that cross-over madhya_pradesh
+(lambda $0:e (river:<r_pkey,<t,r>> $0 (state:<r_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> madhya_pradesh:s))))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.034000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 15 : ==================
+[P-T2] [P-T2] which states border haryana
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> haryana:s))))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.004000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 16 : ==================
+[P-T2] [P-T2] what is the area of mumbai
+(area:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] Test parsing time 0.01sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (area:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [134.63] S : (area:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#204#93=11.997(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#204=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.56241641781288}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#101#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#101=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#121#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#121=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[3-3 :: lex :: area :- NP/NP : (lambda $0:e (area:<c_pkey,i> $0)){genlex}]{{FACLEX#LEX#430#8=1.997(1.000),FACLEX#TMP#8=0.400(0.100),FACLEX#XEME#430=10.377(1.000),RULE#lex=4.785(0.100)} -> 12.892236759590098}
+[P-T2] [P-T2] 	[4-4 :: lex :: of :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#152#99=12.098(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#152=12.098(1.000),RULE#lex=4.785(0.100)} -> 24.7545627360353}
+[P-T2] [P-T2] 	[5-5 :: lex :: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c){fixed_domain}]{{FACLEX#LEX#247#72=10.667(1.000),FACLEX#TMP#72=0.067(0.100),FACLEX#XEME#247=10.667(1.000),RULE#lex=4.785(0.100)} -> 21.819235355182606}
+[P-T2] [P-T2] 	[4-5 :: >apply :: 4-4, 5-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[3-5 :: >apply :: 3-3, 4-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-5 :: >apply :: 2-2, 3-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-5 :: >apply :: 1-1, 2-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-5 :: >apply :: 0-0, 1-5]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 17 : ==================
+[P-T2] [P-T2] what is the biggest city in maharashtra
+(argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (size:<c_pkey,i> $1)))
+[P-T2] [P-T2] Test parsing time 0.04sec
+[P-T2] [P-T2] EXACT stats -- recording correct parse: (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (size:<c_pkey,i> $1)))
+[P-T2] [P-T2] [EXACT stats]  Record correct.
+[P-T2] [P-T2] CORRECT
+[P-T2] [P-T2] [164.38] S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> maharashtra:s)))) (lambda $1:e (size:<c_pkey,i> $1)))
+[P-T2] [P-T2] 	[0-0 :: lex :: what :- S/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#204#93=11.997(1.000),FACLEX#TMP#93=0.897(0.100),FACLEX#XEME#204=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.56241641781288}
+[P-T2] [P-T2] 	[1-1 :: lex :: is :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#101#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#101=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[2-2 :: lex :: the :- NP/NP : (lambda $0:e $0){fixed_domain}]{{FACLEX#LEX#121#99=11.997(1.000),FACLEX#TMP#99=0.809(0.100),FACLEX#XEME#121=11.997(1.000),RULE#lex=4.785(0.100)} -> 24.553601942809}
+[P-T2] [P-T2] 	[3-3 :: lex :: biggest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<c_pkey,i> $2)))){genlex}]{{FACLEX#LEX#437#42=3.056(1.000),FACLEX#TMP#42=1.183(0.100),FACLEX#XEME#437=3.056(1.000),RULE#lex=4.785(0.100)} -> 6.7091315255844295}
+[P-T2] [P-T2] 	[4-4 :: lex :: city :- N : (lambda $0:e (city:<c_pkey,t> $0)){fixed_domain}]{{FACLEX#LEX#350#91=14.978(1.000),FACLEX#TMP#91=0.498(0.100),FACLEX#XEME#350=14.978(1.000),RULE#lex=4.785(0.100)} -> 30.484782958388347}
+[P-T2] [P-T2] 	[5-5 :: lex :: in :- S\NP/NP : (lambda $0:e (lambda $1:e (set_retriever:<c_pkey,<s_pkey,t>> $1 $0))){fixed_domain}]{{FACLEX#LEX#162#85=5.144(1.000),FACLEX#TMP#85=0.513(0.100),FACLEX#XEME#162=14.978(1.000),RULE#lex=4.785(0.100)} -> 20.651895479058865}
+[P-T2] [P-T2] 	[6-6 :: lex :: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s){fixed_domain}]{{FACLEX#LEX#147#69=12.276(1.000),FACLEX#TMP#69=0.060(0.100),FACLEX#XEME#147=12.732(1.000),RULE#lex=4.785(0.100)} -> 25.492448940731403}
+[P-T2] [P-T2] 	[5-6 :: >apply :: 5-5, 6-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[4-6 :: >thatless :: 4-4, 5-6]{{RULE#>thatless=0.513(0.100)} -> 0.051267647590354404}
+[P-T2] [P-T2] 	[3-6 :: >apply :: 3-3, 4-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[2-6 :: >apply :: 2-2, 3-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[1-6 :: >apply :: 1-1, 2-6]{{RULE#>apply=2.992(0.100)} -> 0.29916316525534875}
+[P-T2] [P-T2] 	[0-6 :: >apply :: 0-0, 1-6]{{LOGEXP#CPP1#and:<t*,t>#set_retriever:<c_pkey,<s_pkey,t>>#city:<c_pkey,t>=5.829(1.000),RULE#>apply=2.992(0.100)} -> 6.128581697632799}
+[P-T2] [P-T2] 18 : ==================
+[P-T2] [P-T2] what are the populations of the states through which the ganga river run
+(lambda $0:e (population:<s_pkey,i> (state:<r_pkey,<t,s_pkey>> $0 (river:<r_pkey,<r,t>> $0 ganga:r))))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.109000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] 19 : ==================
+[P-T2] [P-T2] what rivers flow through uttrakhand
+(lambda $0:e (river:<r_pkey,<t,r>> $0 (state:<r_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> uttrakhand:s))))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.000000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] === EXACT statistics:
+Recall: 11.0/19.0 = 0.5789473684210527
+Precision: 11.0/11.0 = 1.0
+F1: 0.7333333333333334
+SKIP Recall: 11.0/19.0 = 0.5789473684210527
+SKIP Precision: 11.0/12.0 = 0.9166666666666666
+SKIP F1: 0.7096774193548387
+[P-T2] [P-T2] Total run time 0.5080 seconds
+[P-T2] [P-T2] ============ (Job test completed)
