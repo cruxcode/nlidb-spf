@@ -1,0 +1,21 @@
+[P-T2] [P-T2] ============ (Job test started)
+[P-T2] [P-T2] 1 : ==================
+[P-T2] [P-T2] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.007000sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] === EXACT statistics:
+Recall: 0.0/1.0 = 0.0
+Precision: 0.0/0.0 = 0.0
+F1: 0.0
+SKIP Recall: 0.0/1.0 = 0.0
+SKIP Precision: 0.0/0.0 = 0.0
+SKIP F1: 0.0
+[P-T2] [P-T2] Total run time 0.0100 seconds
+[P-T2] [P-T2] ============ (Job test completed)

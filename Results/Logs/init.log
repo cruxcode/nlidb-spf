@@ -1,0 +1,874 @@
+[P-T2] [P-T2] Set: DYNSKIP -> -1.0
+[P-T2] [P-T2] Adding entry: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c)
+[P-T2] [P-T2] Adding entry: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c)
+[P-T2] [P-T2] Adding entry: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1))))
+[P-T2] [P-T2] Adding entry: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c)
+[P-T2] [P-T2] Adding entry: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s)
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: number :- S/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1))))
+[P-T2] [P-T2] Adding entry: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: what :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))
+[P-T2] [P-T2] Adding entry: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c)
+[P-T2] [P-T2] Adding entry: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c)
+[P-T2] [P-T2] Adding entry: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c)
+[P-T2] [P-T2] Adding entry: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: largest :- NP/N/N : (lambda $0:<e,t> (lambda $1:<e,e> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3)))))
+[P-T2] [P-T2] Adding entry: no :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1))))
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: smallest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c)
+[P-T2] [P-T2] Adding entry: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c)
+[P-T2] [P-T2] Adding entry: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c)
+[P-T2] [P-T2] Adding entry: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c)
+[P-T2] [P-T2] Adding entry: border :- NP/NP : (lambda $0:e (next_to:<b_pkey,s_pkey> $0))
+[P-T2] [P-T2] Adding entry: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c)
+[P-T2] [P-T2] Adding entry: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c)
+[P-T2] [P-T2] Adding entry: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: is :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2)))))
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: that :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c)
+[P-T2] [P-T2] Adding entry: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c)
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c)
+[P-T2] [P-T2] Adding entry: in feet :- S\S : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c)
+[P-T2] [P-T2] Adding entry: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c)
+[P-T2] [P-T2] Adding entry: how many :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))))
+[P-T2] [P-T2] Adding entry: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s)
+[P-T2] [P-T2] Adding entry: which :- S/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c)
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c)
+[P-T2] [P-T2] Adding entry: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c)
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c)
+[P-T2] [P-T2] Adding entry: largest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4))))))
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: least :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: lowest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: which :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c)
+[P-T2] [P-T2] Adding entry: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c)
+[P-T2] [P-T2] Adding entry: states :- NP/PP : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1))))
+[P-T2] [P-T2] Adding entry: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c)
+[P-T2] [P-T2] Adding entry: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c)
+[P-T2] [P-T2] Adding entry: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c)
+[P-T2] [P-T2] Adding entry: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s)
+[P-T2] [P-T2] Adding entry: are there :- S\NP : (lambda $0:e true:t)
+[P-T2] [P-T2] Adding entry: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s)
+[P-T2] [P-T2] Adding entry: please :- S\S : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c)
+[P-T2] [P-T2] Adding entry: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c)
+[P-T2] [P-T2] Adding entry: tell me :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: is :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: what :- S/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: is :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c)
+[P-T2] [P-T2] Adding entry: not :- N/N : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1))))
+[P-T2] [P-T2] Adding entry: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s)
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: show :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: are :- N\N/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))
+[P-T2] [P-T2] Adding entry: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c)
+[P-T2] [P-T2] Adding entry: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: how many :- S/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))))
+[P-T2] [P-T2] Adding entry: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c)
+[P-T2] [P-T2] Adding entry: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c)
+[P-T2] [P-T2] Adding entry: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c)
+[P-T2] [P-T2] Adding entry: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c)
+[P-T2] [P-T2] Adding entry: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c)
+[P-T2] [P-T2] Adding entry: highest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c)
+[P-T2] [P-T2] Adding entry: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: which :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: states :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1)))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s)
+[P-T2] [P-T2] Adding entry: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c)
+[P-T2] [P-T2] Adding entry: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c)
+[P-T2] [P-T2] Adding entry: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c)
+[P-T2] [P-T2] Adding entry: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c)
+[P-T2] [P-T2] Adding entry: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1)))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c)
+[P-T2] [P-T2] Adding entry: the :- NP/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0))))
+[P-T2] [P-T2] Adding entry: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c)
+[P-T2] [P-T2] Adding entry: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c)
+[P-T2] [P-T2] Adding entry: can you :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2)))))
+[P-T2] [P-T2] Adding entry: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4))))))
+[P-T2] [P-T2] Adding entry: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s)
+[P-T2] [P-T2] Adding entry: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c)
+[P-T2] [P-T2] Adding entry: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s)
+[P-T2] [P-T2] Adding entry: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c)
+[P-T2] [P-T2] Adding entry: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: of :- NP/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: a :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: by :- N/N : (lambda $0:<e,e> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c)
+[P-T2] [P-T2] Adding entry: is :- S/S : (lambda $0:t $0)
+[P-T2] [P-T2] Adding entry: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c)
+[P-T2] [P-T2] Adding entry: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s)
+[P-T2] [P-T2] Adding entry: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c)
+[P-T2] [P-T2] Adding entry: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c)
+[P-T2] [P-T2] Adding entry: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c)
+[P-T2] [P-T2] Adding entry: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c)
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c)
+[P-T2] [P-T2] Adding entry: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c)
+[P-T2] [P-T2] Adding entry: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c)
+[P-T2] [P-T2] Adding entry: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s)
+[P-T2] [P-T2] Adding entry: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c)
+[P-T2] [P-T2] Adding entry: what :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))
+[P-T2] [P-T2] Adding entry: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: is :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: population :- S/NP : (lambda $0:e (population:<lo,i> $0))
+[P-T2] [P-T2] Adding entry: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: smallest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4))))))
+[P-T2] [P-T2] Adding entry: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c)
+[P-T2] [P-T2] Adding entry: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c)
+[P-T2] [P-T2] Adding entry: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s)
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c)
+[P-T2] [P-T2] Adding entry: not :- PP/PP : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1))))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1))))
+[P-T2] [P-T2] Adding entry: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s)
+[P-T2] [P-T2] Adding entry: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s)
+[P-T2] [P-T2] Adding entry: please :- S\S : (lambda $0:t $0)
+[P-T2] [P-T2] Adding entry: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s)
+[P-T2] [P-T2] Adding entry: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c)
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c)
+[P-T2] [P-T2] Adding entry: in meters :- S\S : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: combined :- NP\N\N : (lambda $0:<e,t> (lambda $1:<e,e> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3)))))
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: does :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0))))
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: total :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c)
+[P-T2] [P-T2] Adding entry: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c)
+[P-T2] [P-T2] Adding entry: is :- S\NP/NP : (lambda $0:e (lambda $1:e (equals:<e,<e,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c)
+[P-T2] [P-T2] Adding entry: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c)
+[P-T2] [P-T2] Adding entry: are :- PP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c)
+[P-T2] [P-T2] Adding entry: largest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0))))
+[P-T2] [P-T2] Adding entry: biggest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c)
+[P-T2] [P-T2] Adding entry: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c)
+[P-T2] [P-T2] Adding entry: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c)
+[P-T2] [P-T2] Adding entry: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c)
+[P-T2] [P-T2] Adding entry: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: do not :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1))))
+[P-T2] [P-T2] Adding entry: how :- S/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: most :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0))))
+[P-T2] [P-T2] Adding entry: is :- NP/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s)
+[P-T2] [P-T2] Adding entry: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c)
+[P-T2] [P-T2] Adding entry: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: sparsest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3)))))
+[P-T2] [P-T2] Adding entry: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c)
+[P-T2] [P-T2] Adding entry: are :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2)))))
+[P-T2] [P-T2] Adding entry: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i))))
+[P-T2] [P-T2] Adding entry: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s)
+[P-T2] [P-T2] Adding entry: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c)
+[P-T2] [P-T2] Adding entry: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s)
+[P-T2] [P-T2] Adding entry: with the :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c)
+[P-T2] [P-T2] Adding entry: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: have :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1)))
+[P-T2] [P-T2] Adding entry: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4)))))))))
+[P-T2] [P-T2] Adding entry: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2))))
+[P-T2] [P-T2] Adding entry: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c)
+[P-T2] [P-T2] Adding entry: aurangabad :- NP : aurangabad:c
+[P-T2] [P-T2] Adding entry: gurgaon :- NP : gurgaon:c
+[P-T2] [P-T2] Adding entry: maharashtra :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: kanpur :- NP : kanpur:c
+[P-T2] [P-T2] Adding entry: haryana :- NP : haryana:s
+[P-T2] [P-T2] Adding entry: nagpur :- NP : nagpur:c
+[P-T2] [P-T2] Adding entry: rishikesh :- NP : rishikesh:c
+[P-T2] [P-T2] Adding entry: reewa :- NP : reewa:c
+[P-T2] [P-T2] Adding entry: katni :- NP : katni:c
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : rajasthan:s
+[P-T2] [P-T2] Adding entry: dehradun :- NP : dehradun:c
+[P-T2] [P-T2] Adding entry: bhusawal :- NP : bhusawal:c
+[P-T2] [P-T2] Adding entry: darbhanga :- NP : darbhanga:c
+[P-T2] [P-T2] Adding entry: nainital :- NP : nainital:c
+[P-T2] [P-T2] Adding entry: uttrakhand :- NP : uttrakhand:s
+[P-T2] [P-T2] Adding entry: the state of haryana :- NP : haryana:s
+[P-T2] [P-T2] Adding entry: madhya pradesh :- NP : madhya_pradesh:s
+[P-T2] [P-T2] Adding entry: kurukshetra :- NP : kurukshetra:c
+[P-T2] [P-T2] Adding entry: noida :- NP : noida:c
+[P-T2] [P-T2] Adding entry: jalgaon :- NP : jalgaon:c
+[P-T2] [P-T2] Adding entry: maharashtra state :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: mussoorie :- NP : mussoorie:c
+[P-T2] [P-T2] Adding entry: the maharashtra :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: the aurangabad :- NP : aurangabad:c
+[P-T2] [P-T2] Adding entry: bhopal :- NP : bhopal:c
+[P-T2] [P-T2] Adding entry: kota :- NP : kota:c
+[P-T2] [P-T2] Adding entry: khandwa :- NP : khandwa:c
+[P-T2] [P-T2] Adding entry: deoghar :- NP : deoghar:c
+[P-T2] [P-T2] Adding entry: jodhpur :- NP : jodhpur:c
+[P-T2] [P-T2] Adding entry: uttar pradesh :- NP : uttar_pradesh:s
+[P-T2] [P-T2] Adding entry: jharkhand :- NP : jharkhand:s
+[P-T2] [P-T2] Adding entry: jaipur :- NP : jaipur:c
+[P-T2] [P-T2] Adding entry: patna :- NP : patna:c
+[P-T2] [P-T2] Adding entry: chandigarh :- NP : chandigarh:c
+[P-T2] [P-T2] Adding entry: ranchi :- NP : ranchi:c
+[P-T2] [P-T2] Adding entry: mumbai :- NP : mumbai:c
+[P-T2] [P-T2] Adding entry: luckhnow :- NP : luckhnow:c
+[P-T2] [P-T2] Adding entry: bihar :- NP : bihar:s
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#120#81=10.000(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#120=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#140#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#140=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#147#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#147=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#165#105=10.000(1.000),FACLEX#TMP#105=0.000(0.100),FACLEX#XEME#165=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#42#49=10.000(1.000),FACLEX#TMP#49=0.000(0.100),FACLEX#XEME#42=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#17#28=10.000(1.000),FACLEX#TMP#28=0.000(0.100),FACLEX#XEME#17=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#115#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#115=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#50#82=21.435(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#50=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#0#39=10.000(1.000),FACLEX#TMP#39=0.000(0.100),FACLEX#XEME#0=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: number :- S/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))) -> {FACLEX#LEX#74#80=10.000(1.000),FACLEX#TMP#80=0.000(0.100),FACLEX#XEME#74=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#135#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#135=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: what :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#11#13=10.000(1.000),FACLEX#TMP#13=0.000(0.100),FACLEX#XEME#11=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#178#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#178=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#131#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#131=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#39#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#39=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#179#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#179=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#41#2=10.000(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#41=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/N : (lambda $0:<e,t> (lambda $1:<e,e> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3))))) -> {FACLEX#LEX#81#84=10.000(1.000),FACLEX#TMP#84=0.000(0.100),FACLEX#XEME#81=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: no :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#83#86=10.000(1.000),FACLEX#TMP#86=0.000(0.100),FACLEX#XEME#83=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#180#83=21.435(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#180=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#28#26=33.484(1.000),FACLEX#TMP#26=0.000(0.100),FACLEX#XEME#28=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#29#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#29=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#162#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#162=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#106#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#106=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#7#3=10.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#7=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#146#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#146=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#40#34=10.000(1.000),FACLEX#TMP#34=0.000(0.100),FACLEX#XEME#40=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- NP/NP : (lambda $0:e (next_to:<b_pkey,s_pkey> $0)) -> {FACLEX#LEX#18#11=10.000(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#18=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#120#96=10.000(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#120=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#98#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#98=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#192#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#192=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#97#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#97=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#25#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#129#87=21.435(1.000),FACLEX#TMP#87=0.000(0.100),FACLEX#XEME#129=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#114#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#114=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: that :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#113#43=10.000(1.000),FACLEX#TMP#43=0.000(0.100),FACLEX#XEME#113=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#128#88=10.000(1.000),FACLEX#TMP#88=0.000(0.100),FACLEX#XEME#128=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#159#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#159=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#46#45=10.000(1.000),FACLEX#TMP#45=0.000(0.100),FACLEX#XEME#46=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#50#32=21.435(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#50=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#185#106=33.484(1.000),FACLEX#TMP#106=0.000(0.100),FACLEX#XEME#185=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#148#95=10.000(1.000),FACLEX#TMP#95=0.000(0.100),FACLEX#XEME#148=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#10#2=33.484(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#10=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#121#81=10.000(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#121=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#102#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#102=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: in feet :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#55#69=21.435(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#55=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#1#37=10.000(1.000),FACLEX#TMP#37=0.000(0.100),FACLEX#XEME#1=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#149#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#149=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: how many :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))) -> {FACLEX#LEX#94#93=21.435(1.000),FACLEX#TMP#93=0.000(0.100),FACLEX#XEME#94=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#33#31=10.000(1.000),FACLEX#TMP#31=0.000(0.100),FACLEX#XEME#33=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#110#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#110=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#93#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#93=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: which :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#36#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#36=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#119#83=21.435(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#119=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#57#22=10.000(1.000),FACLEX#TMP#22=0.000(0.100),FACLEX#XEME#57=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#27#24=10.000(1.000),FACLEX#TMP#24=0.000(0.100),FACLEX#XEME#27=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#24#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#24=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#163#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#163=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#99#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#99=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#181#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#181=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#64#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#64=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#100#15=10.000(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#100=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#56#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#56=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#164#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#164=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#34#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#34=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4)))))) -> {FACLEX#LEX#81#56=10.000(1.000),FACLEX#TMP#56=0.000(0.100),FACLEX#XEME#81=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#129#94=21.435(1.000),FACLEX#TMP#94=0.000(0.100),FACLEX#XEME#129=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#59#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#59=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: lowest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#95#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#95=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: which :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#36#43=10.000(1.000),FACLEX#TMP#43=0.000(0.100),FACLEX#XEME#36=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#61#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#61=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#15#40=10.000(1.000),FACLEX#TMP#40=0.000(0.100),FACLEX#XEME#15=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: states :- NP/PP : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#165#102=10.000(1.000),FACLEX#TMP#102=0.000(0.100),FACLEX#XEME#165=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#16#8=10.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#16=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#193#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#193=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#63#46=10.000(1.000),FACLEX#TMP#46=0.000(0.100),FACLEX#XEME#63=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#8#38=10.000(1.000),FACLEX#TMP#38=0.000(0.100),FACLEX#XEME#8=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#19#9=10.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#19=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#118#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#118=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#29#53=10.000(1.000),FACLEX#TMP#53=0.000(0.100),FACLEX#XEME#29=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#133#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#133=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: are there :- S\NP : (lambda $0:e true:t) -> {FACLEX#LEX#186#107=21.435(1.000),FACLEX#TMP#107=0.000(0.100),FACLEX#XEME#186=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#128#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#128=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#182#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#182=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#150#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#150=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: please :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#19#69=10.000(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#19=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#45#12=10.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#45=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#65#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#65=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: tell me :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#43#9=21.435(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#43=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#134#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#134=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#166#103=21.435(1.000),FACLEX#TMP#103=0.000(0.100),FACLEX#XEME#166=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#77=10.000(1.000),FACLEX#TMP#77=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#68#67=21.435(1.000),FACLEX#TMP#67=0.000(0.100),FACLEX#XEME#68=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: what :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#11#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#11=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#136#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#136=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: not :- N/N : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#58#91=10.000(1.000),FACLEX#TMP#91=0.000(0.100),FACLEX#XEME#58=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#62#62=21.435(1.000),FACLEX#TMP#62=0.000(0.100),FACLEX#XEME#62=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#167#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#167=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#135#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#135=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: show :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#69#21=10.000(1.000),FACLEX#TMP#21=0.000(0.100),FACLEX#XEME#69=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: are :- N\N/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#8#68=10.000(1.000),FACLEX#TMP#68=0.000(0.100),FACLEX#XEME#8=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#23#41=10.000(1.000),FACLEX#TMP#41=0.000(0.100),FACLEX#XEME#23=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#152#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#152=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: how many :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#6#90=21.435(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#6=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))) -> {FACLEX#LEX#94#71=21.435(1.000),FACLEX#TMP#71=0.000(0.100),FACLEX#XEME#94=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#194#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#194=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#2#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#2=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#132#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#132=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#119#92=21.435(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#119=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#168#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#168=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#187#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#187=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#47#15=21.435(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#47=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#53#42=10.000(1.000),FACLEX#TMP#42=0.000(0.100),FACLEX#XEME#53=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: highest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#90#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#90=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#195#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#195=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#80#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#80=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: which :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#36#63=10.000(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#36=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#81#47=10.000(1.000),FACLEX#TMP#47=0.000(0.100),FACLEX#XEME#81=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: states :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#75#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#75=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) -> {FACLEX#LEX#85#74=10.000(1.000),FACLEX#TMP#74=0.000(0.100),FACLEX#XEME#85=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#85#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#85=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#9#31=21.435(1.000),FACLEX#TMP#31=0.000(0.100),FACLEX#XEME#9=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#169#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#169=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#111#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#111=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#20#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#20=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#30#4=21.435(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#30=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#52#29=10.000(1.000),FACLEX#TMP#29=0.000(0.100),FACLEX#XEME#52=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#21#14=10.000(1.000),FACLEX#TMP#14=0.000(0.100),FACLEX#XEME#21=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#82#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#82=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#86#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#86=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#154#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#154=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#95#59=10.000(1.000),FACLEX#TMP#59=0.000(0.100),FACLEX#XEME#95=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) -> {FACLEX#LEX#156#74=10.000(1.000),FACLEX#TMP#74=0.000(0.100),FACLEX#XEME#156=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) -> {FACLEX#LEX#156#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#156=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#3#36=10.000(1.000),FACLEX#TMP#36=0.000(0.100),FACLEX#XEME#3=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#39#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#39=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#103#55=10.000(1.000),FACLEX#TMP#55=0.000(0.100),FACLEX#XEME#103=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#108#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#108=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#170#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#170=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: can you :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#77#9=21.435(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#77=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#76#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#76=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#17#51=10.000(1.000),FACLEX#TMP#51=0.000(0.100),FACLEX#XEME#17=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#171#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#171=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#155#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#155=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#88#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#88=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#101#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#101=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#90#59=10.000(1.000),FACLEX#TMP#59=0.000(0.100),FACLEX#XEME#90=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#113#63=10.000(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#113=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: of :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#84#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#84=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: a :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#125#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#125=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: by :- N/N : (lambda $0:<e,e> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#35#52=10.000(1.000),FACLEX#TMP#52=0.000(0.100),FACLEX#XEME#35=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#89#79=33.484(1.000),FACLEX#TMP#79=0.000(0.100),FACLEX#XEME#89=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#123#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#123=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- S/S : (lambda $0:t $0) -> {FACLEX#LEX#25#50=10.000(1.000),FACLEX#TMP#50=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#56#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#56=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#49#61=10.000(1.000),FACLEX#TMP#61=0.000(0.100),FACLEX#XEME#49=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#184#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#184=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#137#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#137=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#4#65=10.000(1.000),FACLEX#TMP#65=0.000(0.100),FACLEX#XEME#4=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#138#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#138=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#124#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#124=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#173#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#173=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#172#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#172=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#157#101=21.435(1.000),FACLEX#TMP#101=0.000(0.100),FACLEX#XEME#157=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#87#32=21.435(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#87=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#48#23=10.000(1.000),FACLEX#TMP#23=0.000(0.100),FACLEX#XEME#48=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#70#57=10.000(1.000),FACLEX#TMP#57=0.000(0.100),FACLEX#XEME#70=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#130#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#130=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#72#16=10.000(1.000),FACLEX#TMP#16=0.000(0.100),FACLEX#XEME#72=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#67#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#67=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: what :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#11#70=10.000(1.000),FACLEX#TMP#70=0.000(0.100),FACLEX#XEME#11=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#188#60=45.948(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#188=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: population :- S/NP : (lambda $0:e (population:<lo,i> $0)) -> {FACLEX#LEX#78#25=10.000(1.000),FACLEX#TMP#25=0.000(0.100),FACLEX#XEME#78=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#29#75=10.000(1.000),FACLEX#TMP#75=0.000(0.100),FACLEX#XEME#29=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#174#60=33.484(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#174=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#112#81=21.435(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#112=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#189#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#189=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4)))))) -> {FACLEX#LEX#29#56=10.000(1.000),FACLEX#TMP#56=0.000(0.100),FACLEX#XEME#29=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#139#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#139=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#183#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#183=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#54#15=21.435(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#54=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#30#35=21.435(1.000),FACLEX#TMP#35=0.000(0.100),FACLEX#XEME#30=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#92#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#92=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: not :- PP/PP : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#58#85=10.000(1.000),FACLEX#TMP#85=0.000(0.100),FACLEX#XEME#58=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#190#108=33.484(1.000),FACLEX#TMP#108=0.000(0.100),FACLEX#XEME#190=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#59#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#59=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#37#61=45.948(1.000),FACLEX#TMP#61=0.000(0.100),FACLEX#XEME#37=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#109#94=10.000(1.000),FACLEX#TMP#94=0.000(0.100),FACLEX#XEME#109=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) -> {FACLEX#LEX#39#17=10.000(1.000),FACLEX#TMP#17=0.000(0.100),FACLEX#XEME#39=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#158#72=45.948(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#158=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#175#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#175=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: please :- S\S : (lambda $0:t $0) -> {FACLEX#LEX#19#64=10.000(1.000),FACLEX#TMP#64=0.000(0.100),FACLEX#XEME#19=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#97#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#97=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#87#82=21.435(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#87=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#22#54=10.000(1.000),FACLEX#TMP#54=0.000(0.100),FACLEX#XEME#22=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#191#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#191=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#172#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#172=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#148#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#148=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#117#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#117=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: in meters :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#31#69=21.435(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#31=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: combined :- NP\N\N : (lambda $0:<e,t> (lambda $1:<e,e> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3))))) -> {FACLEX#LEX#51#78=10.000(1.000),FACLEX#TMP#78=0.000(0.100),FACLEX#XEME#51=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#121#96=10.000(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#121=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: does :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#20#77=10.000(1.000),FACLEX#TMP#77=0.000(0.100),FACLEX#XEME#20=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#153#66=33.484(1.000),FACLEX#TMP#66=0.000(0.100),FACLEX#XEME#153=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#116#100=10.000(1.000),FACLEX#TMP#100=0.000(0.100),FACLEX#XEME#116=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#180#92=21.435(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#180=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#81#75=10.000(1.000),FACLEX#TMP#75=0.000(0.100),FACLEX#XEME#81=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#157#109=21.435(1.000),FACLEX#TMP#109=0.000(0.100),FACLEX#XEME#157=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#141#97=33.484(1.000),FACLEX#TMP#97=0.000(0.100),FACLEX#XEME#141=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: total :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#60#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#60=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#142#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#142=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#126#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#126=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#143#76=21.435(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#143=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- S\NP/NP : (lambda $0:e (lambda $1:e (equals:<e,<e,t>> $1 $0))) -> {FACLEX#LEX#66#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#66=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#26#58=10.000(1.000),FACLEX#TMP#58=0.000(0.100),FACLEX#XEME#26=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#71#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#71=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: are :- PP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#8#44=10.000(1.000),FACLEX#TMP#44=0.000(0.100),FACLEX#XEME#8=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#84#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#84=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#64#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#64=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#14#20=10.000(1.000),FACLEX#TMP#20=0.000(0.100),FACLEX#XEME#14=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: largest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#81#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#81=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#176#104=21.435(1.000),FACLEX#TMP#104=0.000(0.100),FACLEX#XEME#176=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: biggest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#38#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#38=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#104#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#104=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#177#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#177=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#105#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#105=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#160#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#160=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#122#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#122=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: do not :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#107#86=21.435(1.000),FACLEX#TMP#86=0.000(0.100),FACLEX#XEME#107=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: how :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#32#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#32=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#56#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#56=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#145#99=10.000(1.000),FACLEX#TMP#99=0.000(0.100),FACLEX#XEME#145=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: is :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#25#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#73#19=21.435(1.000),FACLEX#TMP#19=0.000(0.100),FACLEX#XEME#73=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#0#22=10.000(1.000),FACLEX#TMP#22=0.000(0.100),FACLEX#XEME#0=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#12#48=10.000(1.000),FACLEX#TMP#48=0.000(0.100),FACLEX#XEME#12=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#112#96=21.435(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#112=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: sparsest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#79#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#79=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#44#10=10.000(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#44=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: are :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#8#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#8=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#91#89=33.484(1.000),FACLEX#TMP#89=0.000(0.100),FACLEX#XEME#91=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#144#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#144=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#151#76=33.484(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#151=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#161#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#161=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: with the :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#13#63=21.435(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#13=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#196#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#196=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#109#87=10.000(1.000),FACLEX#TMP#87=0.000(0.100),FACLEX#XEME#109=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: have :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#127#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#127=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#59#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#59=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#5#28=10.000(1.000),FACLEX#TMP#28=0.000(0.100),FACLEX#XEME#5=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#96#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#96=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#111#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#111=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: gurgaon :- NP : gurgaon:c -> {FACLEX#LEX#102#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#102=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#99#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#99=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kanpur :- NP : kanpur:c -> {FACLEX#LEX#154#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#154=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: haryana :- NP : haryana:s -> {FACLEX#LEX#152#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#152=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nagpur :- NP : nagpur:c -> {FACLEX#LEX#159#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#159=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rishikesh :- NP : rishikesh:c -> {FACLEX#LEX#96#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#96=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: reewa :- NP : reewa:c -> {FACLEX#LEX#170#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#170=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: katni :- NP : katni:c -> {FACLEX#LEX#183#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#183=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : rajasthan:s -> {FACLEX#LEX#167#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#167=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: dehradun :- NP : dehradun:c -> {FACLEX#LEX#132#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#132=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhusawal :- NP : bhusawal:c -> {FACLEX#LEX#98#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#98=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: darbhanga :- NP : darbhanga:c -> {FACLEX#LEX#160#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#160=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nainital :- NP : nainital:c -> {FACLEX#LEX#118#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#118=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttrakhand :- NP : uttrakhand:s -> {FACLEX#LEX#144#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#144=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the state of haryana :- NP : haryana:s -> {FACLEX#LEX#158#110=45.948(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#158=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: madhya pradesh :- NP : madhya_pradesh:s -> {FACLEX#LEX#93#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#93=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kurukshetra :- NP : kurukshetra:c -> {FACLEX#LEX#173#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#173=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: noida :- NP : noida:c -> {FACLEX#LEX#106#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#106=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jalgaon :- NP : jalgaon:c -> {FACLEX#LEX#86#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#86=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra state :- NP : maharashtra:s -> {FACLEX#LEX#80#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#80=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mussoorie :- NP : mussoorie:c -> {FACLEX#LEX#92#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#92=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#146#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#146=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#143#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#143=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhopal :- NP : bhopal:c -> {FACLEX#LEX#101#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#101=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kota :- NP : kota:c -> {FACLEX#LEX#136#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#136=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: khandwa :- NP : khandwa:c -> {FACLEX#LEX#131#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#131=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: deoghar :- NP : deoghar:c -> {FACLEX#LEX#108#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#108=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jodhpur :- NP : jodhpur:c -> {FACLEX#LEX#82#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#82=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttar pradesh :- NP : uttar_pradesh:s -> {FACLEX#LEX#137#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#137=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jharkhand :- NP : jharkhand:s -> {FACLEX#LEX#115#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#115=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jaipur :- NP : jaipur:c -> {FACLEX#LEX#140#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#140=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: patna :- NP : patna:c -> {FACLEX#LEX#117#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#117=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: chandigarh :- NP : chandigarh:c -> {FACLEX#LEX#67#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#67=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: ranchi :- NP : ranchi:c -> {FACLEX#LEX#130#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#130=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mumbai :- NP : mumbai:c -> {FACLEX#LEX#142#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#142=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: luckhnow :- NP : luckhnow:c -> {FACLEX#LEX#147#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#147=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bihar :- NP : bihar:s -> {FACLEX#LEX#175#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#175=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#120#81=10.000(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#120=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#140#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#140=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#147#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#147=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#165#105=10.000(1.000),FACLEX#TMP#105=0.000(0.100),FACLEX#XEME#165=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#42#49=10.000(1.000),FACLEX#TMP#49=0.000(0.100),FACLEX#XEME#42=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#17#28=10.000(1.000),FACLEX#TMP#28=0.000(0.100),FACLEX#XEME#17=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#115#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#115=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#50#82=21.435(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#50=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#0#39=10.000(1.000),FACLEX#TMP#39=0.000(0.100),FACLEX#XEME#0=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: number :- S/N : (lambda $0:<e,t> (count:<<e,t>,i> (lambda $1:e ($0 $1)))) -> {FACLEX#LEX#74#80=10.000(1.000),FACLEX#TMP#80=0.000(0.100),FACLEX#XEME#74=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#135#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#135=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: what :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#11#13=10.000(1.000),FACLEX#TMP#13=0.000(0.100),FACLEX#XEME#11=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#178#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#178=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#131#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#131=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#39#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#39=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#179#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#179=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#41#2=10.000(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#41=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/N : (lambda $0:<e,t> (lambda $1:<e,e> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3))))) -> {FACLEX#LEX#81#84=10.000(1.000),FACLEX#TMP#84=0.000(0.100),FACLEX#XEME#81=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: no :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#83#86=10.000(1.000),FACLEX#TMP#86=0.000(0.100),FACLEX#XEME#83=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#180#83=21.435(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#180=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#28#26=33.484(1.000),FACLEX#TMP#26=0.000(0.100),FACLEX#XEME#28=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#29#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#29=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#162#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#162=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#106#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#106=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#7#3=10.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#7=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#146#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#146=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#40#34=10.000(1.000),FACLEX#TMP#34=0.000(0.100),FACLEX#XEME#40=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- NP/NP : (lambda $0:e (next_to:<b_pkey,s_pkey> $0)) -> {FACLEX#LEX#18#11=10.000(1.000),FACLEX#TMP#11=0.000(0.100),FACLEX#XEME#18=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#120#96=10.000(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#120=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#98#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#98=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#192#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#192=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#97#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#97=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#25#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#129#87=21.435(1.000),FACLEX#TMP#87=0.000(0.100),FACLEX#XEME#129=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#114#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#114=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: that :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#113#43=10.000(1.000),FACLEX#TMP#43=0.000(0.100),FACLEX#XEME#113=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#128#88=10.000(1.000),FACLEX#TMP#88=0.000(0.100),FACLEX#XEME#128=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#159#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#159=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#46#45=10.000(1.000),FACLEX#TMP#45=0.000(0.100),FACLEX#XEME#46=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#50#32=21.435(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#50=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#185#106=33.484(1.000),FACLEX#TMP#106=0.000(0.100),FACLEX#XEME#185=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#148#95=10.000(1.000),FACLEX#TMP#95=0.000(0.100),FACLEX#XEME#148=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#10#2=33.484(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#10=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#121#81=10.000(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#121=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#102#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#102=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: in feet :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#55#69=21.435(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#55=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#1#37=10.000(1.000),FACLEX#TMP#37=0.000(0.100),FACLEX#XEME#1=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#149#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#149=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: how many :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))) -> {FACLEX#LEX#94#93=21.435(1.000),FACLEX#TMP#93=0.000(0.100),FACLEX#XEME#94=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#33#31=10.000(1.000),FACLEX#TMP#31=0.000(0.100),FACLEX#XEME#33=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#110#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#110=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#93#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#93=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: which :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#36#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#36=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#119#83=21.435(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#119=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#57#22=10.000(1.000),FACLEX#TMP#22=0.000(0.100),FACLEX#XEME#57=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#27#24=10.000(1.000),FACLEX#TMP#24=0.000(0.100),FACLEX#XEME#27=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#24#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#24=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#163#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#163=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#99#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#99=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#181#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#181=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#64#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#64=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#100#15=10.000(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#100=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#56#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#56=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#164#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#164=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#34#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#34=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4)))))) -> {FACLEX#LEX#81#56=10.000(1.000),FACLEX#TMP#56=0.000(0.100),FACLEX#XEME#81=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#129#94=21.435(1.000),FACLEX#TMP#94=0.000(0.100),FACLEX#XEME#129=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#59#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#59=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: lowest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#95#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#95=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: which :- PP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#36#43=10.000(1.000),FACLEX#TMP#43=0.000(0.100),FACLEX#XEME#36=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#61#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#61=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#15#40=10.000(1.000),FACLEX#TMP#40=0.000(0.100),FACLEX#XEME#15=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: states :- NP/PP : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#165#102=10.000(1.000),FACLEX#TMP#102=0.000(0.100),FACLEX#XEME#165=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#16#8=10.000(1.000),FACLEX#TMP#8=0.000(0.100),FACLEX#XEME#16=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#193#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#193=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: noida :- NP : (pkey_retriever:<c,c_pkey> noida:c) -> {FACLEX#LEX#63#46=10.000(1.000),FACLEX#TMP#46=0.000(0.100),FACLEX#XEME#63=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: are :- S\NP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#8#38=10.000(1.000),FACLEX#TMP#38=0.000(0.100),FACLEX#XEME#8=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: please :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#19#9=10.000(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#19=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#118#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#118=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N/PP : (lambda $0:<e,i> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#29#53=10.000(1.000),FACLEX#TMP#53=0.000(0.100),FACLEX#XEME#29=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#133#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#133=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: are there :- S\NP : (lambda $0:e true:t) -> {FACLEX#LEX#186#107=21.435(1.000),FACLEX#TMP#107=0.000(0.100),FACLEX#XEME#186=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#128#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#128=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#182#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#182=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#150#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#150=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: please :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#19#69=10.000(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#19=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#45#12=10.000(1.000),FACLEX#TMP#12=0.000(0.100),FACLEX#XEME#45=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#65#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#65=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: tell me :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#43#9=21.435(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#43=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#134#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#134=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#166#103=21.435(1.000),FACLEX#TMP#103=0.000(0.100),FACLEX#XEME#166=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#77=10.000(1.000),FACLEX#TMP#77=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#68#67=21.435(1.000),FACLEX#TMP#67=0.000(0.100),FACLEX#XEME#68=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: what :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#11#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#11=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#136#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#136=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: not :- N/N : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#58#91=10.000(1.000),FACLEX#TMP#91=0.000(0.100),FACLEX#XEME#58=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#62#62=21.435(1.000),FACLEX#TMP#62=0.000(0.100),FACLEX#XEME#62=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#167#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#167=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#135#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#135=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: show :- S/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#69#21=10.000(1.000),FACLEX#TMP#21=0.000(0.100),FACLEX#XEME#69=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: are :- N\N/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#8#68=10.000(1.000),FACLEX#TMP#68=0.000(0.100),FACLEX#XEME#8=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nagpur :- NP : (pkey_retriever:<c,c_pkey> nagpur:c) -> {FACLEX#LEX#23#41=10.000(1.000),FACLEX#TMP#41=0.000(0.100),FACLEX#XEME#23=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#152#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#152=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: how many :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#6#90=21.435(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#6=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: how many :- S/(S\NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (count:<<e,t>,i> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2)))))) -> {FACLEX#LEX#94#71=21.435(1.000),FACLEX#TMP#71=0.000(0.100),FACLEX#XEME#94=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#194#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#194=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#2#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#2=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#132#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#132=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#119#92=21.435(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#119=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#168#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#168=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jaipur :- NP : (pkey_retriever:<c,c_pkey> jaipur:c) -> {FACLEX#LEX#187#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#187=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#47#15=21.435(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#47=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhusawal :- NP : (pkey_retriever:<c,c_pkey> bhusawal:c) -> {FACLEX#LEX#53#42=10.000(1.000),FACLEX#TMP#42=0.000(0.100),FACLEX#XEME#53=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: highest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#90#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#90=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#195#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#195=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#80#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#80=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: which :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#36#63=10.000(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#36=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#81#47=10.000(1.000),FACLEX#TMP#47=0.000(0.100),FACLEX#XEME#81=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: states :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#75#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#75=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) -> {FACLEX#LEX#85#74=10.000(1.000),FACLEX#TMP#74=0.000(0.100),FACLEX#XEME#85=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#85#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#85=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#9#31=21.435(1.000),FACLEX#TMP#31=0.000(0.100),FACLEX#XEME#9=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#169#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#169=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#111#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#111=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: does :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#20#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#20=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#30#4=21.435(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#30=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) -> {FACLEX#LEX#52#29=10.000(1.000),FACLEX#TMP#29=0.000(0.100),FACLEX#XEME#52=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#21#14=10.000(1.000),FACLEX#TMP#14=0.000(0.100),FACLEX#XEME#21=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#82#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#82=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#86#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#86=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#154#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#154=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: lowest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#95#59=10.000(1.000),FACLEX#TMP#59=0.000(0.100),FACLEX#XEME#95=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) -> {FACLEX#LEX#156#74=10.000(1.000),FACLEX#TMP#74=0.000(0.100),FACLEX#XEME#156=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) -> {FACLEX#LEX#156#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#156=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#3#36=10.000(1.000),FACLEX#TMP#36=0.000(0.100),FACLEX#XEME#3=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#39#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#39=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#103#55=10.000(1.000),FACLEX#TMP#55=0.000(0.100),FACLEX#XEME#103=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#108#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#108=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: reewa :- NP : (pkey_retriever:<c,c_pkey> reewa:c) -> {FACLEX#LEX#170#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#170=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: can you :- S/S : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#77#9=21.435(1.000),FACLEX#TMP#9=0.000(0.100),FACLEX#XEME#77=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: with :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#76#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#76=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/PP : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e (size:<lo,i> $4)))))) -> {FACLEX#LEX#17#51=10.000(1.000),FACLEX#TMP#51=0.000(0.100),FACLEX#XEME#17=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#171#60=21.435(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#171=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#155#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#155=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#88#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#88=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhopal :- NP : (pkey_retriever:<c,c_pkey> bhopal:c) -> {FACLEX#LEX#101#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#101=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#90#59=10.000(1.000),FACLEX#TMP#59=0.000(0.100),FACLEX#XEME#90=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: that :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#113#63=10.000(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#113=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: of :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#84#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#84=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: a :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#125#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#125=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: by :- N/N : (lambda $0:<e,e> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#35#52=10.000(1.000),FACLEX#TMP#52=0.000(0.100),FACLEX#XEME#35=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#89#79=33.484(1.000),FACLEX#TMP#79=0.000(0.100),FACLEX#XEME#89=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: deoghar :- NP : (pkey_retriever:<c,c_pkey> deoghar:c) -> {FACLEX#LEX#123#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#123=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- S/S : (lambda $0:t $0) -> {FACLEX#LEX#25#50=10.000(1.000),FACLEX#TMP#50=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#56#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#56=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#49#61=10.000(1.000),FACLEX#TMP#61=0.000(0.100),FACLEX#XEME#49=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jalgaon :- NP : (pkey_retriever:<c,c_pkey> jalgaon:c) -> {FACLEX#LEX#184#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#184=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) -> {FACLEX#LEX#137#72=21.435(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#137=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: khandwa :- NP : (pkey_retriever:<c,c_pkey> khandwa:c) -> {FACLEX#LEX#4#65=10.000(1.000),FACLEX#TMP#65=0.000(0.100),FACLEX#XEME#4=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jodhpur :- NP : (pkey_retriever:<c,c_pkey> jodhpur:c) -> {FACLEX#LEX#138#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#138=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kanpur :- NP : (pkey_retriever:<c,c_pkey> kanpur:c) -> {FACLEX#LEX#124#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#124=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kurukshetra :- NP : (pkey_retriever:<c,c_pkey> kurukshetra:c) -> {FACLEX#LEX#173#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#173=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#172#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#172=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#157#101=21.435(1.000),FACLEX#TMP#101=0.000(0.100),FACLEX#XEME#157=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#87#32=21.435(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#87=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: luckhnow :- NP : (pkey_retriever:<c,c_pkey> luckhnow:c) -> {FACLEX#LEX#48#23=10.000(1.000),FACLEX#TMP#23=0.000(0.100),FACLEX#XEME#48=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#70#57=10.000(1.000),FACLEX#TMP#57=0.000(0.100),FACLEX#XEME#70=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: ranchi :- NP : (pkey_retriever:<c,c_pkey> ranchi:c) -> {FACLEX#LEX#130#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#130=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#72#16=10.000(1.000),FACLEX#TMP#16=0.000(0.100),FACLEX#XEME#72=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#67#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#67=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: what :- S/(S/NP)/N : (lambda $0:<e,t> (lambda $1:<e,t> (lambda $2:e (and:<t*,t> ($0 $2) ($1 $2))))) -> {FACLEX#LEX#11#70=10.000(1.000),FACLEX#TMP#70=0.000(0.100),FACLEX#XEME#11=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#188#60=45.948(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#188=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#25#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: population :- S/NP : (lambda $0:e (population:<lo,i> $0)) -> {FACLEX#LEX#78#25=10.000(1.000),FACLEX#TMP#25=0.000(0.100),FACLEX#XEME#78=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#29#75=10.000(1.000),FACLEX#TMP#75=0.000(0.100),FACLEX#XEME#29=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#174#60=33.484(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#174=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#112#81=21.435(1.000),FACLEX#TMP#81=0.000(0.100),FACLEX#XEME#112=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#189#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#189=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N/PP/N : (lambda $0:<e,e> (lambda $1:<e,t> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e (and:<t*,t> ($1 $3) ($2 $3))) (lambda $4:e ($0 $4)))))) -> {FACLEX#LEX#29#56=10.000(1.000),FACLEX#TMP#56=0.000(0.100),FACLEX#XEME#29=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: dehradun :- NP : (pkey_retriever:<c,c_pkey> dehradun:c) -> {FACLEX#LEX#139#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#139=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#183#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#183=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) -> {FACLEX#LEX#54#15=21.435(1.000),FACLEX#TMP#15=0.000(0.100),FACLEX#XEME#54=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#30#35=21.435(1.000),FACLEX#TMP#35=0.000(0.100),FACLEX#XEME#30=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#92#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#92=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: not :- PP/PP : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#58#85=10.000(1.000),FACLEX#TMP#85=0.000(0.100),FACLEX#XEME#58=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#190#108=33.484(1.000),FACLEX#TMP#108=0.000(0.100),FACLEX#XEME#190=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#59#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#59=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#37#61=45.948(1.000),FACLEX#TMP#61=0.000(0.100),FACLEX#XEME#37=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#109#94=10.000(1.000),FACLEX#TMP#94=0.000(0.100),FACLEX#XEME#109=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the :- NP/N : (lambda $0:<e,t> (the:<<e,t>,e> (lambda $1:e ($0 $1)))) -> {FACLEX#LEX#39#17=10.000(1.000),FACLEX#TMP#17=0.000(0.100),FACLEX#XEME#39=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) -> {FACLEX#LEX#158#72=45.948(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#158=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#175#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#175=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: please :- S\S : (lambda $0:t $0) -> {FACLEX#LEX#19#64=10.000(1.000),FACLEX#TMP#64=0.000(0.100),FACLEX#XEME#19=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#97#83=10.000(1.000),FACLEX#TMP#83=0.000(0.100),FACLEX#XEME#97=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#87#82=21.435(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#87=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#22#54=10.000(1.000),FACLEX#TMP#54=0.000(0.100),FACLEX#XEME#22=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kota :- NP : (pkey_retriever:<c,c_pkey> kota:c) -> {FACLEX#LEX#191#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#191=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#172#92=10.000(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#172=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#148#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#148=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#117#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#117=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: in meters :- S\S : (lambda $0:e $0) -> {FACLEX#LEX#31#69=21.435(1.000),FACLEX#TMP#69=0.000(0.100),FACLEX#XEME#31=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: combined :- NP\N\N : (lambda $0:<e,t> (lambda $1:<e,e> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($0 $2)) (lambda $3:e ($1 $3))))) -> {FACLEX#LEX#51#78=10.000(1.000),FACLEX#TMP#78=0.000(0.100),FACLEX#XEME#51=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#121#96=10.000(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#121=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: does :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#20#77=10.000(1.000),FACLEX#TMP#77=0.000(0.100),FACLEX#XEME#20=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#153#66=33.484(1.000),FACLEX#TMP#66=0.000(0.100),FACLEX#XEME#153=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#116#100=10.000(1.000),FACLEX#TMP#100=0.000(0.100),FACLEX#XEME#116=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#180#92=21.435(1.000),FACLEX#TMP#92=0.000(0.100),FACLEX#XEME#180=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#81#75=10.000(1.000),FACLEX#TMP#75=0.000(0.100),FACLEX#XEME#81=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#157#109=21.435(1.000),FACLEX#TMP#109=0.000(0.100),FACLEX#XEME#157=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#141#97=33.484(1.000),FACLEX#TMP#97=0.000(0.100),FACLEX#XEME#141=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: total :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (sum:<<e,t>,<<e,i>,i>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#60#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#60=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#142#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#142=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nainital :- NP : (pkey_retriever:<c,c_pkey> nainital:c) -> {FACLEX#LEX#126#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#126=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the aurangabad :- NP : (pkey_retriever:<c,c_pkey> aurangabad:c) -> {FACLEX#LEX#143#76=21.435(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#143=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- S\NP/NP : (lambda $0:e (lambda $1:e (equals:<e,<e,t>> $1 $0))) -> {FACLEX#LEX#66#73=10.000(1.000),FACLEX#TMP#73=0.000(0.100),FACLEX#XEME#66=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#26#58=10.000(1.000),FACLEX#TMP#58=0.000(0.100),FACLEX#XEME#26=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#71#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#71=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: are :- PP/PP : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#8#44=10.000(1.000),FACLEX#TMP#44=0.000(0.100),FACLEX#XEME#8=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: of :- N/N : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#84#30=10.000(1.000),FACLEX#TMP#30=0.000(0.100),FACLEX#XEME#84=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: fewest :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#64#82=10.000(1.000),FACLEX#TMP#82=0.000(0.100),FACLEX#XEME#64=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#14#20=10.000(1.000),FACLEX#TMP#20=0.000(0.100),FACLEX#XEME#14=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: largest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#81#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#81=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: higher than :- PP/NP : (lambda $0:e (lambda $1:e (>:<i,<i,t>> (elevation:<lo,i> $1) (elevation:<lo,i> $0)))) -> {FACLEX#LEX#176#104=21.435(1.000),FACLEX#TMP#104=0.000(0.100),FACLEX#XEME#176=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: biggest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#38#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#38=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: patna :- NP : (pkey_retriever:<c,c_pkey> patna:c) -> {FACLEX#LEX#104#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#104=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: chandigarh :- NP : (pkey_retriever:<c,c_pkey> chandigarh:c) -> {FACLEX#LEX#177#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#177=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: katni :- NP : (pkey_retriever:<c,c_pkey> katni:c) -> {FACLEX#LEX#105#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#105=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: darbhanga :- NP : (pkey_retriever:<c,c_pkey> darbhanga:c) -> {FACLEX#LEX#160#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#160=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#122#98=10.000(1.000),FACLEX#TMP#98=0.000(0.100),FACLEX#XEME#122=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: do not :- S\NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (not:<t,t> ($0 $1)))) -> {FACLEX#LEX#107#86=21.435(1.000),FACLEX#TMP#86=0.000(0.100),FACLEX#XEME#107=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: how :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#32#90=10.000(1.000),FACLEX#TMP#90=0.000(0.100),FACLEX#XEME#32=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#56#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#56=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: excluding :- PP/NP : (lambda $0:e (lambda $1:e (not:<t,t> (equals:<e,<e,t>> $1 $0)))) -> {FACLEX#LEX#145#99=10.000(1.000),FACLEX#TMP#99=0.000(0.100),FACLEX#XEME#145=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: is :- NP/NP : (lambda $0:e $0) -> {FACLEX#LEX#25#18=10.000(1.000),FACLEX#TMP#18=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) -> {FACLEX#LEX#73#19=21.435(1.000),FACLEX#TMP#19=0.000(0.100),FACLEX#XEME#73=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: smallest :- NP/N : (lambda $0:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (size:<lo,i> $2)))) -> {FACLEX#LEX#0#22=10.000(1.000),FACLEX#TMP#22=0.000(0.100),FACLEX#XEME#0=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: gurgaon :- NP : (pkey_retriever:<c,c_pkey> gurgaon:c) -> {FACLEX#LEX#12#48=10.000(1.000),FACLEX#TMP#48=0.000(0.100),FACLEX#XEME#12=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#112#96=21.435(1.000),FACLEX#TMP#96=0.000(0.100),FACLEX#XEME#112=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: sparsest :- NP/N/N : (lambda $0:<e,e> (lambda $1:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $2:e ($1 $2)) (lambda $3:e ($0 $3))))) -> {FACLEX#LEX#79#27=10.000(1.000),FACLEX#TMP#27=0.000(0.100),FACLEX#XEME#79=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#44#10=10.000(1.000),FACLEX#TMP#10=0.000(0.100),FACLEX#XEME#44=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: are :- NP\N/(NP/N) : (lambda $0:<<e,t>,e> (lambda $1:<e,t> ($0 (lambda $2:e ($1 $2))))) -> {FACLEX#LEX#8#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#8=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: at least one :- S\NP\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:e (>:<i,<i,t>> (count:<<e,t>,i> (lambda $3:e (and:<t*,t> ($0 $3) ($1 $3 $2)))) 0:i)))) -> {FACLEX#LEX#91#89=33.484(1.000),FACLEX#TMP#89=0.000(0.100),FACLEX#XEME#91=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) -> {FACLEX#LEX#144#72=10.000(1.000),FACLEX#TMP#72=0.000(0.100),FACLEX#XEME#144=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: city named mumbai :- NP : (pkey_retriever:<c,c_pkey> mumbai:c) -> {FACLEX#LEX#151#76=33.484(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#151=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) -> {FACLEX#LEX#161#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#161=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: with the :- PP/(S\NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#13#63=21.435(1.000),FACLEX#TMP#63=0.000(0.100),FACLEX#XEME#13=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mussoorie :- NP : (pkey_retriever:<c,c_pkey> mussoorie:c) -> {FACLEX#LEX#196#60=10.000(1.000),FACLEX#TMP#60=0.000(0.100),FACLEX#XEME#196=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: most :- NP\N\(PP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#109#87=10.000(1.000),FACLEX#TMP#87=0.000(0.100),FACLEX#XEME#109=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: have :- S/NP/(S/NP) : (lambda $0:<e,t> (lambda $1:e ($0 $1))) -> {FACLEX#LEX#127#33=10.000(1.000),FACLEX#TMP#33=0.000(0.100),FACLEX#XEME#127=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: least :- NP\N\(S\NP/NP)/N : (lambda $0:<e,t> (lambda $1:<e,<e,t>> (lambda $2:<e,t> (argmin:<<e,t>,<<e,i>,e>> (lambda $3:e ($2 $3)) (lambda $4:e (count:<<e,t>,i> (lambda $5:e (and:<t*,t> ($0 $5) ($1 $5 $4))))))))) -> {FACLEX#LEX#59#32=10.000(1.000),FACLEX#TMP#32=0.000(0.100),FACLEX#XEME#59=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: highest :- NP/N : (lambda $0:<e,t> (argmax:<<e,t>,<<e,i>,e>> (lambda $1:e ($0 $1)) (lambda $2:e (elevation:<lo,i> $2)))) -> {FACLEX#LEX#5#28=10.000(1.000),FACLEX#TMP#28=0.000(0.100),FACLEX#XEME#5=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rishikesh :- NP : (pkey_retriever:<c,c_pkey> rishikesh:c) -> {FACLEX#LEX#96#76=10.000(1.000),FACLEX#TMP#76=0.000(0.100),FACLEX#XEME#96=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#111#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#111=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: gurgaon :- NP : gurgaon:c -> {FACLEX#LEX#102#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#102=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#99#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#99=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kanpur :- NP : kanpur:c -> {FACLEX#LEX#154#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#154=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: haryana :- NP : haryana:s -> {FACLEX#LEX#152#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#152=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nagpur :- NP : nagpur:c -> {FACLEX#LEX#159#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#159=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rishikesh :- NP : rishikesh:c -> {FACLEX#LEX#96#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#96=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: reewa :- NP : reewa:c -> {FACLEX#LEX#170#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#170=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: katni :- NP : katni:c -> {FACLEX#LEX#183#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#183=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : rajasthan:s -> {FACLEX#LEX#167#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#167=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: dehradun :- NP : dehradun:c -> {FACLEX#LEX#132#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#132=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhusawal :- NP : bhusawal:c -> {FACLEX#LEX#98#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#98=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: darbhanga :- NP : darbhanga:c -> {FACLEX#LEX#160#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#160=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nainital :- NP : nainital:c -> {FACLEX#LEX#118#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#118=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttrakhand :- NP : uttrakhand:s -> {FACLEX#LEX#144#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#144=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the state of haryana :- NP : haryana:s -> {FACLEX#LEX#158#110=45.948(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#158=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: madhya pradesh :- NP : madhya_pradesh:s -> {FACLEX#LEX#93#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#93=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kurukshetra :- NP : kurukshetra:c -> {FACLEX#LEX#173#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#173=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: noida :- NP : noida:c -> {FACLEX#LEX#106#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#106=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jalgaon :- NP : jalgaon:c -> {FACLEX#LEX#86#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#86=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra state :- NP : maharashtra:s -> {FACLEX#LEX#80#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#80=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mussoorie :- NP : mussoorie:c -> {FACLEX#LEX#92#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#92=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#146#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#146=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#143#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#143=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhopal :- NP : bhopal:c -> {FACLEX#LEX#101#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#101=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kota :- NP : kota:c -> {FACLEX#LEX#136#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#136=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: khandwa :- NP : khandwa:c -> {FACLEX#LEX#131#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#131=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: deoghar :- NP : deoghar:c -> {FACLEX#LEX#108#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#108=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jodhpur :- NP : jodhpur:c -> {FACLEX#LEX#82#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#82=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttar pradesh :- NP : uttar_pradesh:s -> {FACLEX#LEX#137#110=21.435(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#137=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jharkhand :- NP : jharkhand:s -> {FACLEX#LEX#115#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#115=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jaipur :- NP : jaipur:c -> {FACLEX#LEX#140#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#140=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: patna :- NP : patna:c -> {FACLEX#LEX#117#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#117=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: chandigarh :- NP : chandigarh:c -> {FACLEX#LEX#67#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#67=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: ranchi :- NP : ranchi:c -> {FACLEX#LEX#130#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#130=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mumbai :- NP : mumbai:c -> {FACLEX#LEX#142#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#142=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: luckhnow :- NP : luckhnow:c -> {FACLEX#LEX#147#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#147=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bihar :- NP : bihar:s -> {FACLEX#LEX#175#110=10.000(1.000),FACLEX#TMP#110=0.000(0.100),FACLEX#XEME#175=10.000(1.000)}
