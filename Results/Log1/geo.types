@@ -1,0 +1,20 @@
+(
+
+(i e)	// integer / number...
+(pkey e) //primary_key
+(s_pkey pkey) // state primary key
+(c_pkey pkey) //city primary key
+(r_pkey pkey) //river primary key
+(b_pkey pkey) //border primary key
+(n e)		//name
+(lo e)		// location
+(s lo) 		// state
+(c lo)		// city
+(r lo)		// river
+(l lo)		// lake
+(m lo)		// mountain
+(co lo)		// country 
+(p lo)		// place
+(to lo)		// town
+
+)
