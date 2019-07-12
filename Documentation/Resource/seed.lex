@@ -1,0 +1,7 @@
+which :- S/NP : (lambda $0:e $0)
+states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1))))
+border :- (S\NP)/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0)))
+border :- (S\NP)/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1)))
+border :- (S\NP)/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1)))
+border :- (S\NP)/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0)))
+rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
