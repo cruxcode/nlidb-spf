@@ -1,0 +1,142 @@
+[P-T2] [P-T2] Set: DYNSKIP -> -1.0
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1)))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1))))
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0)))
+[P-T2] [P-T2] Adding entry: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1)))
+[P-T2] [P-T2] Adding entry: which :- S/NP : (lambda $0:e $0)
+[P-T2] [P-T2] Adding entry: aurangabad :- NP : aurangabad:c
+[P-T2] [P-T2] Adding entry: gurgaon :- NP : gurgaon:c
+[P-T2] [P-T2] Adding entry: maharashtra :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: kanpur :- NP : kanpur:c
+[P-T2] [P-T2] Adding entry: haryana :- NP : haryana:s
+[P-T2] [P-T2] Adding entry: nagpur :- NP : nagpur:c
+[P-T2] [P-T2] Adding entry: rishikesh :- NP : rishikesh:c
+[P-T2] [P-T2] Adding entry: reewa :- NP : reewa:c
+[P-T2] [P-T2] Adding entry: katni :- NP : katni:c
+[P-T2] [P-T2] Adding entry: rajasthan :- NP : rajasthan:s
+[P-T2] [P-T2] Adding entry: dehradun :- NP : dehradun:c
+[P-T2] [P-T2] Adding entry: bhusawal :- NP : bhusawal:c
+[P-T2] [P-T2] Adding entry: darbhanga :- NP : darbhanga:c
+[P-T2] [P-T2] Adding entry: nainital :- NP : nainital:c
+[P-T2] [P-T2] Adding entry: uttrakhand :- NP : uttrakhand:s
+[P-T2] [P-T2] Adding entry: the state of haryana :- NP : haryana:s
+[P-T2] [P-T2] Adding entry: madhya pradesh :- NP : madhya_pradesh:s
+[P-T2] [P-T2] Adding entry: kurukshetra :- NP : kurukshetra:c
+[P-T2] [P-T2] Adding entry: noida :- NP : noida:c
+[P-T2] [P-T2] Adding entry: jalgaon :- NP : jalgaon:c
+[P-T2] [P-T2] Adding entry: maharashtra state :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: mussoorie :- NP : mussoorie:c
+[P-T2] [P-T2] Adding entry: the maharashtra :- NP : maharashtra:s
+[P-T2] [P-T2] Adding entry: the aurangabad :- NP : aurangabad:c
+[P-T2] [P-T2] Adding entry: bhopal :- NP : bhopal:c
+[P-T2] [P-T2] Adding entry: kota :- NP : kota:c
+[P-T2] [P-T2] Adding entry: khandwa :- NP : khandwa:c
+[P-T2] [P-T2] Adding entry: deoghar :- NP : deoghar:c
+[P-T2] [P-T2] Adding entry: jodhpur :- NP : jodhpur:c
+[P-T2] [P-T2] Adding entry: uttar pradesh :- NP : uttar_pradesh:s
+[P-T2] [P-T2] Adding entry: jharkhand :- NP : jharkhand:s
+[P-T2] [P-T2] Adding entry: jaipur :- NP : jaipur:c
+[P-T2] [P-T2] Adding entry: patna :- NP : patna:c
+[P-T2] [P-T2] Adding entry: chandigarh :- NP : chandigarh:c
+[P-T2] [P-T2] Adding entry: ranchi :- NP : ranchi:c
+[P-T2] [P-T2] Adding entry: mumbai :- NP : mumbai:c
+[P-T2] [P-T2] Adding entry: luckhnow :- NP : luckhnow:c
+[P-T2] [P-T2] Adding entry: bihar :- NP : bihar:s
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) -> {FACLEX#LEX#0#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#0=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) -> {FACLEX#LEX#0#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#0=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#1#2=10.000(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#1=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#2#3=10.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#2=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#3#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#3=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#4#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#4=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#5#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#5=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) -> {FACLEX#LEX#5#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#5=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: which :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#6#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#6=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#7#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#7=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: gurgaon :- NP : gurgaon:c -> {FACLEX#LEX#31#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#31=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#9#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#9=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kanpur :- NP : kanpur:c -> {FACLEX#LEX#10#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#10=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: haryana :- NP : haryana:s -> {FACLEX#LEX#12#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#12=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nagpur :- NP : nagpur:c -> {FACLEX#LEX#29#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#29=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rishikesh :- NP : rishikesh:c -> {FACLEX#LEX#15#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#15=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: reewa :- NP : reewa:c -> {FACLEX#LEX#22#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#22=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: katni :- NP : katni:c -> {FACLEX#LEX#13#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#13=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: rajasthan :- NP : rajasthan:s -> {FACLEX#LEX#2#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#2=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: dehradun :- NP : dehradun:c -> {FACLEX#LEX#16#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#16=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhusawal :- NP : bhusawal:c -> {FACLEX#LEX#18#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#18=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: darbhanga :- NP : darbhanga:c -> {FACLEX#LEX#20#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#20=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: nainital :- NP : nainital:c -> {FACLEX#LEX#34#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#34=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttrakhand :- NP : uttrakhand:s -> {FACLEX#LEX#23#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#23=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the state of haryana :- NP : haryana:s -> {FACLEX#LEX#17#7=45.948(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#17=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: madhya pradesh :- NP : madhya_pradesh:s -> {FACLEX#LEX#24#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#24=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kurukshetra :- NP : kurukshetra:c -> {FACLEX#LEX#36#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#36=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: noida :- NP : noida:c -> {FACLEX#LEX#37#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#37=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jalgaon :- NP : jalgaon:c -> {FACLEX#LEX#39#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#39=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: maharashtra state :- NP : maharashtra:s -> {FACLEX#LEX#11#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#11=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mussoorie :- NP : mussoorie:c -> {FACLEX#LEX#26#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#26=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#33#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#33=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: the aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#38#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#38=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bhopal :- NP : bhopal:c -> {FACLEX#LEX#40#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#40=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: kota :- NP : kota:c -> {FACLEX#LEX#42#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#42=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: khandwa :- NP : khandwa:c -> {FACLEX#LEX#32#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#32=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: deoghar :- NP : deoghar:c -> {FACLEX#LEX#21#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#21=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jodhpur :- NP : jodhpur:c -> {FACLEX#LEX#14#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#14=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: uttar pradesh :- NP : uttar_pradesh:s -> {FACLEX#LEX#27#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#27=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jharkhand :- NP : jharkhand:s -> {FACLEX#LEX#25#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#25=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: jaipur :- NP : jaipur:c -> {FACLEX#LEX#41#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#41=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: patna :- NP : patna:c -> {FACLEX#LEX#28#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#28=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: chandigarh :- NP : chandigarh:c -> {FACLEX#LEX#8#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#8=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: ranchi :- NP : ranchi:c -> {FACLEX#LEX#30#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#30=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: mumbai :- NP : mumbai:c -> {FACLEX#LEX#35#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#35=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: luckhnow :- NP : luckhnow:c -> {FACLEX#LEX#43#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#43=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#LEX: bihar :- NP : bihar:s -> {FACLEX#LEX#19#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#19=0.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) -> {FACLEX#LEX#0#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#0=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) -> {FACLEX#LEX#0#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#0=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#1#2=10.000(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#1=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#2#3=10.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#2=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) -> {FACLEX#LEX#3#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#3=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) -> {FACLEX#LEX#4#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#4=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) -> {FACLEX#LEX#5#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#5=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) -> {FACLEX#LEX#5#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#5=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: which :- S/NP : (lambda $0:e $0) -> {FACLEX#LEX#6#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#6=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#7#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#7=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: gurgaon :- NP : gurgaon:c -> {FACLEX#LEX#31#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#31=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#9#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#9=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kanpur :- NP : kanpur:c -> {FACLEX#LEX#10#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#10=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: haryana :- NP : haryana:s -> {FACLEX#LEX#12#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#12=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nagpur :- NP : nagpur:c -> {FACLEX#LEX#29#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#29=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rishikesh :- NP : rishikesh:c -> {FACLEX#LEX#15#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#15=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: reewa :- NP : reewa:c -> {FACLEX#LEX#22#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#22=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: katni :- NP : katni:c -> {FACLEX#LEX#13#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#13=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: rajasthan :- NP : rajasthan:s -> {FACLEX#LEX#2#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#2=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: dehradun :- NP : dehradun:c -> {FACLEX#LEX#16#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#16=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhusawal :- NP : bhusawal:c -> {FACLEX#LEX#18#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#18=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: darbhanga :- NP : darbhanga:c -> {FACLEX#LEX#20#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#20=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: nainital :- NP : nainital:c -> {FACLEX#LEX#34#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#34=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttrakhand :- NP : uttrakhand:s -> {FACLEX#LEX#23#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#23=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the state of haryana :- NP : haryana:s -> {FACLEX#LEX#17#7=45.948(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#17=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: madhya pradesh :- NP : madhya_pradesh:s -> {FACLEX#LEX#24#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#24=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kurukshetra :- NP : kurukshetra:c -> {FACLEX#LEX#36#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#36=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: noida :- NP : noida:c -> {FACLEX#LEX#37#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#37=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jalgaon :- NP : jalgaon:c -> {FACLEX#LEX#39#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#39=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: maharashtra state :- NP : maharashtra:s -> {FACLEX#LEX#11#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#11=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mussoorie :- NP : mussoorie:c -> {FACLEX#LEX#26#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#26=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the maharashtra :- NP : maharashtra:s -> {FACLEX#LEX#33#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#33=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: the aurangabad :- NP : aurangabad:c -> {FACLEX#LEX#38#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#38=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bhopal :- NP : bhopal:c -> {FACLEX#LEX#40#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#40=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: kota :- NP : kota:c -> {FACLEX#LEX#42#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#42=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: khandwa :- NP : khandwa:c -> {FACLEX#LEX#32#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#32=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: deoghar :- NP : deoghar:c -> {FACLEX#LEX#21#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#21=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jodhpur :- NP : jodhpur:c -> {FACLEX#LEX#14#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#14=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: uttar pradesh :- NP : uttar_pradesh:s -> {FACLEX#LEX#27#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#27=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jharkhand :- NP : jharkhand:s -> {FACLEX#LEX#25#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#25=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: jaipur :- NP : jaipur:c -> {FACLEX#LEX#41#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#41=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: patna :- NP : patna:c -> {FACLEX#LEX#28#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#28=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: chandigarh :- NP : chandigarh:c -> {FACLEX#LEX#8#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#8=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: ranchi :- NP : ranchi:c -> {FACLEX#LEX#30#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#30=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: mumbai :- NP : mumbai:c -> {FACLEX#LEX#35#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#35=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: luckhnow :- NP : luckhnow:c -> {FACLEX#LEX#43#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#43=10.000(1.000)}
+[P-T2] [P-T2] Init FACLEX#XEME: bihar :- NP : bihar:s -> {FACLEX#LEX#19#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#19=10.000(1.000)}

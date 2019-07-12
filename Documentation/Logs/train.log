@@ -1,0 +1,2239 @@
+[P-T4] [P-T4] ============ (Job train started)
+[P-T4] [P-T4] Initializing GENLEX ...
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0e:e]-->NP : (pkey_retriever:<s,s_pkey> #0e:e)
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0e:e]-->NP : #0e:e
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0<e,<e,t>>:<e,<e,t>>]-->S\NP/NP : (lambda $0:e (lambda $1:e (#0<e,<e,t>>:<e,<e,t>> $0 $1)))
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0<e,<e,t>>:<e,<e,t>>]-->S\NP/NP : (lambda $0:e (lambda $1:e (#0<e,<e,t>>:<e,<e,t>> $1 $0)))
+[P-T4] [P-T4] Adding new template to generation repository (2 constants, 0 attributes): [#0<e,e>:<e,e>, #0e:e]-->NP : (#0<e,e>:<e,e> #0e:e)
+[P-T4] [P-T4] Adding new template to generation repository (0 constants, 0 attributes): []-->S/NP : (lambda $0:e $0)
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0<e,<t,e>>:<e,<t,e>>]-->NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (#0<e,<t,e>>:<e,<t,e>> $1 ($0 $1))))
+[P-T4] [P-T4] Adding new template to generation repository (1 constants, 0 attributes): [#0<e,e>:<e,e>]-->NP : (#0<e,e>:<e,e> rajasthan:s)
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 0
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0470sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0220sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0870sec
+[P-T4] [P-T4] 1 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0080sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0250sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0070sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0420sec
+[P-T4] [P-T4] 2 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0230sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0320sec
+[P-T4] [P-T4] 3 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0120sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0190sec
+[P-T4] [P-T4] 4 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0140sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0220sec
+[P-T4] [P-T4] 5 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0160sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0230sec
+[P-T4] [P-T4] 6 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0170sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0220sec
+[P-T4] [P-T4] 7 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0080sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0130sec
+[P-T4] [P-T4] 8 : ================== [0]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0090sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0130sec
+[P-T4] [P-T4] System memory: free memory: 113mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,790mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 9 Sample processing, mean: 0.0303sec
+Perfromend 9 Model parse, mean: 0.0080sec
+Perfromend 9 genlex parse, mean: 0.0162sec
+Processed: 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 1
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0060sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 1 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0070sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] 2 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 3 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 4 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 5 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 6 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] 7 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 8 : ================== [1]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0080sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0130sec
+[P-T4] [P-T4] System memory: free memory: 103mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,779mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 18 Sample processing, mean: 0.0201sec
+Perfromend 18 Model parse, mean: 0.0047sec
+Perfromend 18 genlex parse, mean: 0.0107sec
+Processed: 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 2
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0070sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 1 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 2 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 3 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 4 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 5 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 6 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 7 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 8 : ================== [2]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] System memory: free memory: 93mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,769mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 27 Sample processing, mean: 0.0159sec
+Perfromend 27 Model parse, mean: 0.0034sec
+Perfromend 27 genlex parse, mean: 0.0086sec
+Processed: 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 3
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 1 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 2 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0140sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0190sec
+[P-T4] [P-T4] 3 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0060sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 4 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] 5 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 6 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0080sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0140sec
+[P-T4] [P-T4] 7 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0080sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0150sec
+[P-T4] [P-T4] 8 : ================== [3]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0240sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0330sec
+[P-T4] [P-T4] System memory: free memory: 117mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,794mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 36 Sample processing, mean: 0.0153sec
+Perfromend 36 Model parse, mean: 0.0027sec
+Perfromend 36 genlex parse, mean: 0.0084sec
+Processed: 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 4
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0260sec
+[P-T4] [P-T4] 1 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 2 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0140sec
+[P-T4] [P-T4] 3 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0080sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0150sec
+[P-T4] [P-T4] 4 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 5 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 6 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 7 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 8 : ================== [4]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] System memory: free memory: 106mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,783mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 45 Sample processing, mean: 0.0147sec
+Perfromend 45 Model parse, mean: 0.0026sec
+Perfromend 45 genlex parse, mean: 0.0075sec
+Processed: 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 5
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 1 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 2 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0070sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 3 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 4 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 5 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0310sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0420sec
+[P-T4] [P-T4] 6 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 7 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0190sec
+[P-T4] [P-T4] 8 : ================== [5]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0390sec
+[P-T4] [P-T4] System memory: free memory: 97mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,773mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 54 Sample processing, mean: 0.0151sec
+Perfromend 54 Model parse, mean: 0.0025sec
+Perfromend 54 genlex parse, mean: 0.0074sec
+Processed: 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 6
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 1 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 2 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 3 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 4 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 5 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] 6 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 7 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0150sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0180sec
+[P-T4] [P-T4] 8 : ================== [6]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] System memory: free memory: 118mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,795mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 63 Sample processing, mean: 0.0144sec
+Perfromend 63 Model parse, mean: 0.0024sec
+Perfromend 63 genlex parse, mean: 0.0071sec
+Processed: 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 7
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 1 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0190sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0260sec
+[P-T4] [P-T4] 2 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 3 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 4 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 5 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0030sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 6 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 7 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 8 : ================== [7]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] System memory: free memory: 108mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,784mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 72 Sample processing, mean: 0.0139sec
+Perfromend 72 Model parse, mean: 0.0023sec
+Perfromend 72 genlex parse, mean: 0.0069sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 8
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 1 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 2 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 3 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0060sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 4 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 5 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 6 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 7 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 8 : ================== [8]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] System memory: free memory: 98mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,774mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 81 Sample processing, mean: 0.0130sec
+Perfromend 81 Model parse, mean: 0.0022sec
+Perfromend 81 genlex parse, mean: 0.0064sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 9
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 1 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 2 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 3 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 4 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 5 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 6 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 7 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 8 : ================== [9]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] System memory: free memory: 88mb	| allocated memory: 123mb	| max memory: 1,799mb	| total free memory: 1,764mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 90 Sample processing, mean: 0.0123sec
+Perfromend 90 Model parse, mean: 0.0020sec
+Perfromend 90 genlex parse, mean: 0.0061sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 10
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 1 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 2 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 3 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 4 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 5 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0040sec
+[P-T4] [P-T4] 6 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 7 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 8 : ================== [10]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] System memory: free memory: 142mb	| allocated memory: 155mb	| max memory: 1,799mb	| total free memory: 1,786mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 99 Sample processing, mean: 0.0117sec
+Perfromend 99 Model parse, mean: 0.0019sec
+Perfromend 99 genlex parse, mean: 0.0058sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 11
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 1 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0100sec
+[P-T4] [P-T4] 2 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0070sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0120sec
+[P-T4] [P-T4] 3 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0060sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0110sec
+[P-T4] [P-T4] 4 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 5 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 6 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0040sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 7 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0060sec
+[P-T4] [P-T4] 8 : ================== [11]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] System memory: free memory: 132mb	| allocated memory: 155mb	| max memory: 1,799mb	| total free memory: 1,776mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 108 Sample processing, mean: 0.0114sec
+Perfromend 108 Model parse, mean: 0.0019sec
+Perfromend 108 genlex parse, mean: 0.0056sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] Training epoch 12
+[P-T4] [P-T4] =========================
+[P-T4] [P-T4] 0 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which state border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0000sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 1 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<b_pkey,<s_pkey,t>> $0 (pkey_retriever:<s,s_pkey> rajasthan:s))))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 2 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 3 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0090sec
+[P-T4] [P-T4] 4 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0020sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0070sec
+[P-T4] [P-T4] 5 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0050sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0080sec
+[P-T4] [P-T4] 6 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0030sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] 7 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0000sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0040sec
+[P-T4] [P-T4] 8 : ================== [12]
+[P-T4] [P-T4] Sample type: SingleSentence
+[P-T4] [P-T4] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T4] [P-T4] Model parsing time: 0.0010sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 0 model parses for training sample:
+[P-T4] [P-T4] Generated lexicon size = 80
+[P-T4] [P-T4] Lexicon induction parsing time: 0.0020sec
+[P-T4] [P-T4] Output is exact
+[P-T4] [P-T4] Created 2 lexicon generation parses for training sample
+[P-T4] [P-T4] Removed 2 invalid parses
+[P-T4] [P-T4] 0 valid best parses for lexical generation:
+[P-T4] [P-T4] Conditioned parsing time: 0.0010sec
+[P-T4] [P-T4] No positive update
+[P-T4] [P-T4] Total sample handling time: 0.0050sec
+[P-T4] [P-T4] System memory: free memory: 121mb	| allocated memory: 155mb	| max memory: 1,799mb	| total free memory: 1,765mb
+[P-T4] [P-T4] Epoch stats:
+[P-T4] [P-T4] Perfromend 117 Sample processing, mean: 0.0110sec
+Perfromend 117 Model parse, mean: 0.0018sec
+Perfromend 117 genlex parse, mean: 0.0054sec
+Processed: 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+Sample statistics (total: 9)
+0 :: 
+1 :: 
+2 :: 
+3 :: 
+4 :: 
+5 :: 
+6 :: 
+7 :: 
+8 :: 
+
+[P-T4] [P-T4] Final model:
+Feature sets:
+	edu.cornell.cs.nlp.spf.parser.ccg.factoredlex.features.FactoredLexicalFeatureSet@6a4f787b
+	edu.cornell.cs.nlp.spf.parser.ccg.features.lambda.LogicalExpressionCoordinationFeatureSet@685cb137
+	edu.cornell.cs.nlp.spf.parser.ccg.features.basic.RuleUsageFeatureSet@6a41eaa2
+	edu.cornell.cs.nlp.spf.parser.ccg.features.basic.DynamicWordSkippingFeatures@7cd62f43
+Independent Lexical feature sets (subset of all features):
+	edu.cornell.cs.nlp.spf.parser.ccg.factoredlex.features.FactoredLexicalFeatureSet@6a4f787b
+Lexicon [size=84]
+chandigarh :- NP : (pkey_retriever:<s,s_pkey> chandigarh:c) [10.0]
+aurangabad :- NP : aurangabad:c [20.0]
+maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) [10.0]
+maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) [10.0]
+kanpur :- NP : kanpur:c [20.0]
+haryana :- NP : haryana:s [20.0]
+states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) [20.0]
+jodhpur :- NP : (pkey_retriever:<s,s_pkey> jodhpur:c) [10.0]
+katni :- NP : (pkey_retriever:<s,s_pkey> katni:c) [10.0]
+rishikesh :- NP : rishikesh:c [20.0]
+dehradun :- NP : (pkey_retriever:<s,s_pkey> dehradun:c) [10.0]
+the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) [10.0]
+border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) [20.0]
+border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) [20.0]
+dehradun :- NP : dehradun:c [20.0]
+bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) [10.0]
+bhusawal :- NP : bhusawal:c [20.0]
+rishikesh :- NP : (pkey_retriever:<s,s_pkey> rishikesh:c) [10.0]
+darbhanga :- NP : darbhanga:c [20.0]
+deoghar :- NP : (pkey_retriever:<s,s_pkey> deoghar:c) [10.0]
+reewa :- NP : (pkey_retriever:<s,s_pkey> reewa:c) [10.0]
+uttrakhand :- NP : uttrakhand:s [20.0]
+madhya pradesh :- NP : madhya_pradesh:s [31.435469250725863]
+jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) [10.0]
+mussoorie :- NP : mussoorie:c [20.0]
+border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) [20.0]
+border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) [20.0]
+bhusawal :- NP : (pkey_retriever:<s,s_pkey> bhusawal:c) [10.0]
+deoghar :- NP : deoghar:c [20.0]
+jodhpur :- NP : jodhpur:c [20.0]
+uttar pradesh :- NP : uttar_pradesh:s [31.435469250725863]
+aurangabad :- NP : (pkey_retriever:<s,s_pkey> aurangabad:c) [10.0]
+patna :- NP : patna:c [20.0]
+chandigarh :- NP : chandigarh:c [20.0]
+nagpur :- NP : (pkey_retriever:<s,s_pkey> nagpur:c) [10.0]
+ranchi :- NP : ranchi:c [20.0]
+kanpur :- NP : (pkey_retriever:<s,s_pkey> kanpur:c) [10.0]
+gurgaon :- NP : (pkey_retriever:<s,s_pkey> gurgaon:c) [10.0]
+ranchi :- NP : (pkey_retriever:<s,s_pkey> ranchi:c) [10.0]
+khandwa :- NP : (pkey_retriever:<s,s_pkey> khandwa:c) [10.0]
+bihar :- NP : bihar:s [20.0]
+the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) [10.0]
+nainital :- NP : (pkey_retriever:<s,s_pkey> nainital:c) [10.0]
+gurgaon :- NP : gurgaon:c [20.0]
+maharashtra :- NP : maharashtra:s [20.0]
+nagpur :- NP : nagpur:c [20.0]
+reewa :- NP : reewa:c [20.0]
+katni :- NP : katni:c [20.0]
+rajasthan :- NP : rajasthan:s [20.0]
+mumbai :- NP : (pkey_retriever:<s,s_pkey> mumbai:c) [10.0]
+uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) [10.0]
+nainital :- NP : nainital:c [20.0]
+rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) [20.0]
+the state of haryana :- NP : haryana:s [55.9479341998814]
+kurukshetra :- NP : kurukshetra:c [20.0]
+rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) [20.0]
+the aurangabad :- NP : (pkey_retriever:<s,s_pkey> aurangabad:c) [10.0]
+noida :- NP : noida:c [20.0]
+noida :- NP : (pkey_retriever:<s,s_pkey> noida:c) [10.0]
+mussoorie :- NP : (pkey_retriever:<s,s_pkey> mussoorie:c) [10.0]
+jalgaon :- NP : jalgaon:c [20.0]
+bhopal :- NP : (pkey_retriever:<s,s_pkey> bhopal:c) [10.0]
+haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) [10.0]
+maharashtra state :- NP : maharashtra:s [31.435469250725863]
+jaipur :- NP : (pkey_retriever:<s,s_pkey> jaipur:c) [10.0]
+the maharashtra :- NP : maharashtra:s [31.435469250725863]
+the aurangabad :- NP : aurangabad:c [31.435469250725863]
+bhopal :- NP : bhopal:c [20.0]
+kota :- NP : (pkey_retriever:<s,s_pkey> kota:c) [10.0]
+kota :- NP : kota:c [20.0]
+luckhnow :- NP : (pkey_retriever:<s,s_pkey> luckhnow:c) [10.0]
+khandwa :- NP : khandwa:c [20.0]
+uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) [10.0]
+madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) [10.0]
+which :- S/NP : (lambda $0:e $0) [20.0]
+jharkhand :- NP : jharkhand:s [20.0]
+jaipur :- NP : jaipur:c [20.0]
+kurukshetra :- NP : (pkey_retriever:<s,s_pkey> kurukshetra:c) [10.0]
+mumbai :- NP : mumbai:c [20.0]
+luckhnow :- NP : luckhnow:c [20.0]
+rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) [20.0]
+patna :- NP : (pkey_retriever:<s,s_pkey> patna:c) [10.0]
+darbhanga :- NP : (pkey_retriever:<s,s_pkey> darbhanga:c) [10.0]
+jalgaon :- NP : (pkey_retriever:<s,s_pkey> jalgaon:c) [10.0]
+Feature vector
+{DYNSKIP=-1.000, FACLEX#LEX#0#0=10.000, FACLEX#LEX#0#1=10.000, FACLEX#LEX#1#2=10.000, FACLEX#LEX#10#7=10.000, FACLEX#LEX#11#3=0.000, FACLEX#LEX#11#7=21.435, FACLEX#LEX#12#7=10.000, FACLEX#LEX#13#3=0.000, FACLEX#LEX#13#7=10.000, FACLEX#LEX#14#3=0.000, FACLEX#LEX#14#7=10.000, FACLEX#LEX#15#7=10.000, FACLEX#LEX#16#3=0.000, FACLEX#LEX#16#7=10.000, FACLEX#LEX#17#3=0.000, FACLEX#LEX#17#7=45.948, FACLEX#LEX#18#7=10.000, FACLEX#LEX#19#3=0.000, FACLEX#LEX#19#7=10.000, FACLEX#LEX#2#3=10.000, FACLEX#LEX#2#7=10.000, FACLEX#LEX#20#7=10.000, FACLEX#LEX#21#3=0.000, FACLEX#LEX#21#7=10.000, FACLEX#LEX#22#3=0.000, FACLEX#LEX#22#7=10.000, FACLEX#LEX#23#7=10.000, FACLEX#LEX#24#7=21.435, FACLEX#LEX#25#3=0.000, FACLEX#LEX#25#7=10.000, FACLEX#LEX#26#7=10.000, FACLEX#LEX#27#7=21.435, FACLEX#LEX#28#7=10.000, FACLEX#LEX#29#3=0.000, FACLEX#LEX#29#7=10.000, FACLEX#LEX#3#4=10.000, FACLEX#LEX#30#7=10.000, FACLEX#LEX#31#3=0.000, FACLEX#LEX#31#7=10.000, FACLEX#LEX#32#3=0.000, FACLEX#LEX#32#7=10.000, FACLEX#LEX#33#3=0.000, FACLEX#LEX#33#7=21.435, FACLEX#LEX#34#3=0.000, FACLEX#LEX#34#7=10.000, FACLEX#LEX#35#3=0.000, FACLEX#LEX#35#7=10.000, FACLEX#LEX#36#7=10.000, FACLEX#LEX#37#7=10.000, FACLEX#LEX#38#3=0.000, FACLEX#LEX#38#7=21.435, FACLEX#LEX#39#7=10.000, FACLEX#LEX#4#5=10.000, FACLEX#LEX#40#3=0.000, FACLEX#LEX#40#7=10.000, FACLEX#LEX#41#3=0.000, FACLEX#LEX#41#7=10.000, FACLEX#LEX#42#3=0.000, FACLEX#LEX#42#7=10.000, FACLEX#LEX#43#3=0.000, FACLEX#LEX#43#7=10.000, FACLEX#LEX#5#0=10.000, FACLEX#LEX#5#1=10.000, FACLEX#LEX#6#6=10.000, FACLEX#LEX#7#7=10.000, FACLEX#LEX#8#3=0.000, FACLEX#LEX#8#7=10.000, FACLEX#LEX#9#3=0.000, FACLEX#LEX#9#7=10.000, FACLEX#LEXDEFAULT=1.000, FACLEX#TMP#0=0.000, FACLEX#TMP#1=0.000, FACLEX#TMP#2=0.000, FACLEX#TMP#3=0.000, FACLEX#TMP#4=0.000, FACLEX#TMP#5=0.000, FACLEX#TMP#6=0.000, FACLEX#TMP#7=0.000, FACLEX#TMPDEFAULT=1.000, FACLEX#XEME#0=10.000, FACLEX#XEME#1=10.000, FACLEX#XEME#10=10.000, FACLEX#XEME#11=10.000, FACLEX#XEME#12=10.000, FACLEX#XEME#13=10.000, FACLEX#XEME#14=10.000, FACLEX#XEME#15=10.000, FACLEX#XEME#16=10.000, FACLEX#XEME#17=10.000, FACLEX#XEME#18=10.000, FACLEX#XEME#19=10.000, FACLEX#XEME#2=10.000, FACLEX#XEME#20=10.000, FACLEX#XEME#21=10.000, FACLEX#XEME#22=10.000, FACLEX#XEME#23=10.000, FACLEX#XEME#24=10.000, FACLEX#XEME#25=10.000, FACLEX#XEME#26=10.000, FACLEX#XEME#27=10.000, FACLEX#XEME#28=10.000, FACLEX#XEME#29=10.000, FACLEX#XEME#3=10.000, FACLEX#XEME#30=10.000, FACLEX#XEME#31=10.000, FACLEX#XEME#32=10.000, FACLEX#XEME#33=10.000, FACLEX#XEME#34=10.000, FACLEX#XEME#35=10.000, FACLEX#XEME#36=10.000, FACLEX#XEME#37=10.000, FACLEX#XEME#38=10.000, FACLEX#XEME#39=10.000, FACLEX#XEME#4=10.000, FACLEX#XEME#40=10.000, FACLEX#XEME#41=10.000, FACLEX#XEME#42=10.000, FACLEX#XEME#43=10.000, FACLEX#XEME#5=10.000, FACLEX#XEME#6=10.000, FACLEX#XEME#7=10.000, FACLEX#XEME#8=10.000, FACLEX#XEME#9=10.000, FACLEX#XEMEDEFAULT=1.000}
+[P-T4] [P-T4] Total run time 1.3690 seconds
+[P-T4] [P-T4] ============ (Job train completed)

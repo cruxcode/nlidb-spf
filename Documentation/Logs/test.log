@@ -1,0 +1,28 @@
+[P-T2] [P-T2] ============ (Job test started)
+[P-T2] [P-T2] 1 : ==================
+[P-T2] [P-T2] which states border rajasthan
+(lambda $0:e (state:<b_pkey,<t,s_pkey>> $0 (next_to:<s_pkey,<b_pkey,t>> (pkey_retriever:<s,s_pkey> rajasthan:s) $0)))
+[P-T2] [P-T2] Test parsing time 0.00sec
+[P-T2] [P-T2] no parses
+[P-T2] [P-T2] EXACT stats -- recording no parse
+[P-T2] [P-T2] [EXACT stats]  Record failure.
+[P-T2] [P-T2] EMPTY Parsing time 0.006000sec
+[P-T2] [P-T2] EXACT stats -- recording no parse with skipping
+[P-T2] [P-T2] [EXACT stats]  Record sloppy failure.
+[P-T2] [P-T2] WRONG: 2 parses
+[P-T2] [P-T2]   [S38.00] S : rajasthan:s
+[P-T2] [P-T2] Calculated score: 38.000000
+[P-T2] [P-T2] Features: {DYNSKIP=-1.000(2.000),FACLEX#LEX#2#7=10.000(1.000),FACLEX#LEX#6#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#2=10.000(1.000),FACLEX#XEME#6=10.000(1.000),RULE#>apply=0.0(0.100),RULE#>skip=0.0(0.200),RULE#lex=0.0(0.400)}
+[P-T2] [P-T2]   [S38.00] S : (pkey_retriever:<s,s_pkey> rajasthan:s)
+[P-T2] [P-T2] Calculated score: 38.000000
+[P-T2] [P-T2] Features: {DYNSKIP=-1.000(2.000),FACLEX#LEX#1#2=10.000(0.333),FACLEX#LEX#2#3=10.000(0.333),FACLEX#LEX#4#5=10.000(0.333),FACLEX#LEX#6#6=10.000(1.000),FACLEX#TMP#2=0.000(0.033),FACLEX#TMP#3=0.000(0.033),FACLEX#TMP#5=0.000(0.033),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#1=10.000(0.333),FACLEX#XEME#2=10.000(0.333),FACLEX#XEME#4=10.000(0.333),FACLEX#XEME#6=10.000(1.000),RULE#>apply=0.0(0.100),RULE#>skip=0.0(0.200),RULE#lex=0.0(0.400)}
+[P-T2] [P-T2] Had correct parses: false
+[P-T2] [P-T2] === EXACT statistics:
+Recall: 0.0/1.0 = 0.0
+Precision: 0.0/0.0 = 0.0
+F1: 0.0
+SKIP Recall: 0.0/1.0 = 0.0
+SKIP Precision: 0.0/0.0 = 0.0
+SKIP F1: 0.0
+[P-T2] [P-T2] Total run time 0.0120 seconds
+[P-T2] [P-T2] ============ (Job test completed)

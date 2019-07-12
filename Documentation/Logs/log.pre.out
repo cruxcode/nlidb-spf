@@ -1,0 +1,211 @@
+Lexical entries [84]:
+[20.0000] noida :- NP : noida:c {FACLEX#LEX#37#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#37=10.000(1.000)} {origin=fixed_domain}
+[10.0000] noida :- NP : (pkey_retriever:<s,s_pkey> noida:c) {FACLEX#LEX#37#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#37=10.000(1.000)} {origin=fixed_domain}
+[20.0000] gurgaon :- NP : gurgaon:c {FACLEX#LEX#31#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#31=10.000(1.000)} {origin=fixed_domain}
+[10.0000] gurgaon :- NP : (pkey_retriever:<s,s_pkey> gurgaon:c) {FACLEX#LEX#31#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#31=10.000(1.000)} {origin=fixed_domain}
+[20.0000] katni :- NP : katni:c {FACLEX#LEX#13#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[10.0000] katni :- NP : (pkey_retriever:<s,s_pkey> katni:c) {FACLEX#LEX#13#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#13=10.000(1.000)} {origin=fixed_domain}
+[20.0000] nainital :- NP : nainital:c {FACLEX#LEX#34#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#34=10.000(1.000)} {origin=fixed_domain}
+[10.0000] nainital :- NP : (pkey_retriever:<s,s_pkey> nainital:c) {FACLEX#LEX#34#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#34=10.000(1.000)} {origin=fixed_domain}
+[20.0000] mumbai :- NP : mumbai:c {FACLEX#LEX#35#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#35=10.000(1.000)} {origin=fixed_domain}
+[10.0000] mumbai :- NP : (pkey_retriever:<s,s_pkey> mumbai:c) {FACLEX#LEX#35#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#35=10.000(1.000)} {origin=fixed_domain}
+[20.0000] uttrakhand :- NP : uttrakhand:s {FACLEX#LEX#23#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[10.0000] uttrakhand :- NP : (pkey_retriever:<s,s_pkey> uttrakhand:s) {FACLEX#LEX#23#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#23=10.000(1.000)} {origin=fixed_domain}
+[20.0000] deoghar :- NP : deoghar:c {FACLEX#LEX#21#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+[10.0000] deoghar :- NP : (pkey_retriever:<s,s_pkey> deoghar:c) {FACLEX#LEX#21#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#21=10.000(1.000)} {origin=fixed_domain}
+[20.0000] nagpur :- NP : nagpur:c {FACLEX#LEX#29#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#29=10.000(1.000)} {origin=fixed_domain}
+[10.0000] nagpur :- NP : (pkey_retriever:<s,s_pkey> nagpur:c) {FACLEX#LEX#29#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#29=10.000(1.000)} {origin=fixed_domain}
+[20.0000] patna :- NP : patna:c {FACLEX#LEX#28#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#28=10.000(1.000)} {origin=fixed_domain}
+[10.0000] patna :- NP : (pkey_retriever:<s,s_pkey> patna:c) {FACLEX#LEX#28#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#28=10.000(1.000)} {origin=fixed_domain}
+[20.0000] states :- NP/(S\NP) : (lambda $0:<e,t> (lambda $1:e (next_to:<b_pkey,<t,s_pkey>> $1 ($0 $1)))) {FACLEX#LEX#3#4=10.000(1.000),FACLEX#TMP#4=0.000(0.100),FACLEX#XEME#3=10.000(1.000)} {origin=fixed_domain}
+[31.4355] the aurangabad :- NP : aurangabad:c {FACLEX#LEX#38#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#38=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the aurangabad :- NP : (pkey_retriever:<s,s_pkey> aurangabad:c) {FACLEX#LEX#38#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#38=10.000(1.000)} {origin=fixed_domain}
+[20.0000] kanpur :- NP : kanpur:c {FACLEX#LEX#10#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[10.0000] kanpur :- NP : (pkey_retriever:<s,s_pkey> kanpur:c) {FACLEX#LEX#10#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#10=10.000(1.000)} {origin=fixed_domain}
+[20.0000] jodhpur :- NP : jodhpur:c {FACLEX#LEX#14#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[10.0000] jodhpur :- NP : (pkey_retriever:<s,s_pkey> jodhpur:c) {FACLEX#LEX#14#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#14=10.000(1.000)} {origin=fixed_domain}
+[20.0000] jaipur :- NP : jaipur:c {FACLEX#LEX#41#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#41=10.000(1.000)} {origin=fixed_domain}
+[10.0000] jaipur :- NP : (pkey_retriever:<s,s_pkey> jaipur:c) {FACLEX#LEX#41#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#41=10.000(1.000)} {origin=fixed_domain}
+[20.0000] maharashtra :- NP : maharashtra:s {FACLEX#LEX#9#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[10.0000] maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) {FACLEX#LEX#9#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#9=10.000(1.000)} {origin=fixed_domain}
+[20.0000] darbhanga :- NP : darbhanga:c {FACLEX#LEX#20#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[10.0000] darbhanga :- NP : (pkey_retriever:<s,s_pkey> darbhanga:c) {FACLEX#LEX#20#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#20=10.000(1.000)} {origin=fixed_domain}
+[31.4355] the maharashtra :- NP : maharashtra:s {FACLEX#LEX#33#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#33=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the maharashtra :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) {FACLEX#LEX#33#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#33=10.000(1.000)} {origin=fixed_domain}
+[20.0000] rajasthan :- NP : rajasthan:s {FACLEX#LEX#2#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#2=10.000(1.000)} {origin=fixed_domain}
+[20.0000] rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) {FACLEX#LEX#1#2=10.000(1.000),FACLEX#TMP#2=0.000(0.100),FACLEX#XEME#1=10.000(1.000)} {origin=fixed_domain}
+[20.0000] rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) {FACLEX#LEX#2#3=10.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#2=10.000(1.000)} {origin=fixed_domain}
+[20.0000] rajasthan :- NP : (pkey_retriever:<s,s_pkey> rajasthan:s) {FACLEX#LEX#4#5=10.000(1.000),FACLEX#TMP#5=0.000(0.100),FACLEX#XEME#4=10.000(1.000)} {origin=fixed_domain}
+[20.0000] haryana :- NP : haryana:s {FACLEX#LEX#12#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[10.0000] haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) {FACLEX#LEX#12#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#12=10.000(1.000)} {origin=fixed_domain}
+[55.9479] the state of haryana :- NP : haryana:s {FACLEX#LEX#17#7=45.948(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[10.0000] the state of haryana :- NP : (pkey_retriever:<s,s_pkey> haryana:s) {FACLEX#LEX#17#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#17=10.000(1.000)} {origin=fixed_domain}
+[20.0000] khandwa :- NP : khandwa:c {FACLEX#LEX#32#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#32=10.000(1.000)} {origin=fixed_domain}
+[10.0000] khandwa :- NP : (pkey_retriever:<s,s_pkey> khandwa:c) {FACLEX#LEX#32#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#32=10.000(1.000)} {origin=fixed_domain}
+[20.0000] jharkhand :- NP : jharkhand:s {FACLEX#LEX#25#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[10.0000] jharkhand :- NP : (pkey_retriever:<s,s_pkey> jharkhand:s) {FACLEX#LEX#25#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#25=10.000(1.000)} {origin=fixed_domain}
+[20.0000] luckhnow :- NP : luckhnow:c {FACLEX#LEX#43#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#43=10.000(1.000)} {origin=fixed_domain}
+[10.0000] luckhnow :- NP : (pkey_retriever:<s,s_pkey> luckhnow:c) {FACLEX#LEX#43#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#43=10.000(1.000)} {origin=fixed_domain}
+[20.0000] mussoorie :- NP : mussoorie:c {FACLEX#LEX#26#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[10.0000] mussoorie :- NP : (pkey_retriever:<s,s_pkey> mussoorie:c) {FACLEX#LEX#26#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#26=10.000(1.000)} {origin=fixed_domain}
+[20.0000] kurukshetra :- NP : kurukshetra:c {FACLEX#LEX#36#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#36=10.000(1.000)} {origin=fixed_domain}
+[10.0000] kurukshetra :- NP : (pkey_retriever:<s,s_pkey> kurukshetra:c) {FACLEX#LEX#36#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#36=10.000(1.000)} {origin=fixed_domain}
+[20.0000] border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $0 $1))) {FACLEX#LEX#5#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#5=10.000(1.000)} {origin=fixed_domain}
+[20.0000] border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<b_pkey,<s_pkey,t>> $1 $0))) {FACLEX#LEX#5#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#5=10.000(1.000)} {origin=fixed_domain}
+[20.0000] border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $0 $1))) {FACLEX#LEX#0#0=10.000(1.000),FACLEX#TMP#0=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[20.0000] border :- S\NP/NP : (lambda $0:e (lambda $1:e (next_to:<s_pkey,<b_pkey,t>> $1 $0))) {FACLEX#LEX#0#1=10.000(1.000),FACLEX#TMP#1=0.000(0.100),FACLEX#XEME#0=10.000(1.000)} {origin=fixed_domain}
+[20.0000] bihar :- NP : bihar:s {FACLEX#LEX#19#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[10.0000] bihar :- NP : (pkey_retriever:<s,s_pkey> bihar:s) {FACLEX#LEX#19#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#19=10.000(1.000)} {origin=fixed_domain}
+[20.0000] which :- S/NP : (lambda $0:e $0) {FACLEX#LEX#6#6=10.000(1.000),FACLEX#TMP#6=0.000(0.100),FACLEX#XEME#6=10.000(1.000)} {origin=fixed_domain}
+[20.0000] bhusawal :- NP : bhusawal:c {FACLEX#LEX#18#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[10.0000] bhusawal :- NP : (pkey_retriever:<s,s_pkey> bhusawal:c) {FACLEX#LEX#18#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#18=10.000(1.000)} {origin=fixed_domain}
+[31.4355] uttar pradesh :- NP : uttar_pradesh:s {FACLEX#LEX#27#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#27=10.000(1.000)} {origin=fixed_domain}
+[10.0000] uttar pradesh :- NP : (pkey_retriever:<s,s_pkey> uttar_pradesh:s) {FACLEX#LEX#27#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#27=10.000(1.000)} {origin=fixed_domain}
+[20.0000] chandigarh :- NP : chandigarh:c {FACLEX#LEX#8#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[10.0000] chandigarh :- NP : (pkey_retriever:<s,s_pkey> chandigarh:c) {FACLEX#LEX#8#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#8=10.000(1.000)} {origin=fixed_domain}
+[20.0000] reewa :- NP : reewa:c {FACLEX#LEX#22#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[10.0000] reewa :- NP : (pkey_retriever:<s,s_pkey> reewa:c) {FACLEX#LEX#22#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#22=10.000(1.000)} {origin=fixed_domain}
+[20.0000] jalgaon :- NP : jalgaon:c {FACLEX#LEX#39#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#39=10.000(1.000)} {origin=fixed_domain}
+[10.0000] jalgaon :- NP : (pkey_retriever:<s,s_pkey> jalgaon:c) {FACLEX#LEX#39#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#39=10.000(1.000)} {origin=fixed_domain}
+[20.0000] ranchi :- NP : ranchi:c {FACLEX#LEX#30#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#30=10.000(1.000)} {origin=fixed_domain}
+[10.0000] ranchi :- NP : (pkey_retriever:<s,s_pkey> ranchi:c) {FACLEX#LEX#30#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#30=10.000(1.000)} {origin=fixed_domain}
+[31.4355] madhya pradesh :- NP : madhya_pradesh:s {FACLEX#LEX#24#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[10.0000] madhya pradesh :- NP : (pkey_retriever:<s,s_pkey> madhya_pradesh:s) {FACLEX#LEX#24#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#24=10.000(1.000)} {origin=fixed_domain}
+[20.0000] dehradun :- NP : dehradun:c {FACLEX#LEX#16#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[10.0000] dehradun :- NP : (pkey_retriever:<s,s_pkey> dehradun:c) {FACLEX#LEX#16#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#16=10.000(1.000)} {origin=fixed_domain}
+[20.0000] aurangabad :- NP : aurangabad:c {FACLEX#LEX#7#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[10.0000] aurangabad :- NP : (pkey_retriever:<s,s_pkey> aurangabad:c) {FACLEX#LEX#7#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#7=10.000(1.000)} {origin=fixed_domain}
+[31.4355] maharashtra state :- NP : maharashtra:s {FACLEX#LEX#11#7=21.435(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[10.0000] maharashtra state :- NP : (pkey_retriever:<s,s_pkey> maharashtra:s) {FACLEX#LEX#11#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#11=10.000(1.000)} {origin=fixed_domain}
+[20.0000] bhopal :- NP : bhopal:c {FACLEX#LEX#40#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#40=10.000(1.000)} {origin=fixed_domain}
+[10.0000] bhopal :- NP : (pkey_retriever:<s,s_pkey> bhopal:c) {FACLEX#LEX#40#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#40=10.000(1.000)} {origin=fixed_domain}
+[20.0000] rishikesh :- NP : rishikesh:c {FACLEX#LEX#15#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[10.0000] rishikesh :- NP : (pkey_retriever:<s,s_pkey> rishikesh:c) {FACLEX#LEX#15#3=0.0(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#15=10.000(1.000)} {origin=fixed_domain}
+[20.0000] kota :- NP : kota:c {FACLEX#LEX#42#7=10.000(1.000),FACLEX#TMP#7=0.000(0.100),FACLEX#XEME#42=10.000(1.000)} {origin=fixed_domain}
+[10.0000] kota :- NP : (pkey_retriever:<s,s_pkey> kota:c) {FACLEX#LEX#42#3=0.000(1.000),FACLEX#TMP#3=0.000(0.100),FACLEX#XEME#42=10.000(1.000)} {origin=fixed_domain}
+Feature weights [125]:
+DYNSKIP=-1.0
+FACLEX#LEX#0#0=10.0
+FACLEX#LEX#0#1=10.0
+FACLEX#LEX#1#2=10.0
+FACLEX#LEX#10#7=10.0
+FACLEX#LEX#11#3=0.0
+FACLEX#LEX#11#7=21.435469250725863
+FACLEX#LEX#12#7=10.0
+FACLEX#LEX#13#3=0.0
+FACLEX#LEX#13#7=10.0
+FACLEX#LEX#14#3=0.0
+FACLEX#LEX#14#7=10.0
+FACLEX#LEX#15#7=10.0
+FACLEX#LEX#16#3=0.0
+FACLEX#LEX#16#7=10.0
+FACLEX#LEX#17#3=0.0
+FACLEX#LEX#17#7=45.9479341998814
+FACLEX#LEX#18#7=10.0
+FACLEX#LEX#19#3=0.0
+FACLEX#LEX#19#7=10.0
+FACLEX#LEX#2#3=10.0
+FACLEX#LEX#2#7=10.0
+FACLEX#LEX#20#7=10.0
+FACLEX#LEX#21#3=0.0
+FACLEX#LEX#21#7=10.0
+FACLEX#LEX#22#3=0.0
+FACLEX#LEX#22#7=10.0
+FACLEX#LEX#23#7=10.0
+FACLEX#LEX#24#7=21.435469250725863
+FACLEX#LEX#25#3=0.0
+FACLEX#LEX#25#7=10.0
+FACLEX#LEX#26#7=10.0
+FACLEX#LEX#27#7=21.435469250725863
+FACLEX#LEX#28#7=10.0
+FACLEX#LEX#29#3=0.0
+FACLEX#LEX#29#7=10.0
+FACLEX#LEX#3#4=10.0
+FACLEX#LEX#30#7=10.0
+FACLEX#LEX#31#3=0.0
+FACLEX#LEX#31#7=10.0
+FACLEX#LEX#32#3=0.0
+FACLEX#LEX#32#7=10.0
+FACLEX#LEX#33#3=0.0
+FACLEX#LEX#33#7=21.435469250725863
+FACLEX#LEX#34#3=0.0
+FACLEX#LEX#34#7=10.0
+FACLEX#LEX#35#3=0.0
+FACLEX#LEX#35#7=10.0
+FACLEX#LEX#36#7=10.0
+FACLEX#LEX#37#7=10.0
+FACLEX#LEX#38#3=0.0
+FACLEX#LEX#38#7=21.435469250725863
+FACLEX#LEX#39#7=10.0
+FACLEX#LEX#4#5=10.0
+FACLEX#LEX#40#3=0.0
+FACLEX#LEX#40#7=10.0
+FACLEX#LEX#41#3=0.0
+FACLEX#LEX#41#7=10.0
+FACLEX#LEX#42#3=0.0
+FACLEX#LEX#42#7=10.0
+FACLEX#LEX#43#3=0.0
+FACLEX#LEX#43#7=10.0
+FACLEX#LEX#5#0=10.0
+FACLEX#LEX#5#1=10.0
+FACLEX#LEX#6#6=10.0
+FACLEX#LEX#7#7=10.0
+FACLEX#LEX#8#3=0.0
+FACLEX#LEX#8#7=10.0
+FACLEX#LEX#9#3=0.0
+FACLEX#LEX#9#7=10.0
+FACLEX#LEXDEFAULT=1.0
+FACLEX#TMP#0=0.0
+FACLEX#TMP#1=0.0
+FACLEX#TMP#2=0.0
+FACLEX#TMP#3=0.0
+FACLEX#TMP#4=0.0
+FACLEX#TMP#5=0.0
+FACLEX#TMP#6=0.0
+FACLEX#TMP#7=0.0
+FACLEX#TMPDEFAULT=1.0
+FACLEX#XEME#0=10.0
+FACLEX#XEME#1=10.0
+FACLEX#XEME#10=10.0
+FACLEX#XEME#11=10.0
+FACLEX#XEME#12=10.0
+FACLEX#XEME#13=10.0
+FACLEX#XEME#14=10.0
+FACLEX#XEME#15=10.0
+FACLEX#XEME#16=10.0
+FACLEX#XEME#17=10.0
+FACLEX#XEME#18=10.0
+FACLEX#XEME#19=10.0
+FACLEX#XEME#2=10.0
+FACLEX#XEME#20=10.0
+FACLEX#XEME#21=10.0
+FACLEX#XEME#22=10.0
+FACLEX#XEME#23=10.0
+FACLEX#XEME#24=10.0
+FACLEX#XEME#25=10.0
+FACLEX#XEME#26=10.0
+FACLEX#XEME#27=10.0
+FACLEX#XEME#28=10.0
+FACLEX#XEME#29=10.0
+FACLEX#XEME#3=10.0
+FACLEX#XEME#30=10.0
+FACLEX#XEME#31=10.0
+FACLEX#XEME#32=10.0
+FACLEX#XEME#33=10.0
+FACLEX#XEME#34=10.0
+FACLEX#XEME#35=10.0
+FACLEX#XEME#36=10.0
+FACLEX#XEME#37=10.0
+FACLEX#XEME#38=10.0
+FACLEX#XEME#39=10.0
+FACLEX#XEME#4=10.0
+FACLEX#XEME#40=10.0
+FACLEX#XEME#41=10.0
+FACLEX#XEME#42=10.0
+FACLEX#XEME#43=10.0
+FACLEX#XEME#5=10.0
+FACLEX#XEME#6=10.0
+FACLEX#XEME#7=10.0
+FACLEX#XEME#8=10.0
+FACLEX#XEME#9=10.0
+FACLEX#XEMEDEFAULT=1.0
