@@ -1,0 +1,319 @@
+maharashtra :- NP : maharashtra:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+haryana :- NP : haryana:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+madhya pradesh :- NP : madhya pradesh:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+rajasthan :- NP : rajasthan:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+jharkhand :- NP : jharkhand:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+uttar pradesh :- NP : uttar pradesh:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+uttrakhand :- NP : uttrakhand:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+bihar :- NP : bihar:s_pkey
+the maharashtra :- NP : maharashtra:s_pkey
+the state of haryana :- NP : haryana:s_pkey
+maharashtra state :- NP : maharashtra:s_pkey
+1 :- NP : 1:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+2 :- NP : 2:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+3 :- NP : 3:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+4 :- NP : 4:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+5 :- NP : 5:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+6 :- NP : 6:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+7 :- NP : 7:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+8 :- NP : 8:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+9 :- NP : 9:s_pkey
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+10 :- NP : 10:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+11 :- NP : 11:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+12 :- NP : 12:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+13 :- NP : 13:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+14 :- NP : 14:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+15 :- NP : 15:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+16 :- NP : 16:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+17 :- NP : 17:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+18 :- NP : 18:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+19 :- NP : 19:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+20 :- NP : 20:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+21 :- NP : 21:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+22 :- NP : 22:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+23 :- NP : 23:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+24 :- NP : 24:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+25 :- NP : 25:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+26 :- NP : 26:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+27 :- NP : 27:c
+the 1 :- NP : 1:s_pkey
+city 2 :- NP : 2:c
+the city of 3 :- NP : 3:c
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+100 :- N : 100:i
+the 100 :- N : 100:i
+ganga :- NP : ganga:r
+the ganga :- NP : ganga:r
+jamuna :- NP : jamuna:r
+the ganga :- NP : ganga:r
+1 :- NP : 1:s_pkey
+the 1 :- NP : 1:s_pkey
+2 :- NP : 2:s_pkey
+the 1 :- NP : 1:s_pkey
+500 :- NP : 500:i
+the 500 :- NP : 500:i
+500 :- NP : 500:i
+the 500 :- NP : 500:i
+aurangabad :- NP : aurangabad:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+mumbai :- NP : mumbai:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+jalgaon :- NP : jalgaon:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+bhusawal :- NP : bhusawal:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+nagpur :- NP : nagpur:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+kurukshetra :- NP : kurukshetra:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+gurgaon :- NP : gurgaon:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+chandigarh :- NP : chandigarh:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+ranchi :- NP : ranchi:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+deoghar :- NP : deoghar:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+kanpur :- NP : kanpur:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+noida :- NP : noida:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+luckhnow :- NP : luckhnow:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+kota :- NP : kota:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+jaipur :- NP : jaipur:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+jodhpur :- NP : jodhpur:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+bhopal :- NP : bhopal:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+khandwa :- NP : khandwa:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+katni :- NP : katni:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+reewa :- NP : reewa:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+dehradun :- NP : dehradun:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+rishikesh :- NP : rishikesh:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+nainital :- NP : nainital:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+mussoorie :- NP : mussoorie:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+patna :- NP : patna:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+darbhanga :- NP : darbhanga:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+aurangabad :- NP : aurangabad:c
+the aurangabad :- NP : aurangabad:c
+city named mumbai :- NP : mumbai:c
+1 :- NP : 1:s_pkey
+the 1 :- NP : 1:s_pkey
+2 :- NP : 2:s_pkey
+the 1 :- NP : 1:s_pkey
+3 :- NP : 3:s_pkey
+the 1 :- NP : 1:s_pkey
+4 :- NP : 4:s_pkey
+the 1 :- NP : 1:s_pkey
+5 :- NP : 5:s_pkey
+the 1 :- NP : 1:s_pkey
+6 :- NP : 6:s_pkey
+the 1 :- NP : 1:s_pkey
+7 :- NP : 7:s_pkey
+the 1 :- NP : 1:s_pkey
+8 :- NP : 8:s_pkey
+the 1 :- NP : 1:s_pkey
+500 :- NP : 500:i
+the 500 :- NP : 500:i
+500 :- NP : 500:i
+the 500 :- NP : 500:i
+1 :- NP : 1:s_pkey
+the 1 :- NP : 1:s_pkey
+2 :- NP : 2:s_pkey
+the 1 :- NP : 1:s_pkey
+3 :- NP : 3:s_pkey
+the 1 :- NP : 1:s_pkey
+4 :- NP : 4:s_pkey
+the 1 :- NP : 1:s_pkey
+5 :- NP : 5:s_pkey
+the 1 :- NP : 1:s_pkey
+6 :- NP : 6:s_pkey
+the 1 :- NP : 1:s_pkey
+7 :- NP : 7:s_pkey
+the 1 :- NP : 1:s_pkey
+8 :- NP : 8:s_pkey
+the 1 :- NP : 1:s_pkey
+9 :- NP : 9:s_pkey
+the 1 :- NP : 1:s_pkey
+1 :- NP : 1:s_pkey
+the 1 :- NP : 1:s_pkey
+2 :- NP : 2:s_pkey
+the 1 :- NP : 1:s_pkey
+3 :- NP : 3:s_pkey
+the 1 :- NP : 1:s_pkey
+4 :- NP : 4:s_pkey
+the 1 :- NP : 1:s_pkey
+5 :- NP : 5:s_pkey
+the 1 :- NP : 1:s_pkey
+6 :- NP : 6:s_pkey
+the 1 :- NP : 1:s_pkey
+7 :- NP : 7:s_pkey
+the 1 :- NP : 1:s_pkey
+8 :- NP : 8:s_pkey
+the 1 :- NP : 1:s_pkey

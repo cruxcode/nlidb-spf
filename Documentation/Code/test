@@ -1,0 +1,4 @@
+what is the population of mumbai
+(population:<c_pkey,i> (pkey_retriever:<c,c_pkey> mumbai:c))
+how large is the largest city in maharashtra
+(size:<c_pkey,i> (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (city:<c_pkey,t> $0) (set_retriever:<c_pkey,<s_pkey,t>> $0 maharashtra))) (lambda $1:e (size:<c_pkey,i> $1))))
