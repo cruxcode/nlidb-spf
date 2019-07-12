@@ -182,6 +182,8 @@ class Seed{
                 seed_col.add(str);
                 str = name + " :- " + "S/PP" + " : " + "(lambda $0:e (" + pred + " $0))";
                 seed_col.add(str);
+                str = name + " :- " + "N" + " : " + "(lambda $0:e (" + pred + " $0))";
+                seed_col.add(str);
                 break;
             
             // density -> N, S/NP   <lo,i> ????????????????????????????
